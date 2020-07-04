@@ -1,0 +1,9 @@
+root: true
+extends:
+  - remcohaszing
+settings:
+  node:
+    convertPath:
+      'src/**':
+        - 'src/(.+?)\.ts$'
+        - dist/$1.js
