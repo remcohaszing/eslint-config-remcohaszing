@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-remcohaszing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A strict ESLint configuration.",
   "keywords": [
     "eslint",
@@ -8,9 +8,6 @@
   ],
   "license": "MIT",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
-  "files": [
-    "lib"
-  ],
   "scripts": {
     "test": "jest"
   },
