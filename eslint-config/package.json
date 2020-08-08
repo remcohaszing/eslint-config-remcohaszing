@@ -6,6 +6,15 @@
     "eslint",
     "eslintconfig"
   ],
+  "homepage": "https://github.com/remcohaszing/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/remcohaszing/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remcohaszing/eslint-config.git",
+    "directory": "eslint-config"
+  },
   "license": "MIT",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
   "scripts": {
