@@ -8,7 +8,7 @@ module.exports = {
     },
   },
   plugins: ['jsx-a11y', 'react', 'react-hooks'],
-  settings: { react: { version: 'detect' } },
+  settings: { react: { pragma: null, version: 'detect' } },
   rules: {
     ...jsxA11y.rules,
     ...getReactRules('react'),

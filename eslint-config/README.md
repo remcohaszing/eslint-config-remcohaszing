@@ -143,6 +143,8 @@ npm install --save-dev \
   eslint-plugin-react
 ```
 
+The pragma is set to `h` by default.
+
 #### React / Preact
 
 For React and Preact some special configurations are recommended.
