@@ -238,5 +238,3 @@ warnings cause ESLint to exit with exit code 1, run:
 ```hh
 eslint --max-warnings 0 .
 ```
-
-## Configuring CI
