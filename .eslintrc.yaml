@@ -3,3 +3,6 @@ extends:
   - remcohaszing
   - remcohaszing/jest
   - remcohaszing/typechecking
+
+ignorePatterns:
+  - '*.md'

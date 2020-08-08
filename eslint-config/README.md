@@ -197,6 +197,27 @@ extends:
   - remcohaszing/jest
 ```
 
+### Markdown
+
+Code blocks in Markdown are linted by default using
+[`eslint-plugin-markdown`](https://github.com/eslint/eslint-plugin-markdown).
+
+`prettier/prettier` is disabled, because it doesn’t play nice with `eslint-plugin-markdown`.
+
+The type checking rules from `@typescript-eslint/eslint-plugin` don’t work with
+`eslint-plugin-markdown`. To work around this, tag TypeScript code blocks with `typescript`, not
+`ts` or `tsx`.
+
+Other rules have been turned off, because these rules may conflict with the purpose of the
+documentation.
+
+To no lint Markdown files, ignore them.
+
+```yaml
+ignorePatterns:
+  - '*.md'
+```
+
 ## Ignored files
 
 By default ESLint ignores `node_modules/` and all dotfiles. This ESLint configuration unignores
