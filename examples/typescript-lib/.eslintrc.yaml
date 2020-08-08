@@ -1,6 +1,3 @@
-root: true
-extends:
-  - remcohaszing
 settings:
   node:
     convertPath:

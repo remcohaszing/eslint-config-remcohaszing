@@ -3,7 +3,7 @@ const getIgnorePatterns = require('./utils/getIgnorePatterns');
 /**
  * https://github.com/github/markup/blob/master/lib/github/markup/markdown.rb#L34
  */
-const markdown = '*.{md,mkd,mkdn,mdwn,mdown,markdown}';
+const markdown = '**/*.{md,mkd,mkdn,mdwn,mdown,markdown}';
 
 module.exports = {
   env: {
@@ -82,7 +82,7 @@ module.exports = {
      * Allow some normally disallowed syntax in Markdown
      */
     {
-      files: `${markdown}/*`,
+      files: [`${markdown}/*`],
       extends: ['remcohaszing/dev'],
       rules: {
         /**
@@ -108,7 +108,7 @@ module.exports = {
      * Lint code blocks tagged with `javascript`.
      */
     {
-      files: `${markdown}/*.javascript`,
+      files: [`${markdown}/*.javascript`],
     },
 
     /**
@@ -117,7 +117,7 @@ module.exports = {
      * Also make sure rules that require type checking are disabled.
      */
     {
-      files: `${markdown}/*.typescript`,
+      files: [`${markdown}/*.typescript`],
       extends: ['remcohaszing/typescript', 'remcohaszing/esm'],
     },
   ],
