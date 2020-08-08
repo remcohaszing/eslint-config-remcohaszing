@@ -162,7 +162,10 @@ module.exports = {
         /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/restrict-template-expressions.md
          */
-        '@typescript-eslint/restrict-template-expressions': 'error',
+        '@typescript-eslint/restrict-template-expressions': [
+          'error',
+          { allowNumber: true, allowBoolean: true, allowAny: false, allowNullish: true },
+        ],
 
         /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/return-await.md
