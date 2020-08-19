@@ -12,12 +12,6 @@ interface State {
    * The error that was thrown.
    */
   error?: null | Error;
-
-  /**
-   * The React error information.
-   */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  errorInfo?: any;
 }
 
 /**
@@ -28,35 +22,27 @@ export class ErrorHandler extends Component<ErrorHandlerProps, State> {
 
   state: State = {
     error: null,
-    errorInfo: null,
   };
 
   /**
    * Handle an error thrown caused by a component on the React tree.
    *
    * @param error - The error that was thrown
-   * @param errorInfo - The React error information
    */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  componentDidCatch(error: Error, errorInfo: any): void {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    this.setState({ error, errorInfo });
+  componentDidCatch(error: Error): void {
+    this.setState({ error });
   }
 
   render(): ComponentChild {
     const { children } = this.props;
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-    const { error, errorInfo } = this.state;
+    const { error } = this.state;
 
-    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
-    if (error || errorInfo) {
+    if (error) {
       return (
         <Fragment>
-          <h1 className="has-text-danger">{error?.name}</h1>
+          <h1 className="has-text-danger">{error instanceof Error ? error.name : 'Error'}</h1>
           <pre className="has-background-danger-light has-text-danger-dark">
-            {error?.message}
-            {/* eslint-disable-next-line @typescript-eslint/no-unsafe-member-access */}
-            {errorInfo?.componentStack}
+            {error instanceof Error ? error.message : JSON.stringify(error, undefined, 2)}
           </pre>
         </Fragment>
       );

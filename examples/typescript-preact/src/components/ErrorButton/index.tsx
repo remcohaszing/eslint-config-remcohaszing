@@ -1,4 +1,4 @@
-import { ComponentChild, VNode, h } from 'preact';
+import { VNode, h } from 'preact';
 import { useCallback, useState } from 'preact/hooks';
 
 import { Button } from '../Button';
@@ -15,7 +15,7 @@ export function ErrorButton(): VNode {
   }, []);
 
   if (!ok) {
-    return (ok as ComponentChild) as VNode;
+    throw new Error('fail');
   }
 
   return (
