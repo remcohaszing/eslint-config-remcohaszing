@@ -283,11 +283,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/no-restricted-properties
    */
-  'no-restricted-properties': [
-    'error',
-    { property: 'prototype', message: 'Use a class instead.' },
-    { property: 'toString', message: 'Use String() instread.' },
-  ],
+  'no-restricted-properties': ['error', { property: 'prototype', message: 'Use a class instead.' }],
 
   /**
    * https://eslint.org/docs/rules/no-return-assign

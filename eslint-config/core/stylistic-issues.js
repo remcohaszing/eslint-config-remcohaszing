@@ -369,6 +369,12 @@ module.exports = {
       message: 'Use String() instead.',
     },
     {
+      // `value.toString()`
+      selector: 'CallExpression[callee.property.name="toString"][arguments.length=0]',
+      message: 'Use String() instead.',
+    },
+
+    {
       selector: 'SequenceExpression',
       message: 'Split this sequence into multiple statements.',
     },
