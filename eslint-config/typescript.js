@@ -49,6 +49,34 @@ module.exports = {
     'lines-around-comment': 'off',
 
     /**
+     * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/default.md
+     *
+     * Use TypeScript to determine this.
+     */
+    'import/default': 'off',
+
+    /**
+     * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md
+     *
+     * Use TypeScript to determine this.
+     */
+    'import/named': 'off',
+
+    /**
+     * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/namespace.md
+     *
+     * Use TypeScript to determine this.
+     */
+    'import/namespace': 'off',
+
+    /**
+     * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default-member.md
+     *
+     * Use TypeScript to determine this.
+     */
+    'import/no-named-as-default-member': 'off',
+
+    /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-types.md
      */
     'jsdoc/no-types': 'error',
