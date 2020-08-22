@@ -211,7 +211,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/require-atomic-updates
    */
-  'require-atomic-updates': 'error',
+  'require-atomic-updates': 'off',
 
   /**
    * https://eslint.org/docs/rules/use-isnan
