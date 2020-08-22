@@ -569,7 +569,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/spaced-comment
    */
-  'spaced-comment': ['error', 'always'],
+  'spaced-comment': ['error', 'always', { block: { balanced: true } }],
 
   /**
    * https://eslint.org/docs/rules/switch-colon-spacing
