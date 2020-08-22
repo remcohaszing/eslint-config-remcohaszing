@@ -280,7 +280,7 @@ module.exports = {
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dynamic-delete.md
      */
-    '@typescript-eslint/no-dynamic-delete': 'error',
+    '@typescript-eslint/no-dynamic-delete': 'off',
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md
