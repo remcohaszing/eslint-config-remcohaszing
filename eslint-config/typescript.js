@@ -388,18 +388,7 @@ module.exports = {
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-type-alias.md
      */
-    '@typescript-eslint/no-type-alias': [
-      'error',
-      {
-        allowAliases: 'in-unions-and-intersections',
-        allowCallbacks: 'always',
-        allowConditionalTypes: 'always',
-        allowConstructors: 'always',
-        allowLiterals: 'in-unions-and-intersections',
-        allowMappedTypes: 'always',
-        allowTupleTypes: 'always',
-      },
-    ],
+    '@typescript-eslint/no-type-alias': 'off',
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
