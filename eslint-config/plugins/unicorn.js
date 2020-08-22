@@ -239,7 +239,7 @@ module.exports = {
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-replace-all.md
      */
-    'unicorn/prefer-replace-all': 'error',
+    'unicorn/prefer-replace-all': 'off',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-set-has.md
