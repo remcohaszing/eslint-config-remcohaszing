@@ -21,7 +21,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "find-up": "^4.1.0"
+    "find-up": "^5.0.0"
   },
   "peerDependencies": {
     "eslint": "^7",
