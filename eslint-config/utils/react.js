@@ -397,18 +397,18 @@ module.exports = {
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-default-props.md
    */
   'react/jsx-sort-default-props': {
-    jsx: 'off',
-    preact: 'error',
-    react: 'error',
+    jsx: ['off', { ignoreCase: true }],
+    preact: ['error', { ignoreCase: true }],
+    react: ['error', { ignoreCase: true }],
   },
 
   /**
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
    */
   'react/jsx-sort-props': {
-    jsx: 'error',
-    preact: 'error',
-    react: 'error',
+    jsx: ['error', { ignoreCase: true }],
+    preact: ['error', { ignoreCase: true }],
+    react: ['error', { ignoreCase: true }],
   },
 
   /**
@@ -781,9 +781,9 @@ module.exports = {
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
    */
   'react/sort-prop-types': {
-    jsx: 'off',
-    preact: 'error',
-    react: 'error',
+    jsx: ['off', { ignoreCase: true }],
+    preact: ['error', { ignoreCase: true }],
+    react: ['error', { ignoreCase: true }],
   },
 
   /**

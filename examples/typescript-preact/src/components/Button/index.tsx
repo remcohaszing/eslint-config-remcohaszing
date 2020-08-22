@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { VNode, h } from 'preact';
+import { h, VNode } from 'preact';
 
 /**
  * Render a Bylma styled button element.

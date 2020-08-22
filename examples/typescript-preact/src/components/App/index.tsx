@@ -1,4 +1,4 @@
-import { VNode, h } from 'preact';
+import { h, VNode } from 'preact';
 
 import { ErrorHandler } from '../ErrorHandler';
 import { ItemList } from '../ItemList';

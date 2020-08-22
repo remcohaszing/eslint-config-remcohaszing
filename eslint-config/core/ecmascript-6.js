@@ -155,7 +155,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/sort-imports
    */
-  'sort-imports': ['error', { ignoreDeclarationSort: true }],
+  'sort-imports': ['error', { ignoreCase: true, ignoreDeclarationSort: true }],
 
   /**
    * https://eslint.org/docs/rules/symbol-description

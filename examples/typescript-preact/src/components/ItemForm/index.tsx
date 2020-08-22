@@ -1,4 +1,4 @@
-import { VNode, h } from 'preact';
+import { h, VNode } from 'preact';
 import { useCallback, useState } from 'preact/hooks';
 
 import { Item } from '../../types';
