@@ -20,6 +20,13 @@ module.exports = {
     'getter-return': 'off',
 
     /**
+     * https://eslint.org/docs/rules/new-cap
+     *
+     * Decorators should be allowed.
+     */
+    'new-cap': 'off',
+
+    /**
      * https://eslint.org/docs/rules/no-obj-calls
      */
     'no-obj-calls': 'off',
