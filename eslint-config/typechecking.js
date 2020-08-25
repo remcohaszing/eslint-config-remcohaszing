@@ -175,18 +175,7 @@ module.exports = {
         /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md
          */
-        '@typescript-eslint/strict-boolean-expressions': [
-          'error',
-          {
-            allowString: true,
-            allowNumber: true,
-            allowNullableObject: true,
-            allowNullableBoolean: true,
-            allowNullableString: true,
-            allowNullableNumber: true,
-            allowAny: false,
-          },
-        ],
+        '@typescript-eslint/strict-boolean-expressions': 'off',
 
         /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/switch-exhaustiveness-check.md
