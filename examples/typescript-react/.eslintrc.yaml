@@ -1,2 +1,6 @@
-extends:
-  - remcohaszing/react
+overrides:
+  - files:
+      - src/**
+    extends:
+      - remcohaszing/react
+      - remcohaszing/web

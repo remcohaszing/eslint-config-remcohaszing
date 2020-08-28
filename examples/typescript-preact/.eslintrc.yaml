@@ -1,2 +1,5 @@
-extends:
-  - remcohaszing/preact
+overrides:
+  - files:
+      - src/**
+    extends:
+      - remcohaszing/preact

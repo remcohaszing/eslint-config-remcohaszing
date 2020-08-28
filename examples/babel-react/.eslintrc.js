@@ -7,7 +7,7 @@ module.exports = {
           configFile: require.resolve('./babel.config'),
         },
       },
-      extends: ['remcohaszing/babel', 'remcohaszing/react'],
+      extends: ['remcohaszing/babel', 'remcohaszing/react', 'remcohaszing/web'],
     },
   ],
 };

@@ -17,7 +17,8 @@ Install this configuration and its peer dependencies using `npm` or `yarn` as de
 
 ```sh
 npm install --save-dev \
-  eslint eslint-config-remcohaszing \
+  eslint \
+  eslint-config-remcohaszing \
   eslint-plugin-eslint-comments \
   eslint-plugin-import \
   eslint-plugin-jsdoc \
@@ -82,6 +83,43 @@ settings:
         - dist/$1.js
 ```
 
+### Web
+
+The default configuration works for NodeJS projects. For web based projects it’s recommended to use
+the `remcohaszing/web` preset for the source files. This preset requires `eslint-plugin-compat` to
+have been installed:
+
+```sh
+npm install --save-dev \
+  eslint-plugin-compat
+```
+
+Example if the source files are in the `src` directory:
+
+```yaml
+root: true
+settings:
+  polyfills:
+    - fetch
+    - Promise
+extends:
+  - remcohaszing
+overrides:
+  - files:
+      - 'src/**'
+    extends:
+      - remcohaszing/web
+```
+
+It’s recommended to also create a `browserslist` file. For example:
+
+```
+last 2 chrome versions
+last 2 edge versions
+last 2 firefox versions
+last 2 safari versions
+```
+
 ### TypeScript
 
 This configuration enabled ESLint for TypeScript automatically. This requires some additional
@@ -114,8 +152,8 @@ additional dependencies:
 
 ```sh
 npm install --save-dev \
-  babel-eslint \
-  eslint-plugin-babel
+  @babel/eslint-parser \
+  @babel/eslint-plugin
 ```
 
 Use an override so ESLint knows on which files to apply these special configurations. For example if
@@ -165,7 +203,12 @@ React example:
 root: true
 extends:
   - remcohaszing
-  - remcohaszing/react
+overrides:
+  - files:
+      - 'src/**'
+    extends:
+      - remcohaszing/react
+      - remcohaszing/web
 ```
 
 Preact example:
@@ -174,7 +217,11 @@ Preact example:
 root: true
 extends:
   - remcohaszing
-  - remcohaszing/preact
+overrides:
+  - files:
+      - 'src/**'
+    extends:
+      - remcohaszing/preact
 ```
 
 ### Jest
