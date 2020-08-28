@@ -358,6 +358,11 @@ module.exports = {
     '@typescript-eslint/no-extraneous-class': 'error',
 
     /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-implicit-any-catch.md
+     */
+    '@typescript-eslint/no-implicit-any-catch': 'error',
+
+    /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-inferrable-types.md
      */
     '@typescript-eslint/no-inferrable-types': 'error',
