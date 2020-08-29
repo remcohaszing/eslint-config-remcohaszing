@@ -26,6 +26,11 @@ module.exports = {
     /**
      * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
      */
+    'node/no-unpublished-import': 'off',
+
+    /**
+     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
+     */
     'node/no-unpublished-require': 'off',
 
     /**
