@@ -91,6 +91,16 @@ module.exports = {
         'no-console': 'off',
 
         /**
+         * Enabled for the purpose of examples.
+         */
+        'no-unused-vars': 'off',
+
+        /**
+         * Enabled for the purpose of examples.
+         */
+        '@typescript-eslint/no-unused-vars': 'off',
+
+        /**
          * This may be useful for documentation purposes.
          */
         'import/no-unresolved': 'off',
