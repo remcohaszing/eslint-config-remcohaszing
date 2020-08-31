@@ -1,5 +1,5 @@
 import { addAsync, addPromise, addSync } from './add';
-import type { Callback } from './types';
+import { Callback } from './types';
 
 /**
  * Substract y from x synchronously.

@@ -97,6 +97,11 @@ module.exports = {
     'jsdoc/require-returns-type': 'off',
 
     /**
+     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-undefined-types.md
+     */
+    'jsdoc/no-undefined-types': 'off',
+
+    /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/valid-types.md
      */
     'jsdoc/valid-types': 'off',
@@ -221,6 +226,14 @@ module.exports = {
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
      */
     '@typescript-eslint/consistent-type-definitions': 'error',
+
+    /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-imports.md
+     */
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      { prefer: 'no-type-imports', disallowTypeAnnotations: false },
+    ],
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/default-param-last.md
@@ -554,7 +567,7 @@ module.exports = {
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/typedef.md
      */
-    '@typescript-eslint/typedef': 0,
+    '@typescript-eslint/typedef': 'off',
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/unified-signatures.md
