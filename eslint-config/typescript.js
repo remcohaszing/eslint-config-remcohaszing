@@ -196,7 +196,7 @@ module.exports = {
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-types.md
      */
-    '@typescript-eslint/ban-types': 0,
+    '@typescript-eslint/ban-types': 'error',
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/brace-style.md
