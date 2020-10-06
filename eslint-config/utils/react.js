@@ -330,9 +330,9 @@ module.exports = {
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
    */
   'react/jsx-no-target-blank': {
-    jsx: 0,
-    preact: 0,
-    react: 0,
+    jsx: 'error',
+    preact: 'error',
+    react: 'error',
   },
 
   /**
