@@ -301,7 +301,50 @@ module.exports = {
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md
      */
-    '@typescript-eslint/member-ordering': 0,
+    '@typescript-eslint/member-ordering': [
+      'error',
+      {
+        default: [
+          'public-static-field',
+          'protected-static-field',
+          'private-static-field',
+
+          'public-decorated-field',
+          'protected-decorated-field',
+          'private-decorated-field',
+
+          'public-instance-field',
+          'protected-instance-field',
+          'private-instance-field',
+
+          'public-abstract-field',
+          'protected-abstract-field',
+          'private-abstract-field',
+
+          'signature',
+
+          'public-static-method',
+          'protected-static-method',
+          'private-static-method',
+
+          'public-constructor',
+          'protected-constructor',
+          'private-constructor',
+
+          'public-decorated-method',
+          'protected-decorated-method',
+          'private-decorated-method',
+
+          'public-instance-method',
+          'protected-instance-method',
+          'private-instance-method',
+
+          'public-abstract-method',
+          'protected-abstract-method',
+          'private-abstract-method',
+        ],
+      },
+    ],
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/method-signature-style.md

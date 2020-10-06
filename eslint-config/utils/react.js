@@ -774,7 +774,21 @@ module.exports = {
   'react/sort-comp': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: [
+      'error',
+      {
+        order: [
+          'static-variables',
+          'type-annotations',
+          'instance-variables',
+          'static-methods',
+          'lifecycle',
+          'instance-methods',
+          'everything-else',
+          'render',
+        ],
+      },
+    ],
   },
 
   /**
