@@ -112,7 +112,16 @@ module.exports = {
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-restricted-matchers.md
      */
-    'jest/no-restricted-matchers': 0,
+    'jest/no-restricted-matchers': [
+      'error',
+      {
+        resolves: 'Use expect(await) instead',
+        toHaveBeenCalled: 'Use toHaveBeenCalledWith() instead',
+        'not.toHaveBeenCalledWith': 'Use not.toHaveBeenCalled() instead',
+        'toBeFalsy()': 'Use toBe(false) instead.',
+        'toBeTruthy()': 'Use toBe(true) instead.',
+      },
+    ],
 
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-standalone-expect.md
