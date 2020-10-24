@@ -572,11 +572,13 @@ module.exports = {
 
   /**
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
+   *
+   * Disabled because of https://github.com/yannickcr/eslint-plugin-react/issues/2842
    */
   'react/no-multi-comp': {
-    jsx: 0,
-    preact: 0,
-    react: 'error',
+    jsx: 'off',
+    preact: 'off',
+    react: 'off',
   },
 
   /**
