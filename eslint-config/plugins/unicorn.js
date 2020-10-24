@@ -112,7 +112,7 @@ module.exports = {
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-fn-reference-in-iterator.md
      */
-    'unicorn/no-fn-reference-in-iterator': 'error',
+    'unicorn/no-fn-reference-in-iterator': 'off',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-for-loop.md
