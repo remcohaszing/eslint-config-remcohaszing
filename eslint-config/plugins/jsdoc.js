@@ -100,6 +100,11 @@ module.exports = {
     'jsdoc/check-indentation': 'error',
 
     /**
+     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-line-alignment.md
+     */
+    'jsdoc/check-line-alignment': 'off',
+
+    /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-param-names.md
      */
     'jsdoc/check-param-names': ['error', { checkDestructured: false }],

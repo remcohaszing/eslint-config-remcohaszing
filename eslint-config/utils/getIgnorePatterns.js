@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+const { existsSync, readFileSync } = require('fs');
+const { dirname, join } = require('path');
 
 const findUp = require('find-up');
 
@@ -13,9 +13,9 @@ module.exports = () => {
   const gitDir = findUp.sync('.git', { type: 'directory' });
 
   if (gitDir) {
-    const gitIgnorePath = path.join(path.dirname(gitDir), '.gitignore');
-    if (fs.existsSync(gitIgnorePath)) {
-      const ignore = fs.readFileSync(gitIgnorePath, 'utf-8');
+    const gitIgnorePath = join(dirname(gitDir), '.gitignore');
+    if (existsSync(gitIgnorePath)) {
+      const ignore = readFileSync(gitIgnorePath, 'utf-8');
       ignorePatterns.push(
         ...ignore.split(/\r?\n/g).filter((line) => line && !line.startsWith('#')),
       );

@@ -211,11 +211,23 @@ module.exports = {
     '@typescript-eslint/class-literal-property-style': 'error',
 
     /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-dangle.md
+     *
+     * // Prettier
+     */
+    '@typescript-eslint/comma-dangle': 'off',
+
+    /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-spacing.md
      *
      * // Prettier
      */
     '@typescript-eslint/comma-spacing': 'off',
+
+    /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-indexed-object-style.md
+     */
+    '@typescript-eslint/consistent-indexed-object-style': 'error',
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md
@@ -369,6 +381,12 @@ module.exports = {
     'no-dupe-class-members': 'off',
 
     /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-duplicate-imports.md
+     */
+    '@typescript-eslint/no-duplicate-imports': ['error', { includeExports: true }],
+    'no-duplicate-imports': 'off',
+
+    /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dynamic-delete.md
      */
     '@typescript-eslint/no-dynamic-delete': 'off',
@@ -435,6 +453,12 @@ module.exports = {
     '@typescript-eslint/no-invalid-void-type': 'error',
 
     /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loop-func.md
+     */
+    '@typescript-eslint/no-loop-func': 'error',
+    'no-loop-func': 'off',
+
+    /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loss-of-precision.md
      */
     '@typescript-eslint/no-loss-of-precision': 'error',
@@ -472,9 +496,28 @@ module.exports = {
     '@typescript-eslint/no-parameter-properties': 'error',
 
     /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
+     */
+    '@typescript-eslint/no-redeclare': ['error', { ignoreDeclarationMerge: false }],
+    'no-redeclare': 'off',
+
+    /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-require-imports.md
      */
     '@typescript-eslint/no-require-imports': 'error',
+
+    /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
+     */
+    '@typescript-eslint/no-shadow': [
+      'error',
+      {
+        hoist: 'all',
+        ignoreFunctionTypeParameterNameValueShadow: false,
+        ignoreTypeValueShadow: false,
+      },
+    ],
+    'no-shadow': 'off',
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-this-alias.md

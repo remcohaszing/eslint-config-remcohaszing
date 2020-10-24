@@ -48,6 +48,11 @@ module.exports = {
     'jest/no-disabled-tests': 'error',
 
     /**
+     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-done-callback.md
+     */
+    'jest/no-done-callback': 'error',
+
+    /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-duplicate-hooks.md
      */
     'jest/no-duplicate-hooks': 'off',
@@ -127,11 +132,6 @@ module.exports = {
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-standalone-expect.md
      */
     'jest/no-standalone-expect': 'error',
-
-    /**
-     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-test-callback.md
-     */
-    'jest/no-test-callback': 'error',
 
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-test-prefixes.md

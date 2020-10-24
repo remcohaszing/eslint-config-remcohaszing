@@ -194,9 +194,9 @@ module.exports = {
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
    */
   'react/jsx-filename-extension': {
-    jsx: ['error', { extensions: ['.jsx', '.tsx'] }],
-    preact: ['error', { extensions: ['.jsx', '.tsx'] }],
-    react: ['error', { extensions: ['.jsx', '.tsx'] }],
+    jsx: ['error', { allow: 'as-needed', extensions: ['.jsx', '.tsx'] }],
+    preact: ['error', { allow: 'as-needed', extensions: ['.jsx', '.tsx'] }],
+    react: ['error', { allow: 'as-needed', extensions: ['.jsx', '.tsx'] }],
   },
 
   /**

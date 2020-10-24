@@ -54,6 +54,42 @@ module.exports = {
     'unicorn/import-index': 'error',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/import-style.md
+     */
+    'unicorn/import-style': [
+      'error',
+      {
+        extendDefaultStyles: false,
+        styles: {
+          // eslint-disable-next-line camelcase
+          child_process: { named: true },
+          crypto: { named: true },
+          events: { named: true },
+          fs: { named: true },
+          os: { named: true },
+          path: { named: true },
+          url: { named: true },
+          util: { named: true },
+          zlib: { named: true },
+
+          '@hapi/boom': { named: true },
+          '@sentry/browser': { named: true },
+          '@sentry/node': { named: true },
+          chalk: { named: true },
+          enzyme: { named: true },
+          'fs-extra': { named: true },
+          'intl-messageformat': { named: true },
+          lodash: { named: true },
+          preact: { named: true },
+          'preact/compat': { named: true },
+          'preact/hooks': { named: true },
+          sequelize: { named: true },
+          uuid: { named: true },
+        },
+      },
+    ],
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/new-for-builtins.md
      */
     'unicorn/new-for-builtins': 'error',
@@ -160,6 +196,11 @@ module.exports = {
     'unicorn/number-literal-case': 'off',
 
     /**
+     * hhttps://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/numeric-separators-style.md
+     */
+    'unicorn/numeric-separators-style': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-add-event-listener.md
      */
     'unicorn/prefer-add-event-listener': 'off',
@@ -195,6 +236,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-includes.md
      */
     'unicorn/prefer-includes': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-math-trunc.md
+     */
+    'unicorn/prefer-math-trunc': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-modern-dom-apis.md
@@ -260,6 +306,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-string-slice.md
      */
     'unicorn/prefer-string-slice': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-ternary.md
+     */
+    'unicorn/prefer-ternary': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-text-content.md

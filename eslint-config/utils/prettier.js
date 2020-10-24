@@ -1,4 +1,4 @@
-const path = require('path');
+const { join } = require('path');
 
 const prettier = require('prettier');
 
@@ -13,7 +13,7 @@ function getConfig(extension) {
     // Prettier defaults
     printWidth: 80,
     singleQuote: false,
-    ...prettier.resolveConfig.sync(path.join(process.cwd(), extension), { editorconfig: true }),
+    ...prettier.resolveConfig.sync(join(process.cwd(), extension), { editorconfig: true }),
   };
 }
 
