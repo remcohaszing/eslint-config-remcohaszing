@@ -241,6 +241,13 @@ module.exports = {
   'no-new-wrappers': 'error',
 
   /**
+   * https://eslint.org/docs/rules/no-nonoctal-decimal-escape
+   *
+   * Prettier
+   */
+  'no-nonoctal-decimal-escape': 'off',
+
+  /**
    * https://eslint.org/docs/rules/no-octal
    *
    * This is useful for limited use cases.

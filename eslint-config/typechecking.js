@@ -28,6 +28,11 @@ module.exports = {
         '@typescript-eslint/naming-convention': 'error',
 
         /**
+         * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-confusing-void-expression".md
+         */
+        '@typescript-eslint/no-confusing-void-expression': 'off',
+
+        /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-base-to-string.md
          */
         '@typescript-eslint/no-base-to-string': 'error',
@@ -101,6 +106,11 @@ module.exports = {
          * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-return.md
          */
         '@typescript-eslint/no-unsafe-return': 'error',
+
+        /**
+         * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/non-nullable-type-assertion-style.md
+         */
+        '@typescript-eslint/non-nullable-type-assertion-style': 'error',
 
         /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-includes.md

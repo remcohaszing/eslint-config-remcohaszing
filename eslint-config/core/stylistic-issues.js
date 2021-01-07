@@ -311,8 +311,10 @@ module.exports = {
 
   /**
    * https://eslint.org/docs/rules/no-lonely-if
+   *
+   * Handled by `unicorn/no-lonely-if`
    */
-  'no-lonely-if': 'error',
+  'no-lonely-if': 'off',
 
   /**
    * https://eslint.org/docs/rules/no-mixed-operators

@@ -11,12 +11,12 @@ interface State {
   /**
    * The error that was thrown.
    */
-  error?: null | Error;
+  error?: Error | null;
 
   /**
    * The React error information.
    */
-  errorInfo?: null | ErrorInfo;
+  errorInfo?: ErrorInfo | null;
 }
 
 /**

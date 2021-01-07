@@ -204,6 +204,11 @@ module.exports = {
   'no-unsafe-negation': 'error',
 
   /**
+   * https://eslint.org/docs/rules/no-unsafe-optional-chaining
+   */
+  'no-unsafe-optional-chaining': 'error',
+
+  /**
    * https://eslint.org/docs/rules/no-useless-backreference
    */
   'no-useless-backreference': 'error',

@@ -257,8 +257,8 @@ module.exports = {
    */
   'react/jsx-key': {
     jsx: 'off',
-    preact: ['error', { checkFragmentShorthand: true }],
-    react: ['error', { checkFragmentShorthand: true }],
+    preact: ['error', { checkFragmentShorthand: true, checkKeyMustBeforeSpread: true }],
+    react: ['error', { checkFragmentShorthand: true, checkKeyMustBeforeSpread: true }],
   },
 
   /**
@@ -282,6 +282,15 @@ module.exports = {
   },
 
   /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-newline.md
+   */
+  'react/jsx-newline': {
+    jsx: 'off',
+    preact: 'off',
+    react: 'off',
+  },
+
+  /**
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
    */
   'react/jsx-no-bind': {
@@ -294,6 +303,15 @@ module.exports = {
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
    */
   'react/jsx-no-comment-textnodes': {
+    jsx: 'error',
+    preact: 'error',
+    react: 'error',
+  },
+
+  /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-constructed-context-values.md
+   */
+  'react/jsx-no-constructed-context-values': {
     jsx: 'error',
     preact: 'error',
     react: 'error',

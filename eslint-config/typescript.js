@@ -159,7 +159,11 @@ module.exports = {
 
       // PropertyLike
       { selector: 'variable', format: ['camelCase'] },
-      { selector: 'variable', modifiers: ['const'], format: ['camelCase', 'UPPER_CASE'] },
+      {
+        selector: 'variable',
+        modifiers: ['const'],
+        format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+      },
       { selector: 'function', format: ['camelCase', 'PascalCase'] },
       { selector: 'parameter', format: ['camelCase'] },
 
@@ -543,6 +547,11 @@ module.exports = {
     '@typescript-eslint/no-type-alias': 'off',
 
     /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-type-constraint.md
+     */
+    '@typescript-eslint/no-unnecessary-type-constraint': 'error',
+
+    /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
      */
     '@typescript-eslint/no-unused-expressions': 'error',
@@ -650,6 +659,18 @@ module.exports = {
      */
     '@typescript-eslint/space-before-function-paren': 'off',
     'space-before-function-paren': 'off',
+
+    /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md
+     */
+    '@typescript-eslint/sort-type-union-intersection-members': 'error',
+
+    /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/space-infix-ops.md
+     *
+     * Prettier
+     */
+    '@typescript-eslint/space-infix-ops': 'off',
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/triple-slash-reference.md

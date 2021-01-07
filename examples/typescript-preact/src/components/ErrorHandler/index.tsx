@@ -11,7 +11,7 @@ interface State {
   /**
    * The error that was thrown.
    */
-  error?: null | Error;
+  error?: Error | null;
 }
 
 /**
