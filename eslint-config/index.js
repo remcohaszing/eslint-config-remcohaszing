@@ -31,21 +31,6 @@ module.exports = {
     },
 
     /**
-     * Overrides for configuration files, for example:
-     *
-     * - `jest.setup.ts`
-     * - `webpack.config.js`
-     * - `.eslintrc.js`
-     * - `config/custom.js`
-     * - `__mocks__/fs.ts`
-     * - etc.
-     */
-    {
-      files: ['jest.*', '*.config.*', '*rc.*', '**/config/**', '**/__mocks__/**'],
-      extends: ['remcohaszing/dev'],
-    },
-
-    /**
      * Enable ESM specific rule for `.mjs` files.
      */
     {
@@ -67,6 +52,21 @@ module.exports = {
     {
       files: ['*.jsx', '*.tsx'],
       extends: ['remcohaszing/jsx'],
+    },
+
+    /**
+     * Overrides for configuration files, for example:
+     *
+     * - `jest.setup.ts`
+     * - `webpack.config.js`
+     * - `.eslintrc.js`
+     * - `config/custom.js`
+     * - `__mocks__/fs.ts`
+     * - etc.
+     */
+    {
+      files: ['jest.*', '*.config.*', '*rc.*', '**/config/**', '**/__mocks__/**'],
+      extends: ['remcohaszing/dev'],
     },
 
     /**
