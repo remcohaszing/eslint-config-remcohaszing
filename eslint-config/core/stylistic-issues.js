@@ -1,3 +1,4 @@
+const allowedProperties = require('../utils/allowedProperties');
 const prettier = require('../utils/prettier');
 
 /**
@@ -42,7 +43,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/camelcase
    */
-  camelcase: 'error',
+  camelcase: ['error', { allow: allowedProperties }],
 
   /**
    * https://eslint.org/docs/rules/capitalized-comments

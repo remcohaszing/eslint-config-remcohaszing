@@ -1,3 +1,4 @@
+const allowedProperties = require('./utils/allowedProperties');
 const prettier = require('./utils/prettier');
 
 /**
@@ -13,6 +14,13 @@ module.exports = {
      * Use TypeScript to determine this.
      */
     'array-callback-return': 'off',
+
+    /**
+     * https://eslint.org/docs/rules/camelcase
+     *
+     * `@typescript-eslint/naming-convention` is used instead.
+     */
+    camelcase: 'off',
 
     /**
      * https://eslint.org/docs/rules/getter-return
@@ -146,6 +154,7 @@ module.exports = {
         format: ['camelCase'],
         leadingUnderscore: 'forbid',
         trailingUnderscore: 'forbid',
+        filter: { regex: `^(${allowedProperties.join('|')})$`, match: false },
       },
 
       // PropertyLike
@@ -155,7 +164,11 @@ module.exports = {
       { selector: 'parameter', format: ['camelCase'] },
 
       // ParameterLike
-      { selector: 'property', format: ['camelCase', 'PascalCase'] },
+      {
+        selector: 'property',
+        format: ['camelCase', 'PascalCase'],
+        filter: { regex: `^(${allowedProperties.join('|')})$`, match: false },
+      },
       { selector: 'parameterProperty', format: ['PascalCase'] },
       { selector: 'method', format: ['camelCase'] },
       { selector: 'accessor', format: ['camelCase', 'PascalCase'] },
