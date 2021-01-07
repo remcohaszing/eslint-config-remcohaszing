@@ -122,6 +122,13 @@ module.exports = {
     'jsdoc/valid-types': 'off',
 
     /**
+     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md
+     *
+     * TypeScript will compile this.
+     */
+    'node/no-unsupported-features/es-syntax': 'off',
+
+    /**
      * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/text-decoder.md
      *
      * These globals don’t exist in @types/node

@@ -7,6 +7,13 @@ module.exports = {
   plugins: ['@babel'],
   rules: {
     /**
+     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md
+     *
+     * Babel will compile this.
+     */
+    'node/no-unsupported-features/es-syntax': 'off',
+
+    /**
      * https://github.com/babel/babel/tree/main/eslint/babel-eslint-plugin#rules
      */
     '@babel/new-cap': 'error',
