@@ -103,6 +103,11 @@ module.exports = {
         /**
          * This may be useful for documentation purposes.
          */
+        'import/extensions': 'off',
+
+        /**
+         * This may be useful for documentation purposes.
+         */
         'import/no-unresolved': 'off',
 
         /**
