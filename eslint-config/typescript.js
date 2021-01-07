@@ -78,6 +78,13 @@ module.exports = {
     'import/namespace': 'off',
 
     /**
+     * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-deprecated.md
+     *
+     * This is triggered if function one call signature is deprecated, but not another.
+     */
+    'import/no-deprecated': 'off',
+
+    /**
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default-member.md
      *
      * Use TypeScript to determine this.
