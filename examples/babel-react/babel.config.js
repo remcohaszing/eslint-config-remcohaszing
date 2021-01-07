@@ -1,4 +1,4 @@
 module.exports = {
-  presets: ['@babel/preset-react'],
+  presets: [['@babel/preset-react', { runtime: 'automatic' }]],
   plugins: ['@babel/plugin-proposal-optional-chaining', '@babel/plugin-proposal-class-properties'],
 };

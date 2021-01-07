@@ -1,4 +1,4 @@
-import { Component, ComponentChild, ComponentChildren, Fragment, h } from 'preact';
+import { Component, ComponentChild, ComponentChildren } from 'preact';
 
 interface ErrorHandlerProps {
   /**
@@ -39,12 +39,12 @@ export class ErrorHandler extends Component<ErrorHandlerProps, State> {
 
     if (error) {
       return (
-        <Fragment>
+        <>
           <h1 className="has-text-danger">{error instanceof Error ? error.name : 'Error'}</h1>
           <pre className="has-background-danger-light has-text-danger-dark">
             {error instanceof Error ? error.message : JSON.stringify(error, undefined, 2)}
           </pre>
-        </Fragment>
+        </>
       );
     }
 

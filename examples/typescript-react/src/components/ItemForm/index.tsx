@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, ReactElement, useCallback, useState } from 'react';
+import { ChangeEvent, FormEvent, ReactElement, useCallback, useState } from 'react';
 
 import { Item } from '../../types';
 import { Button } from '../Button';

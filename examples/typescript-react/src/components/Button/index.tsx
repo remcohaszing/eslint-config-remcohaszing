@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { ComponentPropsWithoutRef, ReactElement } from 'react';
+import { ComponentPropsWithoutRef, ReactElement } from 'react';
 
 /**
  * Render a Bylma styled button element.

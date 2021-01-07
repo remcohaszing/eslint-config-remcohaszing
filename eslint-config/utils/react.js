@@ -455,9 +455,9 @@ module.exports = {
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
    */
   'react/jsx-uses-react': {
-    jsx: 'error',
-    preact: 'error',
-    react: 'error',
+    jsx: 'off',
+    preact: 'off',
+    react: 'off',
   },
 
   /**
@@ -747,9 +747,9 @@ module.exports = {
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
    */
   'react/react-in-jsx-scope': {
-    jsx: 'error',
-    preact: 'error',
-    react: 'error',
+    jsx: 'off',
+    preact: 'off',
+    react: 'off',
   },
 
   /**

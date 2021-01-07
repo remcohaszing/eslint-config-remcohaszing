@@ -1,4 +1,4 @@
-import { ComponentChild, h, VNode } from 'preact';
+import { ComponentChild, JSX, VNode } from 'preact';
 
 interface InputProps {
   /**
@@ -16,7 +16,7 @@ interface InputProps {
   /**
    * The event handler to call when the input changes.
    */
-  onChange: h.JSX.GenericEventHandler<HTMLInputElement>;
+  onChange: JSX.GenericEventHandler<HTMLInputElement>;
 
   /**
    * The input type.

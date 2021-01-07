@@ -1,4 +1,4 @@
-import { h, VNode } from 'preact';
+import { JSX, VNode } from 'preact';
 import { useCallback, useState } from 'preact/hooks';
 
 import { Item } from '../../types';
@@ -20,7 +20,7 @@ export function ItemForm({ onSubmit }: ItemFormProps): VNode {
   const [item, setItem] = useState<Item>({ text: '', link: '' });
 
   const handleChange = useCallback(
-    ({ currentTarget }: h.JSX.TargetedEvent<HTMLInputElement>) => {
+    ({ currentTarget }: JSX.TargetedEvent<HTMLInputElement>) => {
       setItem({
         ...item,
         [currentTarget.name]: currentTarget.value,
@@ -30,7 +30,7 @@ export function ItemForm({ onSubmit }: ItemFormProps): VNode {
   );
 
   const handleSubmit = useCallback(
-    (event: h.JSX.TargetedEvent<HTMLFormElement>) => {
+    (event: JSX.TargetedEvent<HTMLFormElement>) => {
       event.preventDefault();
       onSubmit(item);
       setItem({ text: '', link: '' });

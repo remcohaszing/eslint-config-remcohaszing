@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ErrorHandler } from '../ErrorHandler';
 import { ItemList } from '../ItemList';
 

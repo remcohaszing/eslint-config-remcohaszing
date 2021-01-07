@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 /**
  * Render children, and render a stack trace if an error occurs while rendering.
