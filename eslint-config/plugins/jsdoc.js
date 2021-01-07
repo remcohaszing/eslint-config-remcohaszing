@@ -36,7 +36,6 @@ module.exports = {
         hideconstructor: false,
         ignore: false,
         implements: false,
-        inheritdoc: false,
         inner: false,
         instance: false,
         interface: false,
