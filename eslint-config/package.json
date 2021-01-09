@@ -21,6 +21,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "confusing-browser-globals": "^1.0.10",
     "find-up": "^5.0.0"
   },
   "peerDependencies": {
