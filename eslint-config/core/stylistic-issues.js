@@ -373,7 +373,8 @@ module.exports = {
     },
     {
       // `value.toString()`
-      selector: 'CallExpression[callee.property.name="toString"][arguments.length=0]',
+      selector:
+        'CallExpression[callee.property.name="toString"][callee.optional=false][arguments.length=0][optional=false]',
       message: 'Use String() instead.',
     },
 
