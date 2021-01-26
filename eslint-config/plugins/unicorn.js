@@ -19,6 +19,11 @@ module.exports = {
     'unicorn/consistent-function-scoping': 'error',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/consistent-destructuring.md
+     */
+    'unicorn/consistent-destructuring': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/custom-error-definition.md
      */
     'unicorn/custom-error-definition': 'error',
@@ -112,11 +117,21 @@ module.exports = {
     'unicorn/no-array-callback-reference': 'off',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-array-for-each.md
+     */
+    'unicorn/no-array-for-each': 'off',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-array-instanceof.md
      *
      * @deprecated
      */
     'unicorn/no-array-instanceof': 'off',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-array-push-push.md
+     */
+    'unicorn/no-array-push-push': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-array-reduce.md
@@ -139,6 +154,11 @@ module.exports = {
      * @deprecated
      */
     'unicorn/no-reduce': 'off',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-this-assignment.md
+     */
+    'unicorn/no-this-assignment': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-fn-reference-in-iterator.md
@@ -173,6 +193,11 @@ module.exports = {
      * Prettier
      */
     'unicorn/no-nested-ternary': 'off',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-new-array.md
+     */
+    'unicorn/no-new-array': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-new-buffer.md
@@ -242,6 +267,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-array-find.md
      */
     'unicorn/prefer-array-find': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-array-index-of.md
+     */
+    'unicorn/prefer-array-index-of': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-array-flat-map.md
@@ -369,6 +399,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-reflect-apply.md
      */
     'unicorn/prefer-reflect-apply': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-regexp-test.md
+     */
+    'unicorn/prefer-regexp-test': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-replace-all.md

@@ -604,6 +604,13 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
 
     /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/object-curly-spacing.md
+     *
+     * Prettier
+     */
+    '@typescript-eslint/object-curly-spacing': 'off',
+
+    /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-as-const.md
      */
     '@typescript-eslint/prefer-as-const': 'error',

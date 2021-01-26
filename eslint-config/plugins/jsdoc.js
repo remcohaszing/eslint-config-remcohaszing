@@ -287,6 +287,16 @@ module.exports = {
     'jsdoc/require-throws': 'off',
 
     /**
+     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-yields.md
+     */
+    'jsdoc/require-yields': 'error',
+
+    /**
+     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-yields-check.md
+     */
+    'jsdoc/require-yields-check': 'error',
+
+    /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/valid-types.md
      */
     'jsdoc/valid-types': 'error',
