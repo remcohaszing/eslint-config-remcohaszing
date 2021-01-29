@@ -165,7 +165,7 @@ module.exports = {
       'error',
       {
         selector: 'default',
-        format: ['camelCase'],
+        format: ['camelCase', 'PascalCase'],
         leadingUnderscore: 'forbid',
         trailingUnderscore: 'forbid',
         filter: { regex: `^(${allowedProperties.join('|')})$`, match: false },
@@ -179,7 +179,7 @@ module.exports = {
         format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
       },
       { selector: 'function', format: ['camelCase', 'PascalCase'] },
-      { selector: 'parameter', format: ['camelCase'] },
+      { selector: 'parameter', format: ['camelCase', 'PascalCase'] },
 
       // ParameterLike
       {
@@ -190,7 +190,7 @@ module.exports = {
       { selector: 'parameterProperty', format: ['PascalCase'] },
       { selector: 'method', format: ['camelCase'] },
       { selector: 'accessor', format: ['camelCase', 'PascalCase'] },
-      { selector: 'enumMember', format: ['PascalCase'] },
+      { selector: 'enumMember', format: ['camelCase', 'PascalCase'] },
 
       // TypeLike
       { selector: 'typeLike', format: ['PascalCase'] },
