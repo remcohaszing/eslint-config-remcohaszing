@@ -1,3 +1,4 @@
+const { typesOnlyPackages } = require('../utils/constants');
 const extensions = require('../utils/extensions');
 
 /**
@@ -56,10 +57,8 @@ module.exports = {
 
     /**
      * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-import.md
-     *
-     * Handled by import/no-extraneous-dependencies
      */
-    'node/no-extraneous-import': 'off',
+    'node/no-extraneous-import': ['error', { allowModules: typesOnlyPackages }],
 
     /**
      * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-require.md
