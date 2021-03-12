@@ -64,6 +64,15 @@ module.exports = {
     'import/default': 'off',
 
     /**
+     * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+     *
+     * Handled by node/no-extraneous-import
+     *
+     * Use your own judgement to determine if this is a dependency or devDependency.
+     */
+    'import/no-extraneous-dependencies:': 'off',
+
+    /**
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md
      *
      * Use TypeScript to determine this.

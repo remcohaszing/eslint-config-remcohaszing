@@ -1,4 +1,4 @@
-const { typesOnlyPackages } = require('../utils/constants');
+const { dtOnlyPackages, typesOnlyPackages } = require('../utils/constants');
 const extensions = require('../utils/extensions');
 
 /**
@@ -219,7 +219,10 @@ module.exports = {
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
      */
-    'import/no-unresolved': ['error', { commonjs: true, ignore: typesOnlyPackages }],
+    'import/no-unresolved': [
+      'error',
+      { commonjs: true, ignore: [...dtOnlyPackages, ...typesOnlyPackages] },
+    ],
 
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unused-modules.md
