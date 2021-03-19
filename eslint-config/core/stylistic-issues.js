@@ -131,7 +131,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/id-denylist
    */
-  'id-denylist': ['error', 'l', 'O'],
+  'id-denylist': ['error', 'l', 'O', 'React'],
 
   /**
    * https://eslint.org/docs/rules/id-length

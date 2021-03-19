@@ -95,6 +95,7 @@ module.exports = {
           preact: { named: true },
           'preact/compat': { named: true },
           'preact/hooks': { named: true },
+          react: { named: true },
           sequelize: { named: true },
           uuid: { named: true },
         },
