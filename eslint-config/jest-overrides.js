@@ -227,6 +227,11 @@ module.exports = {
     'jest/require-top-level-describe': 'off',
 
     /**
+     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/unbound-method.md
+     */
+    'jest/unbound-method': 'error',
+
+    /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/valid-describe.md
      */
     'jest/valid-describe': 'error',

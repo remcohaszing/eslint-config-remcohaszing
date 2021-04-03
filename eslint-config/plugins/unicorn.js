@@ -157,6 +157,11 @@ module.exports = {
     'unicorn/no-reduce': 'off',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-static-only-class.md
+     */
+    'unicorn/no-static-only-class': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-this-assignment.md
      */
     'unicorn/no-this-assignment': 'error',
@@ -334,6 +339,11 @@ module.exports = {
      * @deprecated
      */
     'unicorn/prefer-exponentiation-operator': 'off',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-flat.md
+     */
+    'unicorn/prefer-flat': 'off',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-flat-map.md
