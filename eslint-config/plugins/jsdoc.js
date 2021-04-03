@@ -121,7 +121,7 @@ module.exports = {
     /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-tag-names.md
      */
-    'jsdoc/check-tag-names': 'error',
+    'jsdoc/check-tag-names': ['error', { jsxTags: true }],
 
     /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-types.md
