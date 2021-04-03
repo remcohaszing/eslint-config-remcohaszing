@@ -275,6 +275,11 @@ module.exports = {
     'unicorn/prefer-array-find': 'error',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-array-flat.md
+     */
+    'unicorn/prefer-array-flat': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-array-index-of.md
      */
     'unicorn/prefer-array-index-of': 'error',
@@ -339,11 +344,6 @@ module.exports = {
      * @deprecated
      */
     'unicorn/prefer-exponentiation-operator': 'off',
-
-    /**
-     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-flat.md
-     */
-    'unicorn/prefer-flat': 'off',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-flat-map.md
