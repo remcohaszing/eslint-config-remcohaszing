@@ -217,6 +217,7 @@ module.exports = {
     'error',
     {
       code: prettier.js.printWidth,
+      ignorePattern: /eslint-disable/.source,
       ignoreUrls: true,
       ignoreRegExpLiterals: true,
       ignoreStrings: true,
