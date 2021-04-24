@@ -366,21 +366,10 @@ module.exports = {
   'no-restricted-syntax': [
     'error',
     {
-      // `${templateValue}`
-      selector:
-        'TemplateLiteral[expressions.length=1][quasis.0.value.raw=""][quasis.1.value.raw=""]',
-      message: 'Use String() instead.',
-    },
-    {
       // `value.toString()`
       selector:
         'CallExpression[callee.property.name="toString"][callee.optional=false][arguments.length=0][optional=false]',
       message: 'Use String() instead.',
-    },
-
-    {
-      selector: 'SequenceExpression',
-      message: 'Split this sequence into multiple statements.',
     },
   ],
 

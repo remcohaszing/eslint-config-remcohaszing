@@ -88,6 +88,11 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
 
         /**
+         * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-argument.md
+         */
+        '@typescript-eslint/no-unsafe-argument': 'error',
+
+        /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-assignment.md
          */
         '@typescript-eslint/no-unsafe-assignment': 'error',

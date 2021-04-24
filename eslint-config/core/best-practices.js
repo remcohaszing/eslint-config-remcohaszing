@@ -171,7 +171,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/no-implicit-coercion
    */
-  'no-implicit-coercion': 'error',
+  'no-implicit-coercion': ['error', { disallowTemplateShorthand: true }],
 
   /**
    * https://eslint.org/docs/rules/no-implicit-globals
@@ -320,7 +320,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/no-sequences
    */
-  'no-sequences': 'error',
+  'no-sequences': ['error', {allowInParentheses:false}],
 
   /**
    * https://eslint.org/docs/rules/no-throw-literal

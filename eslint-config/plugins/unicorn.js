@@ -373,6 +373,11 @@ module.exports = {
     'unicorn/prefer-modern-dom-apis': 'error',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-module.md
+     */
+    'unicorn/prefer-module': 'off',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-negative-index.md
      */
     'unicorn/prefer-negative-index': 'error',
@@ -390,6 +395,11 @@ module.exports = {
      * @deprecated
      */
     'unicorn/prefer-node-remove': 'off',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-node-protocol.md
+     */
+    'unicorn/prefer-node-protocol': 'off',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-number-properties.md
@@ -459,6 +469,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-string-slice.md
      */
     'unicorn/prefer-string-slice': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-switch.md
+     */
+    'unicorn/prefer-switch': 'off',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-ternary.md
