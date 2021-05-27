@@ -140,6 +140,11 @@ module.exports = {
     'unicorn/no-array-reduce': 'off',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-document-cookie.md
+     */
+    'unicorn/no-document-cookie': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-instanceof-array.md
      */
     'unicorn/no-instanceof-array': 'error',

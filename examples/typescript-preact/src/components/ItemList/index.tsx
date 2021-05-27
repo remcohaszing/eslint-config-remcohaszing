@@ -10,9 +10,10 @@ import { ItemForm } from '../ItemForm';
 export function ItemList(): VNode {
   const [items, setItems] = useState<Item[]>([]);
 
-  const addItem = useCallback((item: Item) => setItems([{ ...item, id: items.length }, ...items]), [
-    items,
-  ]);
+  const addItem = useCallback(
+    (item: Item) => setItems([{ ...item, id: items.length }, ...items]),
+    [items],
+  );
 
   return (
     <div>

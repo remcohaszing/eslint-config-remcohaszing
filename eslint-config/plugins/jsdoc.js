@@ -149,6 +149,18 @@ module.exports = {
     'jsdoc/match-description': 'off',
 
     /**
+     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/multiline-blocks.md
+     */
+    'jsdoc/multiline-blocks': [
+      'error',
+      {
+        noSingleLineBlocks: true,
+        noZeroLineText: true,
+        singleLineTags: ['jsx', 'jsxFrag', 'jsxImportSource', 'jsxRuntime'],
+      },
+    ],
+
+    /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/newline-after-description.md
      */
     'jsdoc/newline-after-description': 'error',
@@ -164,6 +176,21 @@ module.exports = {
     'jsdoc/no-defaults': 'error',
 
     /**
+     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-missing-syntax.md
+     */
+    'jsdoc/no-missing-syntax': 'off',
+
+    /**
+     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-multi-asterisks.md
+     */
+    'jsdoc/no-multi-asterisks': 'error',
+
+    /**
+     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-restricted-syntax.md
+     */
+    'jsdoc/no-restricted-syntax': 'off',
+
+    /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-types.md
      */
     'jsdoc/no-types': 'off',
@@ -172,6 +199,11 @@ module.exports = {
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-undefined-types.md
      */
     'jsdoc/no-undefined-types': 'error',
+
+    /**
+     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-asterisk-prefix.md
+     */
+    'jsdoc/require-asterisk-prefix': 'error',
 
     /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-description.md
@@ -295,6 +327,11 @@ module.exports = {
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-yields-check.md
      */
     'jsdoc/require-yields-check': 'error',
+
+    /**
+     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/tag-lines.md
+     */
+    'jsdoc/tag-lines': ['error', 'never'],
 
     /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/valid-types.md

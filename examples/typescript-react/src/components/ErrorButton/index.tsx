@@ -14,7 +14,7 @@ export function ErrorButton(): ReactElement {
   }, []);
 
   if (!ok) {
-    return (ok as ReactNode) as ReactElement;
+    return ok as ReactNode as ReactElement;
   }
 
   return (

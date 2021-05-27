@@ -28,12 +28,12 @@
     "eslint": "^7",
     "eslint-plugin-eslint-comments": "^3",
     "eslint-plugin-import": "^2",
-    "eslint-plugin-jsdoc": "^32",
+    "eslint-plugin-jsdoc": "^35",
     "eslint-plugin-markdown": "^2",
     "eslint-plugin-node": "^11",
     "eslint-plugin-prettier": "^3",
     "eslint-plugin-sort-destructure-keys": "^1",
-    "eslint-plugin-unicorn": "^30",
+    "eslint-plugin-unicorn": "^32",
     "prettier": "^2"
   },
   "engines": {

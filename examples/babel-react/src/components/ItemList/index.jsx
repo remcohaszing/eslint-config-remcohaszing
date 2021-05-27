@@ -8,9 +8,10 @@ import { ItemForm } from '../ItemForm';
 export function ItemList() {
   const [items, setItems] = useState([]);
 
-  const addItem = useCallback((item) => setItems([{ ...item, id: items.length }, ...items]), [
-    items,
-  ]);
+  const addItem = useCallback(
+    (item) => setItems([{ ...item, id: items.length }, ...items]),
+    [items],
+  );
 
   return (
     <div>

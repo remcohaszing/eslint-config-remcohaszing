@@ -157,6 +157,11 @@ module.exports = {
     ],
 
     /**
+     * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-import-module-exports.md
+     */
+    'import/no-import-module-exports': 'off',
+
+    /**
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md
      */
     'import/no-internal-modules': 'off',
@@ -195,6 +200,11 @@ module.exports = {
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-nodejs-modules.md
      */
     'import/no-nodejs-modules': 'off',
+
+    /**
+     * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-relative-packages.md
+     */
+    'import/no-relative-packages': 'error',
 
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-relative-parent-imports.md

@@ -320,7 +320,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/no-sequences
    */
-  'no-sequences': ['error', {allowInParentheses:false}],
+  'no-sequences': ['error', { allowInParentheses: false }],
 
   /**
    * https://eslint.org/docs/rules/no-throw-literal
