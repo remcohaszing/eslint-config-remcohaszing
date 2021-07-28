@@ -231,7 +231,7 @@ module.exports = {
      */
     'import/no-unresolved': [
       'error',
-      { commonjs: true, ignore: [...dtOnlyPackages, ...typesOnlyPackages] },
+      { commonjs: true, ignore: [...dtOnlyPackages, ...typesOnlyPackages, /[!*]/.source] },
     ],
 
     /**
