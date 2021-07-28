@@ -222,7 +222,7 @@ module.exports = {
       'error',
       {
         'ts-expect-error': 'allow-with-description',
-        'ts-ignore': true,
+        'ts-ignore': false,
         'ts-nocheck': true,
         'ts-check': true,
       },
