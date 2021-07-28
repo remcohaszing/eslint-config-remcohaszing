@@ -52,7 +52,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/no-unused-vars
    */
-  'no-unused-vars': 'error',
+  'no-unused-vars': ['error', { ignoreRestSiblings: true }],
 
   /**
    * https://eslint.org/docs/rules/no-use-before-define
