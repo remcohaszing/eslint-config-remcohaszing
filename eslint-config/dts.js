@@ -24,11 +24,6 @@ module.exports = {
     'max-classes-per-file': 'off',
 
     /**
-     * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-default-export.md
-     */
-    'import/no-default-export': 'off',
-
-    /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extraneous-class
      */
     '@typescript-eslint/no-extraneous-class': 'off',

@@ -4,11 +4,6 @@
 module.exports = {
   rules: {
     /**
-     * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-default-export.md
-     */
-    'import/no-default-export': 'off',
-
-    /**
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
      */
     'import/no-extraneous-dependencies': [

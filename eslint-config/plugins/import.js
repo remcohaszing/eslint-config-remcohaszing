@@ -122,7 +122,7 @@ module.exports = {
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-default-export.md
      */
-    'import/no-default-export': 'error',
+    'import/no-default-export': 'off',
 
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-deprecated.md
