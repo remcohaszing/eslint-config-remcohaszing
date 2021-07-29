@@ -23,6 +23,11 @@ module.exports = {
     'jest/lowercase-name': 'off',
 
     /**
+     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/max-nested-describe.md
+     */
+    'jest/max-nested-describe': 'off',
+
+    /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-alias-methods.md
      */
     'jest/no-alias-methods': 'error',

@@ -149,6 +149,22 @@ module.exports = {
     'jsdoc/match-description': 'off',
 
     /**
+     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/match-name.md
+     */
+    'jsdoc/match-name': [
+      'error',
+      {
+        match: [
+          {
+            tags: ['param'],
+            allowName: '/^[a-z][a-z\\d]*$/i',
+            message: 'Parameters names should be camel case',
+          },
+        ],
+      },
+    ],
+
+    /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/multiline-blocks.md
      */
     'jsdoc/multiline-blocks': [

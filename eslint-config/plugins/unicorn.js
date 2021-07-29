@@ -130,6 +130,11 @@ module.exports = {
     'unicorn/no-array-instanceof': 'off',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-array-method-this-argument.md
+     */
+    'unicorn/no-array-method-this-argument': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-array-push-push.md
      */
     'unicorn/no-array-push-push': 'error',
@@ -300,6 +305,13 @@ module.exports = {
     'unicorn/prefer-array-some': 'error',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-at.md
+     *
+     * Browsers and NodeJS don’t support this yet.
+     */
+    'unicorn/prefer-at': 'off',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-dataset.md
      *
      * @deprecated
@@ -412,9 +424,19 @@ module.exports = {
     'unicorn/prefer-number-properties': 'error',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-object-has-own.md
+     */
+    'unicorn/prefer-object-has-own': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-optional-catch-binding.md
      */
     'unicorn/prefer-optional-catch-binding': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-prototype-methods.md
+     */
+    'unicorn/prefer-prototype-methods': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-query-selector.md
@@ -493,6 +515,13 @@ module.exports = {
     'unicorn/prefer-text-content': 'off',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-top-level-await.md
+     *
+     * Not yet supported in all NodeJS versions
+     */
+    'unicorn/prefer-top-level-await': 'off',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-trim-start-end.md
      *
      * @deprecated
@@ -515,6 +544,21 @@ module.exports = {
      * @deprecated
      */
     'unicorn/regex-shorthand': 'off',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/require-array-join-separator.md
+     */
+    'unicorn/require-array-join-separator': 'off',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/require-number-to-fixed-digits-argument.md
+     */
+    'unicorn/require-number-to-fixed-digits-argument': 'off',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/require-post-message-target-origin.md
+     */
+    'unicorn/require-post-message-target-origin': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/string-content.md
