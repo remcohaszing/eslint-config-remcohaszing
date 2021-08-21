@@ -138,7 +138,7 @@ module.exports = {
   ],
 };
 
-[
+for (const name of [
   'best-practices',
   'deprecated',
   'ecmascript-6',
@@ -146,13 +146,13 @@ module.exports = {
   'strict-mode',
   'stylistic-issues',
   'variables',
-].forEach((name) => {
+]) {
   // eslint-disable-next-line node/global-require, import/no-dynamic-require
   const rules = require(`./core/${name}`);
   Object.assign(module.exports.rules, rules);
-});
+}
 
-[
+for (const name of [
   'eslint-comments',
   'import',
   'jsdoc',
@@ -160,10 +160,10 @@ module.exports = {
   'prettier',
   'sort-destructure-keys',
   'unicorn',
-].forEach((name) => {
+]) {
   // eslint-disable-next-line node/global-require, import/no-dynamic-require
   const preset = require(`./plugins/${name}`);
   module.exports.plugins.push(name);
   Object.assign(module.exports.rules, preset.rules);
   Object.assign(module.exports.settings, preset.settings);
-});
+}

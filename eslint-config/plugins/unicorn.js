@@ -120,7 +120,7 @@ module.exports = {
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-array-for-each.md
      */
-    'unicorn/no-array-for-each': 'off',
+    'unicorn/no-array-for-each': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-array-instanceof.md
