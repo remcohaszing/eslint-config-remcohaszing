@@ -625,6 +625,11 @@ module.exports = {
     '@typescript-eslint/prefer-as-const': 'error',
 
     /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
+     */
+    '@typescript-eslint/prefer-enum-initializers': 'off',
+
+    /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-for-of.md
      *
      * Handled by unicorn/no-for-loop
@@ -658,11 +663,6 @@ module.exports = {
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-ts-expect-error.md
      */
     '@typescript-eslint/prefer-ts-expect-error': 'error',
-
-    /**
-     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
-     */
-    '@typescript-eslint/prefer-enum-initializers': 'off',
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md

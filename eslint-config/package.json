@@ -33,7 +33,7 @@
     "eslint-plugin-node": "^11",
     "eslint-plugin-prettier": "^3",
     "eslint-plugin-sort-destructure-keys": "^1",
-    "eslint-plugin-unicorn": "^34",
+    "eslint-plugin-unicorn": "^35",
     "prettier": "^2"
   },
   "engines": {

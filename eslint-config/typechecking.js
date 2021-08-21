@@ -149,6 +149,11 @@ module.exports = {
         '@typescript-eslint/prefer-regexp-exec': 'error',
 
         /**
+         * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-return-this-type.md
+         */
+        '@typescript-eslint/prefer-return-this-type': 'error',
+
+        /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-string-starts-ends-with.md
          */
         '@typescript-eslint/prefer-string-starts-ends-with': 'error',

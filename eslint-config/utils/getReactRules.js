@@ -5,10 +5,12 @@ const rules = require('./react');
  *
  * @param {string} context - One of `'jsx'`, `'preact'`, or `'react'`.
  */
-module.exports = (context) =>
-  Object.entries(rules).reduce((acc, [rule, config]) => {
+module.exports = (context) => {
+  const contextRules = {};
+  for (const [rule, config] of Object.entries(rules)) {
     if (config[context] !== 'off') {
-      acc[rule] = config[context];
+      contextRules[rule] = config[context];
     }
-    return acc;
-  }, {});
+  }
+  return contextRules;
+};

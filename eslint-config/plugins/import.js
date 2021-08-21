@@ -43,7 +43,7 @@ module.exports = {
     'import/extensions': [
       'error',
       'ignorePackages',
-      extensions.reduce((acc, ext) => Object.assign(acc, { [ext]: 'never' }), {}),
+      Object.fromEntries(extensions.map((ext) => [ext, 'never'])),
     ],
 
     /**

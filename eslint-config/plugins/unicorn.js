@@ -253,6 +253,16 @@ module.exports = {
     'unicorn/no-unused-properties': 'error',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-useless-length-check.md
+     */
+    'unicorn/no-useless-length-check': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-useless-spread.md
+     */
+    'unicorn/no-useless-spread': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-useless-undefined.md
      */
     'unicorn/no-useless-undefined': 'error',
@@ -422,6 +432,13 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-number-properties.md
      */
     'unicorn/prefer-number-properties': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-object-from-entries.md
+     *
+     * XXX
+     */
+    'unicorn/prefer-object-from-entries': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-object-has-own.md

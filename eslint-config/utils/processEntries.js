@@ -6,8 +6,4 @@
  * @param {object} object - The object whose entries to process
  * @param {function} fn - The function that’s called with the object entries.
  */
-module.exports = (object, fn) =>
-  fn(Object.entries(object)).reduce((acc, [key, value]) => {
-    acc[key] = value;
-    return acc;
-  }, {});
+module.exports = (object, fn) => Object.fromEntries(fn(Object.entries(object)));
