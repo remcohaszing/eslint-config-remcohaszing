@@ -126,7 +126,6 @@ module.exports = {
       'error',
       {
         resolves: 'Use expect(await) instead',
-        toHaveBeenCalled: 'Use toHaveBeenCalledWith() instead',
         'not.toHaveBeenCalledWith': 'Use not.toHaveBeenCalled() instead',
         'toBeFalsy()': 'Use toBe(false) instead.',
         'toBeTruthy()': 'Use toBe(true) instead.',
