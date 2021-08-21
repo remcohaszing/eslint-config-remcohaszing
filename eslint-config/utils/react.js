@@ -295,8 +295,8 @@ module.exports = {
    */
   'react/jsx-no-bind': {
     jsx: 'off',
-    preact: ['error', { ignoreRefs: true }],
-    react: ['error', { ignoreRefs: true }],
+    preact: ['error', { allowArrowFunctions: true, ignoreRefs: true }],
+    react: ['error', { allowArrowFunctions: true, ignoreRefs: true }],
   },
 
   /**
