@@ -60,6 +60,11 @@ module.exports = {
         '@typescript-eslint/no-misused-promises': 'error',
 
         /**
+         * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-meaningless-void-operator.md
+         */
+        '@typescript-eslint/no-meaningless-void-operator': 'error',
+
+        /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-throw-literal.md
          */
         '@typescript-eslint/no-throw-literal': 'error',

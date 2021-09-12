@@ -620,6 +620,11 @@ module.exports = {
     '@typescript-eslint/object-curly-spacing': 'off',
 
     /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/padding-line-between-statements.md
+     */
+    '@typescript-eslint/padding-line-between-statements': 'error',
+
+    /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-as-const.md
      */
     '@typescript-eslint/prefer-as-const': 'error',

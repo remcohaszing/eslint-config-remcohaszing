@@ -194,6 +194,11 @@ module.exports = {
     'unicorn/no-hex-escape': 'error',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-invalid-remove-event-listener.md
+     */
+    'unicorn/no-invalid-remove-event-listener': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-keyword-prefix.md
      */
     'unicorn/no-keyword-prefix': 'off',
@@ -251,6 +256,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-unused-properties.md
      */
     'unicorn/no-unused-properties': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-useless-fallback-in-spread.md
+     */
+    'unicorn/no-useless-fallback-in-spread': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-useless-length-check.md

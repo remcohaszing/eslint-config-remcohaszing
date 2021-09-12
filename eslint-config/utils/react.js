@@ -348,9 +348,9 @@ module.exports = {
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
    */
   'react/jsx-no-target-blank': {
-    jsx: 'error',
-    preact: 'error',
-    react: 'error',
+    jsx: ['error', { forms: true }],
+    preact: ['error', { forms: true }],
+    react: ['error', { forms: true }],
   },
 
   /**
@@ -714,6 +714,15 @@ module.exports = {
     jsx: 'off',
     preact: 'off',
     react: 'error',
+  },
+
+  /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-exact-props.md
+   */
+  'react/prefer-exact-props': {
+    jsx: 'off',
+    preact: 'off',
+    react: 'off',
   },
 
   /**

@@ -3,6 +3,3 @@ extends:
   - remcohaszing
   - remcohaszing/jest
   - remcohaszing/typechecking
-rules:
-  # https://github.com/benmosher/eslint-plugin-import/pull/2097
-  import/no-extraneous-dependencies: off
