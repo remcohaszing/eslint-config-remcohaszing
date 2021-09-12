@@ -1,10 +1,12 @@
+const { markdownGlob } = require('./utils/constants');
+
 /**
  * Configuration for TypeScript specifically that don’t require type checking.
  */
 module.exports = {
   overrides: [
     {
-      files: ['*.ts', '*.tsx'],
+      files: [`**/!(${markdownGlob})/*.ts`, '*.tsx'],
       parserOptions: {
         project: 'tsconfig.json',
       },

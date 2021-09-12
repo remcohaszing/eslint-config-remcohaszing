@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.10",
-    "find-up": "^5.0.0"
+    "find-up": "^5.0.0",
+    "markdown-extensions": "^1.0.0"
   },
   "peerDependencies": {
     "eslint": "^7",
