@@ -22,7 +22,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/no-restricted-globals
    */
-  'no-restricted-globals': ['error', ...confusingBrowserGlobals],
+  'no-restricted-globals': ['error', ...confusingBrowserGlobals.filter((name) => name !== 'self')],
 
   /**
    * https://eslint.org/docs/rules/no-shadow
