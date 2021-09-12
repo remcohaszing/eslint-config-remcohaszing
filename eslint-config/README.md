@@ -282,6 +282,6 @@ following rules:
 This is to allow a smooth migration if a dependency decides to deprecate an API. To turn make
 warnings cause ESLint to exit with exit code 1, run:
 
-```hh
+```sh
 eslint --max-warnings 0 .
 ```
