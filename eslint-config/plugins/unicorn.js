@@ -593,6 +593,11 @@ module.exports = {
     'unicorn/string-content': 'off',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/template-indent.md
+     */
+    'unicorn/template-indent': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/throw-new-error.md
      */
     'unicorn/throw-new-error': 'error',

@@ -474,7 +474,7 @@ module.exports = {
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-implicit-any-catch.md
      */
-    '@typescript-eslint/no-implicit-any-catch': 'error',
+    '@typescript-eslint/no-implicit-any-catch': 'off',
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-inferrable-types.md
@@ -521,6 +521,11 @@ module.exports = {
     '@typescript-eslint/no-namespace': ['error', { allowDefinitionFiles: true }],
 
     /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-nullish-coalescing.md
+     */
+    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
+
+    /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-optional-chain.md
      */
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
@@ -545,6 +550,11 @@ module.exports = {
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-require-imports.md
      */
     '@typescript-eslint/no-require-imports': 'error',
+
+    /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-restricted-imports.md
+     */
+    '@typescript-eslint/no-restricted-imports': 'error',
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
@@ -585,11 +595,6 @@ module.exports = {
      */
     '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }],
     'no-unused-vars': 'off',
-
-    /**
-     * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars-experimental.md
-     */
-    '@typescript-eslint/no-unused-vars-experimental': 'off',
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md

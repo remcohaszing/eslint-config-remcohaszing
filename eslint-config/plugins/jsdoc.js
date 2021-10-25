@@ -83,9 +83,11 @@ module.exports = {
 
     /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-examples.md
+     *
+     * @see https://github.com/gajus/eslint-plugin-jsdoc/releases/tag/v37.0.0
      */
     'jsdoc/check-examples': [
-      'error',
+      'off',
       { exampleCodeRegex: /```(?:js|jsx|javascript|ts|tsx|typescript)\r?\n([\S\s]*)```/.source },
     ],
 

@@ -15,6 +15,11 @@ module.exports = {
         '@typescript-eslint/await-thenable': 'error',
 
         /**
+         * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-exports.md
+         */
+        '@typescript-eslint/consistent-type-exports': 'off',
+
+        /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/dot-notation.md
          */
         '@typescript-eslint/dot-notation': 'error',

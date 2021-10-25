@@ -18,11 +18,6 @@ module.exports = {
     'jest/expect-expect': 'error',
 
     /**
-     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/lowercase-name.md
-     */
-    'jest/lowercase-name': 'off',
-
-    /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/max-nested-describe.md
      */
     'jest/max-nested-describe': 'off',
@@ -61,13 +56,6 @@ module.exports = {
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-duplicate-hooks.md
      */
     'jest/no-duplicate-hooks': 'off',
-
-    /**
-     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-expect-resolves.md
-     *
-     * @deprecated
-     */
-    'jest/no-expect-resolves': 'off',
 
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-export.md
@@ -150,20 +138,6 @@ module.exports = {
     'jest/no-test-return-statement': 'error',
 
     /**
-     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-truthy-falsy.md
-     *
-     * @deprecated
-     */
-    'jest/no-truthy-falsy': 'off',
-
-    /**
-     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-try-expect.md
-     *
-     * @deprecated
-     */
-    'jest/no-try-expect': 'off',
-
-    /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-called-with.md
      */
     'jest/prefer-called-with': 'error',
@@ -174,16 +148,19 @@ module.exports = {
     'jest/prefer-expect-assertions': 'off',
 
     /**
+     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-expect-resolves.md
+     */
+    'jest/prefer-expect-resolves': 'off',
+
+    /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-hooks-on-top.md
      */
     'jest/prefer-hooks-on-top': 'error',
 
     /**
-     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-inline-snapshots.md
-     *
-     * @deprecated
+     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-lowercase-title.md
      */
-    'jest/prefer-inline-snapshots': 'off',
+    'jest/prefer-lowercase-title': 'off',
 
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-spy-on.md
@@ -196,14 +173,9 @@ module.exports = {
     'jest/prefer-strict-equal': 'error',
 
     /**
-     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-be-null.md
+     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-be.md
      */
-    'jest/prefer-to-be-null': 'error',
-
-    /**
-     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-be-undefined.md
-     */
-    'jest/prefer-to-be-undefined': 'error',
+    'jest/prefer-to-be': 'error',
 
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-contain.md
@@ -221,6 +193,11 @@ module.exports = {
     'jest/prefer-todo': 'error',
 
     /**
+     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/require-hook.md
+     */
+    'jest/require-hook': 'error',
+
+    /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/require-to-throw-message.md
      */
     'jest/require-to-throw-message': 'error',
@@ -236,9 +213,9 @@ module.exports = {
     'jest/unbound-method': 'error',
 
     /**
-     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/valid-describe.md
+     * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/valid-describe-callback.md
      */
-    'jest/valid-describe': 'error',
+    'jest/valid-describe-callback': 'error',
 
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/valid-expect.md

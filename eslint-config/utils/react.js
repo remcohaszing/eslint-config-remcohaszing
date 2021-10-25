@@ -600,6 +600,15 @@ module.exports = {
   },
 
   /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-namespace.md
+   */
+  'react/no-namespace': {
+    jsx: 'off',
+    preact: 'error',
+    react: 'error',
+  },
+
+  /**
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-redundant-should-component-update.md
    */
   'react/no-redundant-should-component-update': {
