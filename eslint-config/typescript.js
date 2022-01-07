@@ -587,7 +587,7 @@ module.exports = {
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
      */
-    '@typescript-eslint/no-unused-expressions': 'error',
+    '@typescript-eslint/no-unused-expressions': ['error', { enforceForJSX: true }],
     'no-unused-expressions': 'off',
 
     /**

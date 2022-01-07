@@ -28,7 +28,7 @@ module.exports = {
     /**
      * https://github.com/babel/babel/tree/main/eslint/babel-eslint-plugin#rules
      */
-    '@babel/no-unused-expressions': 'error',
+    '@babel/no-unused-expressions': ['error', { enforceForJSX: true }],
     'no-unused-expressions': 'off',
 
     /**

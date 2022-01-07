@@ -337,7 +337,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/no-unused-expressions
    */
-  'no-unused-expressions': 'error',
+  'no-unused-expressions': ['error', { enforceForJSX: true }],
 
   /**
    * https://eslint.org/docs/rules/no-unused-labels
