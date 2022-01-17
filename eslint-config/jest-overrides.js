@@ -205,7 +205,7 @@ module.exports = {
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/require-hook.md
      */
-    'jest/require-hook': 'error',
+    'jest/require-hook': 'off',
 
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/require-to-throw-message.md
