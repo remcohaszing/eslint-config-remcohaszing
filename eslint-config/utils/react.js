@@ -508,6 +508,15 @@ module.exports = {
   },
 
   /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-arrow-function-lifecycle.md
+   */
+  'react/no-arrow-function-lifecycle': {
+    jsx: 'off',
+    preact: 'error',
+    react: 'error',
+  },
+
+  /**
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md
    */
   'react/no-children-prop': {
@@ -583,6 +592,15 @@ module.exports = {
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md
    */
   'react/no-is-mounted': {
+    jsx: 'off',
+    preact: 'off',
+    react: 'error',
+  },
+
+  /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-invalid-html-attribute.md
+   */
+  'react/no-invalid-html-attribute': {
     jsx: 'off',
     preact: 'off',
     react: 'error',
@@ -684,6 +702,15 @@ module.exports = {
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unsafe.md
    */
   'react/no-unsafe': {
+    jsx: 'off',
+    preact: 'error',
+    react: 'error',
+  },
+
+  /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-class-component-methods.md
+   */
+  'react/no-unused-class-component-methods': {
     jsx: 'off',
     preact: 'error',
     react: 'error',
@@ -875,7 +902,7 @@ module.exports = {
   },
 
   /**
-   * https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
+   * https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks
    */
   'react-hooks/rules-of-hooks': {
     jsx: 'off',
@@ -884,7 +911,7 @@ module.exports = {
   },
 
   /**
-   * https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
+   * https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks
    */
   'react-hooks/exhaustive-deps': {
     jsx: 'off',

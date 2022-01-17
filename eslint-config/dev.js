@@ -4,7 +4,7 @@
 module.exports = {
   rules: {
     /**
-     * https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+     * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md
      */
     'import/no-extraneous-dependencies': [
       'error',
@@ -34,7 +34,7 @@ module.exports = {
     'node/no-unpublished-require': 'off',
 
     /**
-     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/consistent-function-scoping.md
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-function-scoping.md
      *
      * This is an optimization that’s not important for tests or confiurations.
      */

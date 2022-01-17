@@ -2,6 +2,7 @@
   "extends": "../../tsconfig",
   "compilerOptions": {
     "module": "commonjs",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "types": ["node"]
   }
 }
