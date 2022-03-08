@@ -60,7 +60,7 @@ module.exports = {
         /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-misused-promises.md
          */
-        '@typescript-eslint/no-misused-promises': 'error',
+        '@typescript-eslint/no-misused-promises': 'off',
 
         /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-meaningless-void-operator.md
