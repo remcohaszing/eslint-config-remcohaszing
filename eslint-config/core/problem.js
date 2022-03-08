@@ -3,6 +3,16 @@
  */
 module.exports = {
   /**
+   * https://eslint.org/docs/rules/array-callback-return
+   */
+  'array-callback-return': ['error', { allowImplicit: true }],
+
+  /**
+   * https://eslint.org/docs/rules/constructor-super
+   */
+  'constructor-super': 'error',
+
+  /**
    * https://eslint.org/docs/rules/for-direction
    */
   'for-direction': 'error',
@@ -23,6 +33,11 @@ module.exports = {
   'no-await-in-loop': 'off',
 
   /**
+   * https://eslint.org/docs/rules/no-class-assign
+   */
+  'no-class-assign': 'error',
+
+  /**
    * https://eslint.org/docs/rules/no-compare-neg-zero
    */
   'no-compare-neg-zero': 'error',
@@ -33,14 +48,19 @@ module.exports = {
   'no-cond-assign': 'error',
 
   /**
-   * https://eslint.org/docs/rules/no-console
+   * https://eslint.org/docs/rules/no-const-assign
    */
-  'no-console': 'error',
+  'no-const-assign': 'error',
 
   /**
    * https://eslint.org/docs/rules/no-constant-condition
    */
   'no-constant-condition': 'error',
+
+  /**
+   * https://eslint.org/docs/rules/no-constructor-return
+   */
+  'no-constructor-return': 'error',
 
   /**
    * https://eslint.org/docs/rules/no-control-regex
@@ -58,6 +78,11 @@ module.exports = {
   'no-dupe-args': 'error',
 
   /**
+   * https://eslint.org/docs/rules/no-dupe-class-members
+   */
+  'no-dupe-class-members': 'error',
+
+  /**
    * https://eslint.org/docs/rules/no-dupe-else-if
    */
   'no-dupe-else-if': 'error',
@@ -73,9 +98,9 @@ module.exports = {
   'no-duplicate-case': 'error',
 
   /**
-   * https://eslint.org/docs/rules/no-empty
+   * https://eslint.org/docs/rules/no-duplicate-imports
    */
-  'no-empty': 'error',
+  'no-duplicate-imports': ['error', { includeExports: true }],
 
   /**
    * https://eslint.org/docs/rules/no-empty-character-class
@@ -83,28 +108,19 @@ module.exports = {
   'no-empty-character-class': 'error',
 
   /**
+   * https://eslint.org/docs/rules/no-empty-pattern
+   */
+  'no-empty-pattern': 'error',
+
+  /**
    * https://eslint.org/docs/rules/no-ex-assign
    */
   'no-ex-assign': 'error',
 
   /**
-   * https://eslint.org/docs/rules/no-extra-boolean-cast
+   * https://eslint.org/docs/rules/no-fallthrough
    */
-  'no-extra-boolean-cast': 'error',
-
-  /**
-   * https://eslint.org/docs/rules/no-extra-parens
-   *
-   * Prettier
-   */
-  'no-extra-parens': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/no-extra-semi
-   *
-   * Prettier
-   */
-  'no-extra-semi': 'off',
+  'no-fallthrough': 'error',
 
   /**
    * https://eslint.org/docs/rules/no-func-assign
@@ -142,6 +158,11 @@ module.exports = {
   'no-misleading-character-class': 'error',
 
   /**
+   * https://eslint.org/docs/rules/no-new-symbol
+   */
+  'no-new-symbol': 'error',
+
+  /**
    * https://eslint.org/docs/rules/no-obj-calls
    */
   'no-obj-calls': 'error',
@@ -157,9 +178,14 @@ module.exports = {
   'no-prototype-builtins': 'error',
 
   /**
-   * https://eslint.org/docs/rules/no-regex-spaces
+   * https://eslint.org/docs/rules/no-self-assign
    */
-  'no-regex-spaces': 'error',
+  'no-self-assign': 'error',
+
+  /**
+   * https://eslint.org/docs/rules/no-self-compare
+   */
+  'no-self-compare': 'error',
 
   /**
    * https://eslint.org/docs/rules/no-setter-return
@@ -177,11 +203,28 @@ module.exports = {
   'no-template-curly-in-string': 'off',
 
   /**
+   * https://eslint.org/docs/rules/no-this-before-super
+   */
+  'no-this-before-super': 'error',
+
+  /**
+   * https://eslint.org/docs/rules/no-undef
+   */
+  'no-undef': 'error',
+
+  /**
    * https://eslint.org/docs/rules/no-unexpected-multiline
    *
    * This causes issues with some Prettier configurations. Just use semicolons.
    */
   'no-unexpected-multiline': 'off',
+
+  /**
+   * https://eslint.org/docs/rules/no-unmodified-loop-condition
+   *
+   * The condition may change by function calls.
+   */
+  'no-unmodified-loop-condition': 'off',
 
   /**
    * https://eslint.org/docs/rules/no-unreachable
@@ -207,6 +250,21 @@ module.exports = {
    * https://eslint.org/docs/rules/no-unsafe-optional-chaining
    */
   'no-unsafe-optional-chaining': 'error',
+
+  /**
+   * https://eslint.org/docs/rules/no-unused-private-class-members
+   */
+  'no-unused-private-class-members': 'error',
+
+  /**
+   * https://eslint.org/docs/rules/no-unused-vars
+   */
+  'no-unused-vars': ['error', { ignoreRestSiblings: true }],
+
+  /**
+   * https://eslint.org/docs/rules/no-use-before-define
+   */
+  'no-use-before-define': 'error',
 
   /**
    * https://eslint.org/docs/rules/no-useless-backreference

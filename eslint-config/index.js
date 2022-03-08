@@ -138,15 +138,7 @@ module.exports = {
   ],
 };
 
-for (const name of [
-  'best-practices',
-  'deprecated',
-  'ecmascript-6',
-  'possible-errors',
-  'strict-mode',
-  'stylistic-issues',
-  'variables',
-]) {
+for (const name of ['deprecated', 'layout', 'problem', 'suggestion']) {
   // eslint-disable-next-line node/global-require, import/no-dynamic-require
   const rules = require(`./core/${name}`);
   Object.assign(module.exports.rules, rules);

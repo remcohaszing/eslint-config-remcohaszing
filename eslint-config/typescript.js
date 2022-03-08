@@ -618,6 +618,11 @@ module.exports = {
     'no-useless-constructor': 'error',
 
     /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-useless-empty-export.md
+     */
+    '@typescript-eslint/no-useless-empty-export': 'off',
+
+    /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-var-requires.md
      *
      * Handled by import/no-commonjs
@@ -711,6 +716,13 @@ module.exports = {
      * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md
      */
     '@typescript-eslint/sort-type-union-intersection-members': 'error',
+
+    /**
+     * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/space-before-blocks.md
+     *
+     * Prettier
+     */
+    '@typescript-eslint/space-before-blocks': 'off',
 
     /**
      * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/space-infix-ops.md

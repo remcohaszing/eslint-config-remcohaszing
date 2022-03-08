@@ -68,6 +68,11 @@ module.exports = {
         '@typescript-eslint/no-meaningless-void-operator': 'error',
 
         /**
+         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-redundant-type-constituents.md
+         */
+        '@typescript-eslint/no-redundant-type-constituents': 'error',
+
+        /**
          * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-throw-literal.md
          */
         '@typescript-eslint/no-throw-literal': 'error',

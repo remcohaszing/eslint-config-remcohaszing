@@ -1,10 +1,9 @@
-const rules = require('eslint/lib/rules');
+// eslint-disable-next-line import/no-unresolved
+const { builtinRules } = require('eslint/use-at-your-own-risk');
 
 const byCategory = {};
-for (const [name, { meta }] of rules) {
-  const cat = meta.deprecated
-    ? 'deprecated'
-    : meta.docs.category.toLowerCase().replace(/\W+/g, '-');
+for (const [name, { meta }] of builtinRules) {
+  const cat = meta.deprecated ? 'deprecated' : meta.type;
   if (!byCategory[cat]) {
     byCategory[cat] = [];
   }

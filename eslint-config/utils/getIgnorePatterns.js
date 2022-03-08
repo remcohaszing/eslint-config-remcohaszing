@@ -15,7 +15,7 @@ module.exports = () => {
   if (gitDir) {
     const gitIgnorePath = join(dirname(gitDir), '.gitignore');
     if (existsSync(gitIgnorePath)) {
-      const ignore = readFileSync(gitIgnorePath, 'utf-8');
+      const ignore = readFileSync(gitIgnorePath, 'utf8');
       ignorePatterns.push(
         ...ignore.split(/\r?\n/g).filter((line) => line && !line.startsWith('#')),
       );

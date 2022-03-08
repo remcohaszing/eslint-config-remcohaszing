@@ -25,11 +25,11 @@
     "find-up": "^5.0.0"
   },
   "peerDependencies": {
-    "eslint": "^7",
+    "eslint": "^8",
     "eslint-plugin-compat": "^4",
     "eslint-plugin-eslint-comments": "^3",
     "eslint-plugin-import": "^2",
-    "eslint-plugin-jest": "^25",
+    "eslint-plugin-jest": "^26",
     "eslint-plugin-jest-formatting": "^3",
     "eslint-plugin-jsdoc": "^37",
     "eslint-plugin-jsx-a11y": "^6",
@@ -39,7 +39,7 @@
     "eslint-plugin-react": "^7",
     "eslint-plugin-react-hooks": "^4",
     "eslint-plugin-sort-destructure-keys": "^1",
-    "eslint-plugin-unicorn": "^40",
+    "eslint-plugin-unicorn": "^41",
     "prettier": "^2"
   },
   "peerDependenciesMeta": {

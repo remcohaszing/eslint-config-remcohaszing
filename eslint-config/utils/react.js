@@ -107,6 +107,24 @@ module.exports = {
   },
 
   /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/hook-use-state.md
+   */
+  'react/hook-use-state': {
+    jsx: 'off',
+    preact: 'error',
+    react: 'error',
+  },
+
+  /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/iframe-missing-sandbox.md
+   */
+  'react/iframe-missing-sandbox': {
+    jsx: 'error',
+    preact: 'error',
+    react: 'error',
+  },
+
+  /**
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
    */
   'react/jsx-boolean-value': {

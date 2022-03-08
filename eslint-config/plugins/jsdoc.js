@@ -343,6 +343,11 @@ module.exports = {
     'jsdoc/require-yields-check': 'error',
 
     /**
+     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/sort-tags.md
+     */
+    'jsdoc/sort-tags': ['error', { alphabetizeExtras: true }],
+
+    /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/tag-lines.md
      */
     'jsdoc/tag-lines': ['error', 'never'],

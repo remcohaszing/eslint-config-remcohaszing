@@ -1,4 +1,3 @@
-const allowedProperties = require('../utils/allowedProperties');
 const prettier = require('../utils/prettier');
 
 /**
@@ -27,6 +26,20 @@ module.exports = {
   'array-element-newline': 'off',
 
   /**
+   * https://eslint.org/docs/rules/arrow-parens
+   *
+   * Prettier
+   */
+  'arrow-parens': 'off',
+
+  /**
+   * https://eslint.org/docs/rules/arrow-spacing
+   *
+   * Prettier
+   */
+  'arrow-spacing': 'off',
+
+  /**
    * https://eslint.org/docs/rules/block-spacing
    *
    * Prettier
@@ -39,16 +52,6 @@ module.exports = {
    * Prettier
    */
   'brace-style': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/camelcase
-   */
-  camelcase: ['error', { allow: allowedProperties }],
-
-  /**
-   * https://eslint.org/docs/rules/capitalized-comments
-   */
-  'capitalized-comments': ['error', 'always', { ignoreConsecutiveComments: true }],
 
   /**
    * https://eslint.org/docs/rules/comma-dangle
@@ -79,9 +82,11 @@ module.exports = {
   'computed-property-spacing': 'off',
 
   /**
-   * https://eslint.org/docs/rules/consistent-this
+   * https://eslint.org/docs/rules/dot-location
+   *
+   * Prettier
    */
-  'consistent-this': 'error',
+  'dot-location': 'off',
 
   /**
    * https://eslint.org/docs/rules/eol-last
@@ -98,23 +103,6 @@ module.exports = {
   'func-call-spacing': 'off',
 
   /**
-   * https://eslint.org/docs/rules/func-name-matching
-   *
-   * Handled by func-style.
-   */
-  'func-name-matching': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/func-names
-   */
-  'func-names': 'error',
-
-  /**
-   * https://eslint.org/docs/rules/func-style
-   */
-  'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
-
-  /**
    * https://eslint.org/docs/rules/function-call-argument-newline
    *
    * Prettier
@@ -129,21 +117,11 @@ module.exports = {
   'function-paren-newline': 'off',
 
   /**
-   * https://eslint.org/docs/rules/id-denylist
-   */
-  'id-denylist': ['error', 'l', 'O', 'React'],
-
-  /**
-   * https://eslint.org/docs/rules/id-length
-   */
-  'id-length': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/id-match
+   * https://eslint.org/docs/rules/generator-star-spacing
    *
-   * Handled by camelcase
+   * Prettier
    */
-  'id-match': 'off',
+  'generator-star-spacing': 'off',
 
   /**
    * https://eslint.org/docs/rules/implicit-arrow-linebreak
@@ -206,11 +184,6 @@ module.exports = {
   'lines-between-class-members': 'error',
 
   /**
-   * https://eslint.org/docs/rules/max-depth
-   */
-  'max-depth': 'off',
-
-  /**
    * https://eslint.org/docs/rules/max-len
    */
   'max-len': [
@@ -226,31 +199,6 @@ module.exports = {
   ],
 
   /**
-   * https://eslint.org/docs/rules/max-lines
-   */
-  'max-lines': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/max-lines-per-function
-   */
-  'max-lines-per-function': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/max-nested-callbacks
-   */
-  'max-nested-callbacks': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/max-params
-   */
-  'max-params': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/max-statements
-   */
-  'max-statements': 'off',
-
-  /**
    * https://eslint.org/docs/rules/max-statements-per-line
    *
    * Handled by Prettier.
@@ -258,23 +206,11 @@ module.exports = {
   'max-statements-per-line': 'off',
 
   /**
-   * https://eslint.org/docs/rules/multiline-comment-style
-   *
-   * Although starred-block is preferred over bare-block, separate-lins is sometimes acceptable.
-   */
-  'multiline-comment-style': 'off',
-
-  /**
    * https://eslint.org/docs/rules/multiline-ternary
    *
    * Prettier
    */
   'multiline-ternary': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/new-cap
-   */
-  'new-cap': 'error',
 
   /**
    * https://eslint.org/docs/rules/new-parens
@@ -291,36 +227,11 @@ module.exports = {
   'newline-per-chained-call': 'off',
 
   /**
-   * https://eslint.org/docs/rules/no-array-constructor
-   */
-  'no-array-constructor': 'error',
-
-  /**
-   * https://eslint.org/docs/rules/no-bitwise
-   */
-  'no-bitwise': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/no-continue
-   */
-  'no-continue': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/no-inline-comments
-   */
-  'no-inline-comments': 'error',
-
-  /**
-   * https://eslint.org/docs/rules/no-lonely-if
+   * https://eslint.org/docs/rules/no-extra-parens
    *
-   * Handled by `unicorn/no-lonely-if`
+   * Prettier
    */
-  'no-lonely-if': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/no-mixed-operators
-   */
-  'no-mixed-operators': 'off',
+  'no-extra-parens': 'off',
 
   /**
    * https://eslint.org/docs/rules/no-mixed-spaces-and-tabs
@@ -330,9 +241,11 @@ module.exports = {
   'no-mixed-spaces-and-tabs': 'off',
 
   /**
-   * https://eslint.org/docs/rules/no-multi-assign
+   * https://eslint.org/docs/rules/no-multi-spaces
+   *
+   * Prettier
    */
-  'no-multi-assign': 'error',
+  'no-multi-spaces': 'off',
 
   /**
    * https://eslint.org/docs/rules/no-multiple-empty-lines
@@ -342,47 +255,9 @@ module.exports = {
   'no-multiple-empty-lines': 'off',
 
   /**
-   * https://eslint.org/docs/rules/no-negated-condition
-   */
-  'no-negated-condition': 'error',
-
-  /**
-   * https://eslint.org/docs/rules/no-nested-ternary
-   */
-  'no-nested-ternary': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/no-new-object
-   */
-  'no-new-object': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/no-plusplus
-   */
-  'no-plusplus': 'error',
-
-  /**
-   * https://eslint.org/docs/rules/no-restricted-syntax
-   */
-  'no-restricted-syntax': [
-    'error',
-    {
-      // `value.toString()`
-      selector:
-        'CallExpression[callee.property.name="toString"][callee.optional=false][arguments.length=0][optional=false]',
-      message: 'Use String() instead.',
-    },
-  ],
-
-  /**
    * https://eslint.org/docs/rules/no-tabs
    */
   'no-tabs': ['error', { allowIndentationTabs: true }],
-
-  /**
-   * https://eslint.org/docs/rules/no-ternary
-   */
-  'no-ternary': 'off',
 
   /**
    * https://eslint.org/docs/rules/no-trailing-spaces
@@ -390,16 +265,6 @@ module.exports = {
    * Prettier
    */
   'no-trailing-spaces': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/no-underscore-dangle
-   */
-  'no-underscore-dangle': 'error',
-
-  /**
-   * https://eslint.org/docs/rules/no-unneeded-ternary
-   */
-  'no-unneeded-ternary': 'error',
 
   /**
    * https://eslint.org/docs/rules/no-whitespace-before-property
@@ -437,23 +302,6 @@ module.exports = {
   'object-property-newline': 'off',
 
   /**
-   * https://eslint.org/docs/rules/one-var
-   */
-  'one-var': ['error', 'never'],
-
-  /**
-   * https://eslint.org/docs/rules/one-var-declaration-per-line
-   *
-   * Prettier
-   */
-  'one-var-declaration-per-line': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/operator-assignment
-   */
-  'operator-assignment': 'error',
-
-  /**
    * https://eslint.org/docs/rules/operator-linebreak
    *
    * Prettier
@@ -473,23 +321,6 @@ module.exports = {
   'padding-line-between-statements': 'off',
 
   /**
-   * https://eslint.org/docs/rules/prefer-exponentiation-operator
-   */
-  'prefer-exponentiation-operator': 'error',
-
-  /**
-   * https://eslint.org/docs/rules/prefer-object-spread
-   */
-  'prefer-object-spread': 'error',
-
-  /**
-   * https://eslint.org/docs/rules/quote-props
-   *
-   * Prettier
-   */
-  'quote-props': 'off',
-
-  /**
    * https://eslint.org/docs/rules/quotes
    */
   quotes: [
@@ -497,6 +328,13 @@ module.exports = {
     prettier.js.singleQuote ? 'single' : 'double',
     { avoidEscape: true, allowTemplateLiterals: false },
   ],
+
+  /**
+   * https://eslint.org/docs/rules/rest-spread-spacing
+   *
+   * Prettier
+   */
+  'rest-spread-spacing': 'off',
 
   /**
    * https://eslint.org/docs/rules/semi
@@ -518,18 +356,6 @@ module.exports = {
    * Prettier
    */
   'semi-style': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/sort-keys
-   */
-  'sort-keys': 'off',
-
-  /**
-   * https://eslint.org/docs/rules/sort-vars
-   *
-   * Handled by one-var.
-   */
-  'sort-vars': 'off',
 
   /**
    * https://eslint.org/docs/rules/space-before-blocks
@@ -567,16 +393,18 @@ module.exports = {
   'space-unary-ops': 'off',
 
   /**
-   * https://eslint.org/docs/rules/spaced-comment
-   */
-  'spaced-comment': ['error', 'always', { block: { balanced: true } }],
-
-  /**
    * https://eslint.org/docs/rules/switch-colon-spacing
    *
    * Prettier
    */
   'switch-colon-spacing': 'off',
+
+  /**
+   * https://eslint.org/docs/rules/template-curly-spacing
+   *
+   * Prettier
+   */
+  'template-curly-spacing': 'off',
 
   /**
    * https://eslint.org/docs/rules/template-tag-spacing
@@ -593,9 +421,23 @@ module.exports = {
   'unicode-bom': 'off',
 
   /**
+   * https://eslint.org/docs/rules/wrap-iife
+   *
+   * Prettier
+   */
+  'wrap-iife': 'off',
+
+  /**
    * https://eslint.org/docs/rules/wrap-regex
    *
    * Prettier
    */
   'wrap-regex': 'off',
+
+  /**
+   * https://eslint.org/docs/rules/yield-star-spacing
+   *
+   * Prettier
+   */
+  'yield-star-spacing': 'off',
 };
