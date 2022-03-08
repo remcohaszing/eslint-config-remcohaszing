@@ -625,7 +625,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/object-shorthand
    */
-  'object-shorthand': 'error',
+  'object-shorthand': ['error', 'always', { avoidExplicitReturnArrows: true }],
 
   /**
    * https://eslint.org/docs/rules/one-var
