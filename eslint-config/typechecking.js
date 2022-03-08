@@ -10,192 +10,192 @@ module.exports = {
       },
       rules: {
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/await-thenable.md
+         * https://typescript-eslint.io/rules/await-thenable.md
          */
         '@typescript-eslint/await-thenable': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/consistent-type-exports.md
+         * https://typescript-eslint.io/rules/consistent-type-exports.md
          */
         '@typescript-eslint/consistent-type-exports': 'off',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/dot-notation.md
+         * https://typescript-eslint.io/rules/dot-notation.md
          */
         '@typescript-eslint/dot-notation': 'error',
         'dot-notation': 'off',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/naming-convention.md
+         * https://typescript-eslint.io/rules/naming-convention.md
          *
          * Defined in the TypeScript override.
          */
         '@typescript-eslint/naming-convention': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-confusing-void-expression".md
+         * https://typescript-eslint.io/rules/no-confusing-void-expression".md
          */
         '@typescript-eslint/no-confusing-void-expression': 'off',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-base-to-string.md
+         * https://typescript-eslint.io/rules/no-base-to-string.md
          */
         '@typescript-eslint/no-base-to-string': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-floating-promises.md
+         * https://typescript-eslint.io/rules/no-floating-promises.md
          */
         '@typescript-eslint/no-floating-promises': 'off',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-for-in-array.md
+         * https://typescript-eslint.io/rules/no-for-in-array.md
          */
         '@typescript-eslint/no-for-in-array': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-implied-eval.md
+         * https://typescript-eslint.io/rules/no-implied-eval.md
          */
         '@typescript-eslint/no-implied-eval': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-misused-promises.md
+         * https://typescript-eslint.io/rules/no-misused-promises.md
          */
         '@typescript-eslint/no-misused-promises': 'off',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-meaningless-void-operator.md
+         * https://typescript-eslint.io/rules/no-meaningless-void-operator.md
          */
         '@typescript-eslint/no-meaningless-void-operator': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-redundant-type-constituents.md
+         * https://typescript-eslint.io/rules/no-redundant-type-constituents.md
          */
         '@typescript-eslint/no-redundant-type-constituents': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-throw-literal.md
+         * https://typescript-eslint.io/rules/no-throw-literal.md
          */
         '@typescript-eslint/no-throw-literal': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unnecessary-boolean-literal-compare.md
+         * https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare.md
          */
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unnecessary-condition.md
+         * https://typescript-eslint.io/rules/no-unnecessary-condition.md
          */
         '@typescript-eslint/no-unnecessary-condition': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unnecessary-qualifier.md
+         * https://typescript-eslint.io/rules/no-unnecessary-qualifier.md
          */
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unnecessary-type-arguments.md
+         * https://typescript-eslint.io/rules/no-unnecessary-type-arguments.md
          */
         '@typescript-eslint/no-unnecessary-type-arguments': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unnecessary-type-assertion.md
+         * https://typescript-eslint.io/rules/no-unnecessary-type-assertion.md
          */
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-argument.md
+         * https://typescript-eslint.io/rules/no-unsafe-argument.md
          */
         '@typescript-eslint/no-unsafe-argument': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-assignment.md
+         * https://typescript-eslint.io/rules/no-unsafe-assignment.md
          */
         '@typescript-eslint/no-unsafe-assignment': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-call.md
+         * https://typescript-eslint.io/rules/no-unsafe-call.md
          */
         '@typescript-eslint/no-unsafe-call': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-member-access.md
+         * https://typescript-eslint.io/rules/no-unsafe-member-access.md
          */
         '@typescript-eslint/no-unsafe-member-access': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-return.md
+         * https://typescript-eslint.io/rules/no-unsafe-return.md
          */
         '@typescript-eslint/no-unsafe-return': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/non-nullable-type-assertion-style.md
+         * https://typescript-eslint.io/rules/non-nullable-type-assertion-style.md
          */
         '@typescript-eslint/non-nullable-type-assertion-style': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-includes.md
+         * https://typescript-eslint.io/rules/prefer-includes.md
          */
         '@typescript-eslint/prefer-includes': 'error',
         'unicorn/prefer-includes': 'off',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-nullish-coalescing.md
+         * https://typescript-eslint.io/rules/prefer-nullish-coalescing.md
          */
         '@typescript-eslint/prefer-nullish-coalescing': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-readonly.md
+         * https://typescript-eslint.io/rules/prefer-readonly.md
          */
         '@typescript-eslint/prefer-readonly': 'off',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-readonly-parameter-types.md
+         * https://typescript-eslint.io/rules/prefer-readonly-parameter-types.md
          */
         '@typescript-eslint/prefer-readonly-parameter-types': 'off',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-reduce-type-parameter.md
+         * https://typescript-eslint.io/rules/prefer-reduce-type-parameter.md
          */
         '@typescript-eslint/prefer-reduce-type-parameter': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-regexp-exec.md
+         * https://typescript-eslint.io/rules/prefer-regexp-exec.md
          */
         '@typescript-eslint/prefer-regexp-exec': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-return-this-type.md
+         * https://typescript-eslint.io/rules/prefer-return-this-type.md
          */
         '@typescript-eslint/prefer-return-this-type': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-string-starts-ends-with.md
+         * https://typescript-eslint.io/rules/prefer-string-starts-ends-with.md
          */
         '@typescript-eslint/prefer-string-starts-ends-with': 'error',
         'unicorn/prefer-starts-ends-with': 'off',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/promise-function-async.md
+         * https://typescript-eslint.io/rules/promise-function-async.md
          */
         '@typescript-eslint/promise-function-async': 'off',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/require-array-sort-compare.md
+         * https://typescript-eslint.io/rules/require-array-sort-compare.md
          */
         '@typescript-eslint/require-array-sort-compare': ['error', { ignoreStringArrays: true }],
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/require-await.md
+         * https://typescript-eslint.io/rules/require-await.md
          */
         '@typescript-eslint/require-await': 'off',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/restrict-plus-operands.md
+         * https://typescript-eslint.io/rules/restrict-plus-operands.md
          */
         '@typescript-eslint/restrict-plus-operands': ['error', { checkCompoundAssignments: true }],
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/restrict-template-expressions.md
+         * https://typescript-eslint.io/rules/restrict-template-expressions.md
          */
         '@typescript-eslint/restrict-template-expressions': [
           'error',
@@ -203,22 +203,22 @@ module.exports = {
         ],
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/return-await.md
+         * https://typescript-eslint.io/rules/return-await.md
          */
         '@typescript-eslint/return-await': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md
+         * https://typescript-eslint.io/rules/strict-boolean-expressions.md
          */
         '@typescript-eslint/strict-boolean-expressions': 'off',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/switch-exhaustiveness-check.md
+         * https://typescript-eslint.io/rules/switch-exhaustiveness-check.md
          */
         '@typescript-eslint/switch-exhaustiveness-check': 'error',
 
         /**
-         * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/unbound-method.md
+         * https://typescript-eslint.io/rules/unbound-method.md
          */
         '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
       },

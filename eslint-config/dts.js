@@ -11,7 +11,7 @@ module.exports = {
     'spaced-comment': ['error', 'always', { line: { markers: ['/'] } }],
 
     /**
-     * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/triple-slash-reference.md
+     * https://typescript-eslint.io/rules/triple-slash-reference.md
      */
     '@typescript-eslint/triple-slash-reference': [
       'error',
@@ -24,7 +24,7 @@ module.exports = {
     'max-classes-per-file': 'off',
 
     /**
-     * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-extraneous-class
+     * https://typescript-eslint.io/rules/no-extraneous-class
      */
     '@typescript-eslint/no-extraneous-class': 'off',
   },
