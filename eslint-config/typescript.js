@@ -180,6 +180,18 @@ module.exports = {
     '@typescript-eslint/naming-convention': [
       'error',
       {
+        selector: [
+          'accessor',
+          'enumMember',
+          'objectLiteralMethod',
+          'objectLiteralProperty',
+          'typeMethod',
+          'typeProperty',
+        ],
+        format: null,
+        modifiers: ['requiresQuotes'],
+      },
+      {
         selector: 'default',
         format: ['camelCase', 'PascalCase'],
         leadingUnderscore: 'forbid',
