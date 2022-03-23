@@ -350,7 +350,7 @@ module.exports = {
     /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/tag-lines.md
      */
-    'jsdoc/tag-lines': ['error', 'never'],
+    'jsdoc/tag-lines': ['error', 'never', { dropEndLines: true }],
 
     /**
      * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/valid-types.md

@@ -20,7 +20,7 @@
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-jest": "^26.0.0",
     "eslint-plugin-jest-formatting": "^3.0.0",
-    "eslint-plugin-jsdoc": "^37.0.0",
+    "eslint-plugin-jsdoc": "^38.0.0",
     "eslint-plugin-jsx-a11y": "^6.0.0",
     "eslint-plugin-markdown": "^2.0.0",
     "eslint-plugin-node": "^11.0.0",
