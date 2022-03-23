@@ -1,7 +1,6 @@
 const plugin = require('@typescript-eslint/eslint-plugin');
-
-const config = require('../eslint-config/typechecking');
-const processEntries = require('../eslint-config/utils/processEntries');
+const config = require('eslint-config-remcohaszing/typechecking');
+const processEntries = require('eslint-config-remcohaszing/utils/processEntries');
 
 it('should define all rules from @typescript-eslint/eslint-plugin with type checking', () => {
   expect(

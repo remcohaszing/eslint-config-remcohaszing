@@ -1,7 +1,6 @@
 const plugin = require('@babel/eslint-plugin');
-
-const config = require('../eslint-config/babel');
-const processEntries = require('../eslint-config/utils/processEntries');
+const config = require('eslint-config-remcohaszing/babel');
+const processEntries = require('eslint-config-remcohaszing/utils/processEntries');
 
 it('should define all rules from eslint-plugin-react', () => {
   expect(

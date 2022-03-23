@@ -1,8 +1,7 @@
+const config = require('eslint-config-remcohaszing/jest-overrides');
+const processEntries = require('eslint-config-remcohaszing/utils/processEntries');
 const pluginJest = require('eslint-plugin-jest');
 const pluginJestFormatting = require('eslint-plugin-jest-formatting');
-
-const config = require('../eslint-config/jest-overrides');
-const processEntries = require('../eslint-config/utils/processEntries');
 
 it('should define all rules from eslint-plugin-jest', () => {
   expect(

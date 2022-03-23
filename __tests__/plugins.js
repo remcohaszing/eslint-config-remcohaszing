@@ -1,11 +1,11 @@
-const config = require('../eslint-config');
-const processEntries = require('../eslint-config/utils/processEntries');
+const config = require('eslint-config-remcohaszing');
+const processEntries = require('eslint-config-remcohaszing/utils/processEntries');
 
 describe.each(config.plugins)('%s', (name) => {
   // eslint-disable-next-line node/global-require, import/no-dynamic-require
   const plugin = require(`eslint-plugin-${name}`);
   // eslint-disable-next-line node/global-require, import/no-dynamic-require
-  const pluginConfig = require(`../eslint-config/plugins/${name}`);
+  const pluginConfig = require(`eslint-config-remcohaszing/plugins/${name}`);
 
   it('should define all rules alphabetically', () => {
     expect(Object.keys(pluginConfig.rules).sort()).toStrictEqual(

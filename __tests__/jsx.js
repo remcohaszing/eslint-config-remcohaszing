@@ -1,7 +1,6 @@
+const config = require('eslint-config-remcohaszing/jsx');
+const processEntries = require('eslint-config-remcohaszing/utils/processEntries');
 const pluginJsxA11y = require('eslint-plugin-jsx-a11y');
-
-const config = require('../eslint-config/jsx');
-const processEntries = require('../eslint-config/utils/processEntries');
 
 it('should define all rules from eslint-plugin-jsx-a11y', () => {
   expect(

@@ -1,38 +1,91 @@
 {
-  "private": true,
+  "name": "eslint-config-remcohaszing",
+  "version": "3.10.1",
+  "description": "A strict ESLint configuration.",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "homepage": "https://github.com/remcohaszing/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/remcohaszing/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remcohaszing/eslint-config.git"
+  },
+  "license": "MIT",
+  "author": "Remco Haszing <remcohaszing@gmail.com>",
+  "files": [
+    "*.js",
+    "core",
+    "plugins",
+    "utils"
+  ],
   "workspaces": [
-    "eslint-config",
     "examples/*"
   ],
   "scripts": {
     "test": "jest"
   },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.0",
+    "find-up": "^5.0.0"
+  },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
     "@babel/eslint-parser": "^7.0.0",
     "@babel/eslint-plugin": "^7.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.0.0",
+    "eslint-config-remcohaszing": ".",
     "eslint-plugin-compat": "^4.0.0",
-    "eslint-plugin-eslint-comments": "^3.0.0",
-    "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-jest": "^26.0.0",
     "eslint-plugin-jest-formatting": "^3.0.0",
-    "eslint-plugin-jsdoc": "^38.0.0",
     "eslint-plugin-jsx-a11y": "^6.0.0",
-    "eslint-plugin-markdown": "^2.0.0",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.0.0",
     "eslint-plugin-react-hooks": "^4.0.0",
-    "eslint-plugin-sort-destructure-keys": "^1.0.0",
-    "eslint-plugin-unicorn": "^41.0.0",
     "jest": "28.0.0-alpha.7",
     "prettier": "^2.0.0",
     "prettier-plugin-packagejson": "^2.0.0",
     "typescript": "^4.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8",
+    "eslint-plugin-compat": "^4",
+    "eslint-plugin-eslint-comments": "^3",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-jest": "^26",
+    "eslint-plugin-jest-formatting": "^3",
+    "eslint-plugin-jsdoc": "^38",
+    "eslint-plugin-jsx-a11y": "^6",
+    "eslint-plugin-markdown": "^2",
+    "eslint-plugin-node": "^11",
+    "eslint-plugin-prettier": "^4",
+    "eslint-plugin-react": "^7",
+    "eslint-plugin-react-hooks": "^4",
+    "eslint-plugin-sort-destructure-keys": "^1",
+    "eslint-plugin-unicorn": "^41",
+    "prettier": "^2"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-compat": {
+      "optional": true
+    },
+    "eslint-plugin-jest": {
+      "optional": true
+    },
+    "eslint-plugin-jest-formatting": {
+      "optional": true
+    },
+    "eslint-plugin-jsx-a11y": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    }
   },
   "engines": {
     "node": ">=12.0.0"
