@@ -17,7 +17,7 @@ module.exports = {
     ],
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-jsdoc.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-jsdoc.md
      *
      * JSDoc is often not relevant in test or configuration files.
      */

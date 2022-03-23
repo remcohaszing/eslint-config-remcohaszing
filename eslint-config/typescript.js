@@ -101,32 +101,32 @@ module.exports = {
     'import/no-named-as-default-member': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/no-types.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/no-types.md
      */
     'jsdoc/no-types': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/require-param-type.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/require-param-type.md
      */
     'jsdoc/require-param-type': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/require-property-type.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/require-property-type.md
      */
     'jsdoc/require-property-type': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/require-returns-type.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/require-returns-type.md
      */
     'jsdoc/require-returns-type': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/no-undefined-types.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/no-undefined-types.md
      */
     'jsdoc/no-undefined-types': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/valid-types.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/valid-types.md
      */
     'jsdoc/valid-types': 'off',
 

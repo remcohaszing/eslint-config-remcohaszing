@@ -70,19 +70,19 @@ module.exports = {
   },
   rules: {
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-access.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-access.md
      */
     'jsdoc/check-access': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-alignment.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-alignment.md
      *
      * Prettier.
      */
     'jsdoc/check-alignment': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-examples.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-examples.md
      *
      * @see https://github.com/gajus/eslint-plugin-jsdoc/releases/tag/v37.0.0
      */
@@ -92,62 +92,62 @@ module.exports = {
     ],
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-indentation.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-indentation.md
      */
     'jsdoc/check-indentation': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-line-alignment.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-line-alignment.md
      */
     'jsdoc/check-line-alignment': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-param-names.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-param-names.md
      */
     'jsdoc/check-param-names': ['error', { checkDestructured: false }],
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-property-names.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-property-names.md
      */
     'jsdoc/check-property-names': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-syntax.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-syntax.md
      */
     'jsdoc/check-syntax': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-tag-names.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-tag-names.md
      */
     'jsdoc/check-tag-names': ['error', { jsxTags: true }],
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-types.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-types.md
      */
     'jsdoc/check-types': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-values.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-values.md
      */
     'jsdoc/check-values': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/empty-tags.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/empty-tags.md
      */
     'jsdoc/empty-tags': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/implements-on-classes.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/implements-on-classes.md
      */
     'jsdoc/implements-on-classes': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/match-description.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/match-description.md
      */
     'jsdoc/match-description': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/match-name.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/match-name.md
      */
     'jsdoc/match-name': [
       'error',
@@ -163,7 +163,7 @@ module.exports = {
     ],
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/multiline-blocks.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/multiline-blocks.md
      */
     'jsdoc/multiline-blocks': [
       'error',
@@ -175,77 +175,77 @@ module.exports = {
     ],
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/newline-after-description.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/newline-after-description.md
      */
     'jsdoc/newline-after-description': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-bad-blocks.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-bad-blocks.md
      */
     'jsdoc/no-bad-blocks': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-defaults.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-defaults.md
      */
     'jsdoc/no-defaults': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-missing-syntax.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-missing-syntax.md
      */
     'jsdoc/no-missing-syntax': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-multi-asterisks.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-multi-asterisks.md
      */
     'jsdoc/no-multi-asterisks': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-restricted-syntax.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-restricted-syntax.md
      */
     'jsdoc/no-restricted-syntax': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-types.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-types.md
      */
     'jsdoc/no-types': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-undefined-types.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-undefined-types.md
      */
     'jsdoc/no-undefined-types': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-asterisk-prefix.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-asterisk-prefix.md
      */
     'jsdoc/require-asterisk-prefix': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-description.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-description.md
      */
     'jsdoc/require-description': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-description-complete-sentence.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-description-complete-sentence.md
      */
     'jsdoc/require-description-complete-sentence': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-example.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-example.md
      */
     'jsdoc/require-example': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-file-overview.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-file-overview.md
      */
     'jsdoc/require-file-overview': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-hyphen-before-param-description.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-hyphen-before-param-description.md
      */
     'jsdoc/require-hyphen-before-param-description': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-jsdoc.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-jsdoc.md
      */
     'jsdoc/require-jsdoc': [
       'error',
@@ -260,7 +260,7 @@ module.exports = {
     ],
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-param.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-param.md
      */
     'jsdoc/require-param': [
       'error',
@@ -273,87 +273,87 @@ module.exports = {
     ],
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-param-description.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-param-description.md
      */
     'jsdoc/require-param-description': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-param-name.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-param-name.md
      */
     'jsdoc/require-param-name': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-param-type.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-param-type.md
      */
     'jsdoc/require-param-type': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-property.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-property.md
      */
     'jsdoc/require-property': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-property-description.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-property-description.md
      */
     'jsdoc/require-property-description': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-property-name.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-property-name.md
      */
     'jsdoc/require-property-name': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-property-type.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-property-type.md
      */
     'jsdoc/require-property-type': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-returns.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-returns.md
      */
     'jsdoc/require-returns': ['error', { contexts: [METHOD_DEFINITION, NON_COMPONENT_FUNCTION] }],
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-returns-check.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-returns-check.md
      */
     'jsdoc/require-returns-check': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-returns-description.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-returns-description.md
      */
     'jsdoc/require-returns-description': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-returns-type.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-returns-type.md
      */
     'jsdoc/require-returns-type': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-throws.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-throws.md
      */
     'jsdoc/require-throws': 'off',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-yields.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-yields.md
      */
     'jsdoc/require-yields': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-yields-check.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-yields-check.md
      */
     'jsdoc/require-yields-check': 'error',
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/sort-tags.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/sort-tags.md
      */
     'jsdoc/sort-tags': ['error', { alphabetizeExtras: true }],
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/tag-lines.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/tag-lines.md
      */
     'jsdoc/tag-lines': ['error', 'never', { dropEndLines: true }],
 
     /**
-     * Https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/valid-types.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/valid-types.md
      */
     'jsdoc/valid-types': 'error',
   },
