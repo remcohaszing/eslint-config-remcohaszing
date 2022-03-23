@@ -13,19 +13,12 @@ plugins have been carefully considered. Overrides are used to apply rules based 
 
 ## Installation
 
-Install this configuration and its peer dependencies using `npm` or `yarn` as dev dependencies.
+Install `eslint-config-remcohaszing` using `npm`.
 
 ```sh
 npm install --save-dev \
   eslint \
   eslint-config-remcohaszing \
-  eslint-plugin-eslint-comments \
-  eslint-plugin-import \
-  eslint-plugin-jsdoc \
-  eslint-plugin-node \
-  eslint-plugin-prettier \
-  eslint-plugin-sort-destructure-keys \
-  eslint-plugin-unicorn \
   prettier
 ```
 
@@ -47,7 +40,7 @@ max_line_length = 100
 trim_trailing_whitespace = true
 ```
 
-And create a `.prettierrc.yaml` with the following content.:
+And create a `.prettierrc.yaml` with the following content:
 
 ```yaml
 proseWrap: always
@@ -85,13 +78,12 @@ settings:
 
 ### Web
 
-The default configuration works for NodeJS projects. For web based projects it’s recommended to use
+The default configuration works for Node.js projects. For web based projects it’s recommended to use
 the `remcohaszing/web` preset for the source files. This preset requires `eslint-plugin-compat` to
 have been installed:
 
 ```sh
-npm install --save-dev \
-  eslint-plugin-compat
+npm install --save-dev eslint-plugin-compat
 ```
 
 Example if the source files are in the `src` directory:
@@ -113,7 +105,7 @@ overrides:
 
 It’s recommended to also create a `browserslist` file. For example:
 
-```
+```browserslist
 last 2 chrome versions
 last 2 edge versions
 last 2 firefox versions
@@ -126,9 +118,7 @@ This configuration enabled ESLint for TypeScript automatically. This requires so
 dependencies to have been installed:
 
 ```sh
-npm install --save-dev \
-  @typescript-eslint/eslint-config \
-  @typescript-eslint/parser
+npm install --save-dev @typescript-eslint/eslint-config
 ```
 
 Some rules from `@typescript-eslint/eslint-config` require TypeScript type checking features to be
@@ -151,9 +141,7 @@ Babel supports some newer syntax ESLint doesn’t support yet. To support this, 
 additional dependencies:
 
 ```sh
-npm install --save-dev \
-  @babel/eslint-parser \
-  @babel/eslint-plugin
+npm install --save-dev @babel/eslint-plugin
 ```
 
 Use an override so ESLint knows on which files to apply these special configurations. For example if
@@ -190,8 +178,7 @@ For React and Preact some special configurations are recommended.
 An additional dependency is required:
 
 ```sh
-npm install --save-dev \
-  eslint-plugin-react-hooks
+npm install --save-dev eslint-plugin-react-hooks
 ```
 
 The configurations can be applied by extending `remcohaszing/react` or `remcohaszing/preact`
@@ -258,7 +245,7 @@ The type checking rules from `@typescript-eslint/eslint-plugin` don’t work wit
 Other rules have been turned off, because these rules may conflict with the purpose of the
 documentation.
 
-To no lint Markdown files, ignore them.
+To not lint Markdown files, ignore them.
 
 ```yaml
 ignorePatterns:
