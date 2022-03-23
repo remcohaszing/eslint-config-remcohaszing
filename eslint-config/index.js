@@ -12,7 +12,7 @@ module.exports = {
   },
   ignorePatterns: getIgnorePatterns(),
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 'latest',
     ecmaFeatures: {
       impliedStrict: true,
     },
