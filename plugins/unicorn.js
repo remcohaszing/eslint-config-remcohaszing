@@ -258,6 +258,11 @@ module.exports = {
     'unicorn/no-thenable': 'off',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-iife.md
+     */
+    'unicorn/no-unreadable-iife': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-array-destructuring.md
      */
     'unicorn/no-unreadable-array-destructuring': 'off',
@@ -291,6 +296,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-spread.md
      */
     'unicorn/no-useless-spread': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-switch-case.md
+     */
+    'unicorn/no-useless-switch-case': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-undefined.md
@@ -445,9 +455,19 @@ module.exports = {
     'unicorn/prefer-modern-dom-apis': 'error',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-math-apis.md
+     */
+    'unicorn/prefer-modern-math-apis': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-module.md
      */
     'unicorn/prefer-module': 'off',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-native-coercion-functions.md
+     */
+    'unicorn/prefer-native-coercion-functions': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-negative-index.md
