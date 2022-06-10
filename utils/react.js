@@ -354,6 +354,15 @@ module.exports = {
   },
 
   /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-leaked-render.md
+   */
+  'react/jsx-no-leaked-render': {
+    jsx: 'error',
+    preact: 'error',
+    react: 'error',
+  },
+
+  /**
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-script-url.md
    */
   'react/jsx-no-script-url': {

@@ -284,6 +284,11 @@ module.exports = {
     '@typescript-eslint/comma-spacing': 'off',
 
     /**
+     * https://typescript-eslint.io/rules/consistent-generic-constructors
+     */
+    '@typescript-eslint/consistent-generic-constructors': 'error',
+
+    /**
      * https://typescript-eslint.io/rules/consistent-indexed-object-style
      */
     '@typescript-eslint/consistent-indexed-object-style': 'error',
@@ -440,10 +445,16 @@ module.exports = {
     'no-dupe-class-members': 'off',
 
     /**
-     * https://typescript-eslint.io/rules/no-duplicate-imports
+     * https://typescript-eslint.io/rules/no-duplicate-enum-values
      */
-    '@typescript-eslint/no-duplicate-imports': ['error', { includeExports: true }],
-    'no-duplicate-imports': 'off',
+    '@typescript-eslint/no-duplicate-enum-values': 'error',
+
+    /**
+     * https://typescript-eslint.io/rules/no-duplicate-imports
+     *
+     * @deprecated
+     */
+    '@typescript-eslint/no-duplicate-imports': 'off',
 
     /**
      * https://typescript-eslint.io/rules/no-dynamic-delete
@@ -556,6 +567,8 @@ module.exports = {
 
     /**
      * https://typescript-eslint.io/rules/no-parameter-properties
+     *
+     * @deprecated
      */
     '@typescript-eslint/no-parameter-properties': 'off',
 
