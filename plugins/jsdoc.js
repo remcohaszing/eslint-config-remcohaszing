@@ -10,6 +10,7 @@ const METHOD_DEFINITION = 'MethodDefinition';
 module.exports = {
   settings: {
     jsdoc: {
+      mode: 'typescript',
       tagNamePreference: {
         abstract: false,
         access: false,
