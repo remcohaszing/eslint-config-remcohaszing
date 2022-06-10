@@ -62,8 +62,10 @@ module.exports = {
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/import-index.md
+     *
+     * @deprecated
      */
-    'unicorn/import-index': 'error',
+    'unicorn/import-index': 'off',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/import-style.md
