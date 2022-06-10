@@ -229,7 +229,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/no-div-regex
    */
-  'no-div-regex': 'error',
+  'no-div-regex': 'off',
 
   /**
    * https://eslint.org/docs/rules/no-else-return
