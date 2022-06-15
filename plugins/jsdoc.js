@@ -169,7 +169,7 @@ module.exports = {
       {
         noSingleLineBlocks: true,
         noZeroLineText: true,
-        singleLineTags: ['jsx', 'jsxFrag', 'jsxImportSource', 'jsxRuntime'],
+        singleLineTags: ['jsx', 'jsxFrag', 'jsxImportSource', 'jsxRuntime', 'type'],
       },
     ],
 

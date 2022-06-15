@@ -313,7 +313,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/no-inline-comments
    */
-  'no-inline-comments': 'error',
+  'no-inline-comments': ['error', { ignorePattern: /\s@type\s/.source }],
 
   /**
    * https://eslint.org/docs/rules/no-invalid-this
