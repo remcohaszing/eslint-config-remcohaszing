@@ -70,20 +70,6 @@ module.exports = {
     'node/prefer-global/text-encoder': 'error',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/url.md
-     *
-     * Re-enabled for TypeScript.
-     */
-    'node/prefer-global/url': 'error',
-
-    /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/url-search-params.md
-     *
-     * Re-enabled for TypeScript.
-     */
-    'node/prefer-global/url-search-params': 'error',
-
-    /**
      * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-promises/dns.md
      */
     'node/prefer-promises/dns': 'off',

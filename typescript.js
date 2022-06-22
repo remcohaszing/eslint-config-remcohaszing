@@ -152,20 +152,6 @@ module.exports = {
     'node/prefer-global/text-encoder': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/main/docs/rules/prefer-global/url
-     *
-     * https://github.com/DefinitelyTyped/DefinitelyTyped/issues/34960
-     */
-    'node/prefer-global/url': 'off',
-
-    /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/main/docs/rules/prefer-global/url-search-params
-     *
-     * https://github.com/DefinitelyTyped/DefinitelyTyped/issues/34960
-     */
-    'node/prefer-global/url-search-params': 'off',
-
-    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-json-parse-buffer
      *
      * The types don’t allow this.
