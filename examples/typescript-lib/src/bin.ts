@@ -5,9 +5,9 @@ import { substractPromise } from './substract';
 /**
  * THe main CLI entry point.
  *
- * @param fn - Tje mathematical function to apply.
- * @param x - The first value parameter.
- * @param y - The second value parameter.
+ * @param fn Tje mathematical function to apply.
+ * @param x The first value parameter.
+ * @param y The second value parameter.
  */
 async function main(fn?: string, x?: string, y?: string): Promise<void> {
   let result: number;

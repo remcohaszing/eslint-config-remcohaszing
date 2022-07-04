@@ -3,7 +3,7 @@ const rules = require('./react');
 /**
  * Get rules from `eslint-plugin-react` for a given context.
  *
- * @param {string} context - One of `'jsx'`, `'preact'`, or `'react'`.
+ * @param {string} context One of `'jsx'`, `'preact'`, or `'react'`.
  */
 module.exports = (context) => {
   const contextRules = {};

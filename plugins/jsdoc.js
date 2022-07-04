@@ -241,7 +241,7 @@ module.exports = {
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-hyphen-before-param-description.md
      */
-    'jsdoc/require-hyphen-before-param-description': 'error',
+    'jsdoc/require-hyphen-before-param-description': ['error', 'never'],
 
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/require-jsdoc.md

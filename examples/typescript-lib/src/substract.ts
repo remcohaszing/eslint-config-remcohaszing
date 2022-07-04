@@ -4,8 +4,8 @@ import { Callback } from './types';
 /**
  * Substract y from x synchronously.
  *
- * @param x - The initial variable.
- * @param y - The value to substract from x.
+ * @param x The initial variable.
+ * @param y The value to substract from x.
  * @returns The difference between x and y.
  */
 export function substractSync(x: number, y: number): number {
@@ -15,9 +15,9 @@ export function substractSync(x: number, y: number): number {
 /**
  * Substract y from x asynchronously.
  *
- * @param x - The initial variable.
- * @param y - The value to substract from x.
- * @param cb - The callback that will be called with the difference between x and y.
+ * @param x The initial variable.
+ * @param y The value to substract from x.
+ * @param cb The callback that will be called with the difference between x and y.
  */
 export function substractAsync(x: number, y: number, cb: Callback<number>): void {
   addAsync(x, -y, (error, result) => {
@@ -32,8 +32,8 @@ export function substractAsync(x: number, y: number, cb: Callback<number>): void
 /**
  * Substract y from x asynchronously.
  *
- * @param x - The initial variable.
- * @param y - The value to substract from x.
+ * @param x The initial variable.
+ * @param y The value to substract from x.
  * @returns The difference between x and y wrapped in a promise.
  */
 export async function substractPromise(x: number, y: number): Promise<number> {

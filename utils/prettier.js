@@ -5,7 +5,7 @@ const prettier = require('prettier');
 /**
  * Get the Prettier configuration for a file extension.
  *
- * @param {string} extension - The file extension for which to get a configuration.
+ * @param {string} extension The file extension for which to get a configuration.
  * @returns {object} The Prettier configuration for the given file extension.
  */
 function getConfig(extension) {

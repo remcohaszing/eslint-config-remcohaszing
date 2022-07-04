@@ -33,8 +33,8 @@ export class ErrorHandler extends Component<ErrorHandlerProps, State> {
   /**
    * Handle an error thrown caused by a component on the React tree.
    *
-   * @param error - The error that was thrown
-   * @param errorInfo - The React error information
+   * @param error The error that was thrown
+   * @param errorInfo The React error information
    */
   componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
     this.setState({ error, errorInfo });
