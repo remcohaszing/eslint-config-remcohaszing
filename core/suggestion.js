@@ -652,7 +652,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/rules/prefer-const
    */
-  'prefer-const': ['error', { destructuring: 'all' }],
+  'prefer-const': ['error', { destructuring: 'all', ignoreReadBeforeAssign: true }],
 
   /**
    * https://eslint.org/docs/rules/prefer-destructuring
