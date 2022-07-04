@@ -4,7 +4,7 @@
 module.exports = {
   rules: {
     /**
-     * https://eslint.org/docs/rules/spaced-comment
+     * https://eslint.org/docs/latest/rules/spaced-comment
      *
      * Allow triple slash directives for types references.
      */
@@ -19,7 +19,7 @@ module.exports = {
     ],
 
     /**
-     * https://eslint.org/docs/rules/max-classes-per-file
+     * https://eslint.org/docs/latest/rules/max-classes-per-file
      */
     'max-classes-per-file': 'off',
 

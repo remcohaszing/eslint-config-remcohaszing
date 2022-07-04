@@ -9,48 +9,48 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     /**
-     * https://eslint.org/docs/rules/array-callback-return
+     * https://eslint.org/docs/latest/rules/array-callback-return
      *
      * Use TypeScript to determine this.
      */
     'array-callback-return': 'off',
 
     /**
-     * https://eslint.org/docs/rules/camelcase
+     * https://eslint.org/docs/latest/rules/camelcase
      *
      * `@typescript-eslint/naming-convention` is used instead.
      */
     camelcase: 'off',
 
     /**
-     * https://eslint.org/docs/rules/getter-return
+     * https://eslint.org/docs/latest/rules/getter-return
      */
     'getter-return': 'off',
 
     /**
-     * https://eslint.org/docs/rules/new-cap
+     * https://eslint.org/docs/latest/rules/new-cap
      *
      * Decorators should be allowed.
      */
     'new-cap': 'off',
 
     /**
-     * https://eslint.org/docs/rules/no-obj-calls
+     * https://eslint.org/docs/latest/rules/no-obj-calls
      */
     'no-obj-calls': 'off',
 
     /**
-     * https://eslint.org/docs/rules/no-setter-return
+     * https://eslint.org/docs/latest/rules/no-setter-return
      */
     'no-setter-return': 'off',
 
     /**
-     * https://eslint.org/docs/rules/no-undef
+     * https://eslint.org/docs/latest/rules/no-undef
      */
     'no-undef': 'off',
 
     /**
-     * https://eslint.org/docs/rules/lines-around-comment
+     * https://eslint.org/docs/latest/rules/lines-around-comment
      *
      * Causes conflicts with prettier for interfaces
      */
