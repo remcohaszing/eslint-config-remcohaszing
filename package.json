@@ -33,8 +33,6 @@
     "find-up": "^5.0.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.0.0",
-    "@babel/eslint-plugin": "^7.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "eslint-config-prettier": "^8.0.0",
     "eslint-config-remcohaszing": ".",

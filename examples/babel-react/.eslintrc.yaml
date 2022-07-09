@@ -1,0 +1,6 @@
+overrides:
+  - files:
+      - src/**
+    extends:
+      - remcohaszing/react
+      - remcohaszing/web

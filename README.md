@@ -135,29 +135,6 @@ extends:
 This sets the project configuration to `tsconfig.json`. To change it, see
 [`@typescript-eslint/parser`](https://www.npmjs.com/package/@typescript-eslint/parser#parseroptionsproject)
 
-### Babel
-
-Babel supports some newer syntax ESLint doesn’t support yet. To support this, install the following
-additional dependencies:
-
-```sh
-npm install --save-dev @babel/eslint-plugin
-```
-
-Use an override so ESLint knows on which files to apply these special configurations. For example if
-the Babel source files are in `src`:
-
-```yaml
-root: true
-extends:
-  - remcohaszing
-overrides:
-  - files:
-      - 'src/**'
-    extends:
-      - remcohaszing/babel
-```
-
 ### JSX
 
 JSX syntax is supported by default in `.jsx` and `.tsx` files. This requires some additional
