@@ -408,6 +408,11 @@ module.exports = {
     'unicorn/prefer-event-key': 'off',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-event-target.md
+     */
+    'unicorn/prefer-event-target': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-exponentiation-operator.md
      *
      * @deprecated
@@ -435,6 +440,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md
      */
     'unicorn/prefer-keyboard-event-key': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-logical-operator-over-ternary.md
+     */
+    'unicorn/prefer-logical-operator-over-ternary': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-trunc.md
