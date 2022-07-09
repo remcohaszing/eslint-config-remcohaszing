@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-        with: { node-version: 14 }
+        with: { node-version: 18 }
       - run: npm ci
       - run: npx eslint .
 
@@ -20,11 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12, 14]
+        node-version: [14, 16, 18]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with: { node-version: '${{ matrix.node-version }}' }
+      - run: npm install npm@latest
       - run: npm ci
       - run: npx jest
 
@@ -33,7 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-        with: { node-version: 14 }
+        with: { node-version: 18 }
       - run: npm ci
       - run: npx --workspace eslint-config-remcohaszing pack
       - run: mv eslint-config/*.tgz ./
@@ -47,7 +48,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-        with: { node-version: 14 }
+        with: { node-version: 18 }
       - run: npm ci
       - run: npx prettier --check .
 
@@ -57,7 +58,7 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     steps:
       - uses: actions/setup-node@v2
-        with: { node-version: 14 }
+        with: { node-version: 18 }
       - uses: actions/download-artifact@v2
         with: { name: package }
       - run: npm publish *.tgz
