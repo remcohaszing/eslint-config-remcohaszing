@@ -138,20 +138,6 @@ module.exports = {
     'node/no-unsupported-features/es-syntax': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/main/docs/rules/prefer-global/text-decoder
-     *
-     * These globals don’t exist in @types/node
-     */
-    'node/prefer-global/text-decoder': 'off',
-
-    /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/main/docs/rules/prefer-global/text-encoder
-     *
-     * These globals don’t exist in @types/node
-     */
-    'node/prefer-global/text-encoder': 'off',
-
-    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-json-parse-buffer
      *
      * The types don’t allow this.
