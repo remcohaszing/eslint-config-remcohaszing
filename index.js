@@ -27,15 +27,7 @@ module.exports = {
      */
     {
       files: ['*.ts', '*.tsx'],
-      extends: ['remcohaszing/typescript', 'remcohaszing/esm'],
-    },
-
-    /**
-     * Enable ESM specific rule for `.mjs` files.
-     */
-    {
-      files: ['*.mjs'],
-      extends: ['remcohaszing/esm'],
+      extends: ['remcohaszing/typescript'],
     },
 
     /**
@@ -133,7 +125,7 @@ module.exports = {
      */
     {
       files: [`${markdown}/*.typescript`],
-      extends: ['remcohaszing/typescript', 'remcohaszing/esm'],
+      extends: ['remcohaszing/typescript'],
     },
   ],
 };

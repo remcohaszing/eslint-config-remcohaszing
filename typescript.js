@@ -635,10 +635,8 @@ module.exports = {
 
     /**
      * https://typescript-eslint.io/rules/no-var-requires
-     *
-     * Handled by import/no-commonjs
      */
-    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-var-requires': 'error',
 
     /**
      * https://typescript-eslint.io/rules/object-curly-spacing

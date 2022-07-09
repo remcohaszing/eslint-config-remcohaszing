@@ -2,7 +2,6 @@
  * Configuration specifically for web development.
  */
 module.exports = {
-  extends: ['remcohaszing/esm'],
   plugins: ['compat'],
   rules: {
     /**

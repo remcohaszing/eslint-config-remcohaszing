@@ -2,7 +2,6 @@
  * https://github.com/babel/babel/tree/main/eslint/babel-eslint-plugin#rules
  */
 module.exports = {
-  extends: ['remcohaszing/esm'],
   parser: '@babel/eslint-parser',
   plugins: ['@babel'],
   rules: {
