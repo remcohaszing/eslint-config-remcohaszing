@@ -1,4 +1,4 @@
-const prettier = require('../utils/prettier');
+const prettier = require('../utils/prettier.js');
 
 /**
  * These rules relate to style guidelines, and are therefore quite subjective.

@@ -1,4 +1,4 @@
-const getIgnorePatterns = require('./utils/getIgnorePatterns');
+const getIgnorePatterns = require('./utils/getIgnorePatterns.js');
 
 /**
  * https://github.com/github/markup/blob/master/lib/github/markup/markdown.rb#L34
@@ -146,7 +146,7 @@ for (const name of [
   'unicorn',
 ]) {
   // eslint-disable-next-line n/global-require, import/no-dynamic-require
-  const preset = require(`./plugins/${name}`);
+  const preset = require(`./plugins/${name}.js`);
   module.exports.plugins.push(name);
   Object.assign(module.exports.rules, preset.rules);
   Object.assign(module.exports.settings, preset.settings);

@@ -1,18 +1,15 @@
-const { dtOnlyPackages, typesOnlyPackages } = require('../utils/constants');
-const extensions = require('../utils/extensions');
-
 /**
  * https://github.com/benmosher/eslint-plugin-import
  */
 module.exports = {
   settings: {
-    'import/extensions': extensions.map((ext) => `.${ext}`),
+    'import/extensions': [],
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     'import/resolver': {
       node: {
-        extensions: extensions.map((ext) => `.${ext}`),
+        extensions: [],
       },
     },
   },
@@ -40,11 +37,7 @@ module.exports = {
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/extensions.md
      */
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      Object.fromEntries(extensions.map((ext) => [ext, 'never'])),
-    ],
+    'import/extensions': ['error', 'ignorePackages'],
 
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/first.md
@@ -234,7 +227,7 @@ module.exports = {
       {
         caseSensitiveStrict: true,
         commonjs: true,
-        ignore: [...dtOnlyPackages, ...typesOnlyPackages, /[!*]/.source],
+        ignore: [/^[@a-z]/.source, /[!*]/.source, /.\.(cjs|js|mjs)$/.source],
       },
     ],
 

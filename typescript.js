@@ -1,5 +1,5 @@
-const allowedProperties = require('./utils/allowedProperties');
-const prettier = require('./utils/prettier');
+const allowedProperties = require('./utils/allowedProperties.js');
+const prettier = require('./utils/prettier.js');
 
 /**
  * Configuration for TypeScript specifically that don’t require type checking.

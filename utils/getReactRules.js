@@ -1,4 +1,4 @@
-const rules = require('./react');
+const rules = require('./react.js');
 
 /**
  * Get rules from `eslint-plugin-react` for a given context.

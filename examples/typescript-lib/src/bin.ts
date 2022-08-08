@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { addPromise } from './add';
-import { substractPromise } from './substract';
+import { addPromise } from './add.js';
+import { substractPromise } from './substract.js';
 
 /**
  * THe main CLI entry point.

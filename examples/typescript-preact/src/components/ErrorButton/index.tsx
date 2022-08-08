@@ -1,7 +1,7 @@
 import { VNode } from 'preact';
 import { useCallback, useState } from 'preact/hooks';
 
-import { Button } from '../Button';
+import { Button } from '../Button/index.js';
 
 /**
  * Render a button which, when clicked, cause a render error.

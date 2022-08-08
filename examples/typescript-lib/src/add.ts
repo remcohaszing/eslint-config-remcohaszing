@@ -1,4 +1,4 @@
-import { Callback } from './types';
+import { Callback } from './types.js';
 
 /**
  * Add x and y synchronously.

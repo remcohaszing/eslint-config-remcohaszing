@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 const { builtinRules } = require('eslint/use-at-your-own-risk');
 
 const byCategory = {};

@@ -1,8 +1,8 @@
 import { VNode } from 'preact';
 import { useCallback, useState } from 'preact/hooks';
 
-import { Item } from '../../types';
-import { ItemForm } from '../ItemForm';
+import { Item } from '../../types.js';
+import { ItemForm } from '../ItemForm/index.js';
 
 /**
  * Display a list of items.

@@ -1,5 +1,5 @@
-const { typesOnlyPackages } = require('../utils/constants');
-const extensions = require('../utils/extensions');
+const { typesOnlyPackages } = require('../utils/constants.js');
+const extensions = require('../utils/extensions.js');
 
 /**
  * https://github.com/weiran-zsd/eslint-plugin-node

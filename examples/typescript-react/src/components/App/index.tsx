@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 
-import { ErrorHandler } from '../ErrorHandler';
-import { ItemList } from '../ItemList';
+import { ErrorHandler } from '../ErrorHandler/index.js';
+import { ItemList } from '../ItemList/index.js';
 
 /**
  * The main entry point to the React app.

@@ -1,9 +1,9 @@
 import { ChangeEvent, FormEvent, ReactElement, useCallback, useState } from 'react';
 
-import { Item } from '../../types';
-import { Button } from '../Button';
-import { ErrorButton } from '../ErrorButton';
-import { Input } from '../Input';
+import { Item } from '../../types.js';
+import { Button } from '../Button/index.js';
+import { ErrorButton } from '../ErrorButton/index.js';
+import { Input } from '../Input/index.js';
 
 interface ItemFormProps {
   /**

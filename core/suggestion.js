@@ -1,6 +1,6 @@
 const confusingBrowserGlobals = require('confusing-browser-globals');
 
-const allowedProperties = require('../utils/allowedProperties');
+const allowedProperties = require('../utils/allowedProperties.js');
 
 /**
  * These rules relate to better ways of doing things to help you avoid problems.

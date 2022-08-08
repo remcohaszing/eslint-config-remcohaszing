@@ -1,5 +1,5 @@
-const getReactRules = require('./utils/getReactRules');
-const jsxA11y = require('./utils/jsx-a11y');
+const getReactRules = require('./utils/getReactRules.js');
+const jsxA11y = require('./utils/jsx-a11y.js');
 
 module.exports = {
   extends: ['remcohaszing/web'],

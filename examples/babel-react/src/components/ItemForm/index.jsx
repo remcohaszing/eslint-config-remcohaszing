@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
-import { Button } from '../Button';
-import { ErrorButton } from '../ErrorButton';
-import { Input } from '../Input';
+import { Button } from '../Button/index.js';
+import { ErrorButton } from '../ErrorButton/index.js';
+import { Input } from '../Input/index.js';
 
 const propTypes = {
   /**

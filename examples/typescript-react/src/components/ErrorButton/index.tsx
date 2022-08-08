@@ -1,6 +1,6 @@
 import { ReactElement, ReactNode, useCallback, useState } from 'react';
 
-import { Button } from '../Button';
+import { Button } from '../Button/index.js';
 
 /**
  * Render a button which, when clicked, cause a render error.

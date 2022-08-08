@@ -1,7 +1,7 @@
 import { ReactElement, useCallback, useState } from 'react';
 
-import { Item } from '../../types';
-import { ItemForm } from '../ItemForm';
+import { Item } from '../../types.js';
+import { ItemForm } from '../ItemForm/index.js';
 
 /**
  * Display a list of items.

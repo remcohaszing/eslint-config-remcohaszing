@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 
-import { ItemForm } from '../ItemForm';
+import { ItemForm } from '../ItemForm/index.js';
 
 /**
  * Display a list of items.

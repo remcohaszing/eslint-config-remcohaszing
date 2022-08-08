@@ -1,4 +1,4 @@
-const obsoleteHTMLElements = require('./obsoleteHTMLElements');
+const obsoleteHTMLElements = require('./obsoleteHTMLElements.js');
 
 module.exports = {
   /**
