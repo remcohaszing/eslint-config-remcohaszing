@@ -57,7 +57,15 @@ module.exports = {
      * - etc.
      */
     {
-      files: ['jest.*', '*.config.*', '*rc.*', '**/config/**', '**/test/**', '**/__mocks__/**'],
+      files: [
+        'jest.*',
+        'test.*',
+        '*.config.*',
+        '*rc.*',
+        '**/config/**',
+        '**/test/**',
+        '**/__mocks__/**',
+      ],
       extends: ['remcohaszing/dev'],
     },
 
