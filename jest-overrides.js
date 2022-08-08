@@ -18,6 +18,11 @@ module.exports = {
     'jest/expect-expect': 'error',
 
     /**
+     * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/max-expects.md
+     */
+    'jest/max-expects': 'off',
+
+    /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/max-nested-describe.md
      */
     'jest/max-nested-describe': 'off',
@@ -183,6 +188,11 @@ module.exports = {
      * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-lowercase-title.md
      */
     'jest/prefer-lowercase-title': 'off',
+
+    /**
+     * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-mock-promise-shorthand.md
+     */
+    'jest/prefer-mock-promise-shorthand': 'off',
 
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-snapshot-hint.md
