@@ -24,14 +24,14 @@ module.exports = {
     'jsdoc/require-jsdoc': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
      */
-    'node/no-unpublished-import': 'off',
+    'n/no-unpublished-import': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
      */
-    'node/no-unpublished-require': 'off',
+    'n/no-unpublished-require': 'off',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-function-scoping.md

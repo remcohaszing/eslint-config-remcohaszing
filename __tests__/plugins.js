@@ -2,9 +2,9 @@ const config = require('eslint-config-remcohaszing');
 const processEntries = require('eslint-config-remcohaszing/utils/processEntries');
 
 describe.each(config.plugins)('%s', (name) => {
-  // eslint-disable-next-line node/global-require, import/no-dynamic-require
+  // eslint-disable-next-line n/global-require, import/no-dynamic-require
   const plugin = require(`eslint-plugin-${name}`);
-  // eslint-disable-next-line node/global-require, import/no-dynamic-require
+  // eslint-disable-next-line n/global-require, import/no-dynamic-require
   const pluginConfig = require(`eslint-config-remcohaszing/plugins/${name}`);
 
   it('should define all rules alphabetically', () => {

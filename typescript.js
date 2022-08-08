@@ -131,11 +131,11 @@ module.exports = {
     'jsdoc/valid-types': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/main/docs/rules/no-unsupported-features/es-syntax
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/main/docs/rules/no-unsupported-features/es-syntax
      *
      * TypeScript will compile this.
      */
-    'node/no-unsupported-features/es-syntax': 'off',
+    'n/no-unsupported-features/es-syntax': 'off',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-json-parse-buffer

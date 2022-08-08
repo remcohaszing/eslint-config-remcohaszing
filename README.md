@@ -63,8 +63,9 @@ extends:
 ### Settings
 
 Most ESLint settings are tweaked to have a proper default. There is one setting that needs to be
-configured if your project uses a build process: `node.convertPath`. See
-[`node/no-unpublished-import`](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-import.md#shared-settings)
+configured if your project uses a build process and provides an executable command:
+`node.convertPath`. See
+[`n/no-unpublished-import`](https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unpublished-import.md#shared-settings)
 for details.
 
 ```yaml
@@ -72,7 +73,7 @@ settings:
   node:
     convertPath:
       'src/**':
-        - 'src/(.+?)\.[jt]sx?$'
+        - 'src/(.+?)\.tsx?$'
         - dist/$1.js
 ```
 

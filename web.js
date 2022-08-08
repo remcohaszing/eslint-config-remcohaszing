@@ -10,82 +10,82 @@ module.exports = {
     'compat/compat': 'error',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
      */
-    'node/no-deprecated-api': 'off',
+    'n/no-deprecated-api': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-path-concat.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-path-concat.md
      */
-    'node/no-path-concat': 'off',
+    'n/no-path-concat': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-bin.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unpublished-bin.md
      */
-    'node/no-unpublished-bin': 'off',
+    'n/no-unpublished-bin': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-import.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unpublished-import.md
      */
-    'node/no-unpublished-import': 'error',
+    'n/no-unpublished-import': 'error',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
      */
-    'node/no-unpublished-require': 'error',
+    'n/no-unpublished-require': 'error',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-builtins.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-builtins.md
      */
-    'node/no-unsupported-features/es-builtins': 'off',
+    'n/no-unsupported-features/es-builtins': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md
      */
-    'node/no-unsupported-features/es-syntax': 'off',
+    'n/no-unsupported-features/es-syntax': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/node-builtins.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/node-builtins.md
      */
-    'node/no-unsupported-features/node-builtins': 'off',
+    'n/no-unsupported-features/node-builtins': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/buffer.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/prefer-global/buffer.md
      */
-    'node/prefer-global/buffer': 'off',
+    'n/prefer-global/buffer': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/text-decoder.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/prefer-global/text-decoder.md
      *
      * Re-enabled for TypeScript.
      */
-    'node/prefer-global/text-decoder': 'error',
+    'n/prefer-global/text-decoder': 'error',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-global/text-encoder.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/prefer-global/text-encoder.md
      *
      * Re-enabled for TypeScript.
      */
-    'node/prefer-global/text-encoder': 'error',
+    'n/prefer-global/text-encoder': 'error',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-promises/dns.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/prefer-promises/dns.md
      */
-    'node/prefer-promises/dns': 'off',
+    'n/prefer-promises/dns': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/prefer-promises/fs.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/prefer-promises/fs.md
      */
-    'node/prefer-promises/fs': 'off',
+    'n/prefer-promises/fs': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/process-exit-as-throw.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/process-exit-as-throw.md
      */
-    'node/process-exit-as-throw': 'off',
+    'n/process-exit-as-throw': 'off',
 
     /**
-     * https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/shebang.md
+     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/shebang.md
      */
-    'node/shebang': 'off',
+    'n/shebang': 'off',
   },
 };
