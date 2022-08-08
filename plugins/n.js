@@ -1,5 +1,4 @@
 const { typesOnlyPackages } = require('../utils/constants.js');
-const extensions = require('../utils/extensions.js');
 
 /**
  * https://github.com/weiran-zsd/eslint-plugin-node
@@ -7,7 +6,7 @@ const extensions = require('../utils/extensions.js');
 module.exports = {
   settings: {
     node: {
-      tryExtensions: extensions.map((ext) => `.${ext}`),
+      tryExtensions: [],
     },
   },
   rules: {
