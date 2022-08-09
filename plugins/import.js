@@ -5,7 +5,7 @@ module.exports = {
   settings: {
     'import/extensions': [],
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
+      '@typescript-eslint/parser': ['.cts', '.mts', '.ts', '.tsx'],
     },
     'import/resolver': {
       node: {
