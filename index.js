@@ -139,7 +139,6 @@ module.exports = {
 };
 
 for (const name of ['deprecated', 'layout', 'problem', 'suggestion']) {
-  // eslint-disable-next-line n/global-require, import/no-dynamic-require
   const rules = require(`./core/${name}`);
   Object.assign(module.exports.rules, rules);
 }
@@ -153,7 +152,6 @@ for (const name of [
   'sort-destructure-keys',
   'unicorn',
 ]) {
-  // eslint-disable-next-line n/global-require, import/no-dynamic-require
   const preset = require(`./plugins/${name}.js`);
   module.exports.plugins.push(name);
   Object.assign(module.exports.rules, preset.rules);

@@ -134,7 +134,7 @@ module.exports = {
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/no-dynamic-require.md
      */
-    'import/no-dynamic-require': 'error',
+    'import/no-dynamic-require': 'off',
 
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md

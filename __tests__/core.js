@@ -12,7 +12,6 @@ for (const [name, { meta }] of builtinRules) {
 
 describe.each(Object.entries(byCategory))('%s', (category, categoryRules) => {
   it('should explicitly define all rules alphabetically', () => {
-    // eslint-disable-next-line n/global-require, import/no-dynamic-require
     const config = require(`eslint-config-remcohaszing/core/${category}`);
     expect(Object.keys(config).sort()).toStrictEqual(categoryRules);
   });

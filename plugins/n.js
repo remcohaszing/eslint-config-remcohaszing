@@ -30,7 +30,7 @@ module.exports = {
     /**
      * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/global-require.md
      */
-    'n/global-require': 'error',
+    'n/global-require': 'off',
 
     /**
      * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/handle-callback-err.md
