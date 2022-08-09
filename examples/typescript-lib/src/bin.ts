@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+import process from 'process';
+
 import { addPromise } from './add.js';
 import { substractPromise } from './substract.js';
 

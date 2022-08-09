@@ -82,6 +82,7 @@ module.exports = {
           fs: { named: true },
           os: { named: true },
           path: { named: true },
+          process: { default: true },
           url: { named: true },
           util: { named: true },
           zlib: { named: true },
