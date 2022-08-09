@@ -38,7 +38,6 @@ jobs:
         with: { node-version: 18 }
       - run: npm ci
       - run: npm pack
-      - run: mv eslint-config/*.tgz ./
       - uses: actions/upload-artifact@v3
         with:
           name: package
