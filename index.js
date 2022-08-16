@@ -8,6 +8,7 @@ const markdown = '**/*.{md,mkd,mkdn,mdwn,mdown,markdown}';
 module.exports = {
   env: {
     browser: true,
+    es2022: true,
     node: true,
   },
   ignorePatterns: getIgnorePatterns(),
