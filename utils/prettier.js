@@ -1,5 +1,4 @@
 const { join } = require('path');
-const process = require('process');
 
 const prettier = require('prettier');
 

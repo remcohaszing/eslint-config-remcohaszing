@@ -177,7 +177,7 @@ module.exports = {
     /**
      * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/prefer-global/process.md
      */
-    'n/prefer-global/process': ['error', 'never'],
+    'n/prefer-global/process': 'error',
 
     /**
      * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/prefer-global/text-decoder.md
