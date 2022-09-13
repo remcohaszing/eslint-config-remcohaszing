@@ -36,7 +36,6 @@
     "find-up": "^5.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
     "eslint-config-prettier": "^8.0.0",
     "eslint-config-remcohaszing": ".",
     "eslint-plugin-compat": "^4.0.0",
@@ -51,6 +50,7 @@
     "typescript": "^4.0.0"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
     "eslint": "8",
     "eslint-plugin-compat": "4",
     "eslint-plugin-eslint-comments": "3",
