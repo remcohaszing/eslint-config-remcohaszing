@@ -135,7 +135,7 @@ module.exports = {
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-reduce.md
      */
-    'unicorn/no-array-reduce': 'off',
+    'unicorn/no-array-reduce': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-expression-member.md
