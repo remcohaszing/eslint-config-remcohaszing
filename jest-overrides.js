@@ -105,11 +105,6 @@ module.exports = {
     'jest/no-jasmine-globals': 'error',
 
     /**
-     * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-jest-import.md
-     */
-    'jest/no-jest-import': 'error',
-
-    /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-large-snapshots.md
      */
     'jest/no-large-snapshots': 'off',
@@ -158,6 +153,11 @@ module.exports = {
      * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-comparison-matcher.md
      */
     'jest/prefer-comparison-matcher': 'error',
+
+    /**
+     * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-each.md
+     */
+    'jest/prefer-each': 'error',
 
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-equality-matcher.md
@@ -247,7 +247,7 @@ module.exports = {
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/unbound-method.md
      */
-    'jest/unbound-method': 'error',
+    'jest/unbound-method': 'off',
 
     /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/valid-describe-callback.md
