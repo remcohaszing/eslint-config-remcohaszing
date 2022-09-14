@@ -1,5 +1,5 @@
-const { existsSync, readFileSync } = require('fs');
-const { dirname, join } = require('path');
+const { existsSync, readFileSync } = require('node:fs');
+const { dirname, join } = require('node:path');
 
 const findUp = require('find-up');
 

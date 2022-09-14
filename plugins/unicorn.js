@@ -82,7 +82,6 @@ module.exports = {
           fs: { named: true },
           os: { named: true },
           path: { named: true },
-          process: { default: true },
           url: { named: true },
           util: { named: true },
           zlib: { named: true },
@@ -494,7 +493,7 @@ module.exports = {
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-node-protocol.md
      */
-    'unicorn/prefer-node-protocol': 'off',
+    'unicorn/prefer-node-protocol': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-number-properties.md
