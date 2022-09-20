@@ -75,16 +75,16 @@ module.exports = {
       {
         extendDefaultStyles: false,
         styles: {
-          // eslint-disable-next-line camelcase
-          child_process: { named: true },
-          crypto: { named: true },
-          events: { named: true },
-          fs: { named: true },
-          os: { named: true },
-          path: { named: true },
-          url: { named: true },
-          util: { named: true },
-          zlib: { named: true },
+          'node:child_process': { named: true },
+          'node:crypto': { named: true },
+          'node:events': { named: true },
+          'node:fs': { named: true },
+          'node:fs/promises': { named: true },
+          'node:os': { named: true },
+          'node:path': { named: true },
+          'node:url': { named: true },
+          'node:util': { named: true },
+          'node:zlib': { named: true },
 
           preact: { named: true },
           'preact/compat': { named: true },
