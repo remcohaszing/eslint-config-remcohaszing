@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
     "jsx": "react-jsx",
     "lib": ["dom", "esnext"],
-    "moduleResolution": "node",
+    "module": "node16",
     "noEmit": true,
     "noImplicitAny": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es2019"
+    "target": "es2020"
   }
 }

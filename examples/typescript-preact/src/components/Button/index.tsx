@@ -1,9 +1,16 @@
 import classNames from 'classnames';
-import { JSX, VNode } from 'preact';
+import { ComponentProps, VNode } from 'preact';
+
+interface ButtonProps extends ComponentProps<'button'> {
+  /**
+   * An optional class name for the button.
+   */
+  className?: string;
+}
 
 /**
  * Render a Bylma styled button element.
  */
-export function Button({ className, ...props }: JSX.IntrinsicElements['button']): VNode {
+export function Button({ className, ...props }: ButtonProps): VNode {
   return <button className={classNames('button', className)} type="button" {...props} />;
 }

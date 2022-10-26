@@ -2,6 +2,7 @@
   "name": "babel-react",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "webpack serve --mode development"
   },
