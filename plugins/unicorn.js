@@ -507,8 +507,6 @@ module.exports = {
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-object-from-entries.md
-     *
-     * XXX
      */
     'unicorn/prefer-object-from-entries': 'error',
 
