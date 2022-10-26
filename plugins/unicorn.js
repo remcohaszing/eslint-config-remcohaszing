@@ -607,10 +607,8 @@ module.exports = {
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md
-     *
-     * Not yet supported in all NodeJS versions
      */
-    'unicorn/prefer-top-level-await': 'off',
+    'unicorn/prefer-top-level-await': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-trim-start-end.md
