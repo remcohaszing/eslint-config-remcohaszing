@@ -133,6 +133,13 @@ module.exports = {
   'init-declarations': 'off',
 
   /**
+   * https://eslint.org/docs/latest/rules/logical-assignment-operators
+   *
+   * Not supported in Node.js 14.
+   */
+  'logical-assignment-operators': ['off', 'always', { enforceForIfStatements: true }],
+
+  /**
    * https://eslint.org/docs/latest/rules/max-classes-per-file
    */
   'max-classes-per-file': 'off',

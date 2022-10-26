@@ -10,32 +10,32 @@ module.exports = {
     'compat/compat': 'error',
 
     /**
-     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
+     * https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-deprecated-api.md
      */
     'n/no-deprecated-api': 'off',
 
     /**
-     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-path-concat.md
+     * https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-path-concat.md
      */
     'n/no-path-concat': 'off',
 
     /**
-     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unpublished-bin.md
+     * https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unpublished-bin.md
      */
     'n/no-unpublished-bin': 'off',
 
     /**
-     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-builtins.md
+     * https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unsupported-features/es-builtins.md
      */
     'n/no-unsupported-features/es-builtins': 'off',
 
     /**
-     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md
+     * https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unsupported-features/es-syntax.md
      */
     'n/no-unsupported-features/es-syntax': 'off',
 
     /**
-     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/node-builtins.md
+     * https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unsupported-features/node-builtins.md
      */
     'n/no-unsupported-features/node-builtins': 'off',
   },

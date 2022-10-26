@@ -115,6 +115,11 @@ module.exports = {
     'jest/no-mocks-import': 'error',
 
     /**
+     * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-restricted-jest-methods.md
+     */
+    'jest/no-restricted-jest-methods': 'off',
+
+    /**
      * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-restricted-matchers.md
      */
     'jest/no-restricted-matchers': [

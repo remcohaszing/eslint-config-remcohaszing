@@ -24,12 +24,12 @@ module.exports = {
     'jsdoc/require-jsdoc': 'off',
 
     /**
-     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
+     * https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unpublished-require.md
      */
     'n/no-unpublished-import': 'off',
 
     /**
-     * https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md
+     * https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unpublished-require.md
      */
     'n/no-unpublished-require': 'off',
 

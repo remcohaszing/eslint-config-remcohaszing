@@ -65,7 +65,7 @@ extends:
 Most ESLint settings are tweaked to have a proper default. There is one setting that needs to be
 configured if your project uses a build process and provides an executable command:
 `node.convertPath`. See
-[`n/no-unpublished-import`](https://github.com/weiran-zsd/eslint-plugin-node/blob/master/docs/rules/no-unpublished-import.md#shared-settings)
+[`n/no-unpublished-import`](https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unpublished-import.md#shared-settings)
 for details.
 
 ```yaml

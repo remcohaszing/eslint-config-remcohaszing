@@ -250,6 +250,11 @@ module.exports = {
     'unicorn/no-thenable': 'off',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-await.md
+     */
+    'unicorn/no-unnecessary-await': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-iife.md
      */
     'unicorn/no-unreadable-iife': 'error',
@@ -655,6 +660,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/string-content.md
      */
     'unicorn/string-content': 'off',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/switch-case-braces.md
+     */
+    'unicorn/switch-case-braces': ['error', 'avoid'],
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/template-indent.md

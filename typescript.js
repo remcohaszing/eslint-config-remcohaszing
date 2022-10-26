@@ -131,7 +131,7 @@ module.exports = {
     'jsdoc/valid-types': 'off',
 
     /**
-     * https://github.com/weiran-zsd/eslint-plugin-node/blob/main/docs/rules/no-unsupported-features/es-syntax
+     * https://github.com/eslint-community/eslint-plugin-n/blob/main/docs/rules/no-unsupported-features/es-syntax
      *
      * TypeScript will compile this.
      */
@@ -587,6 +587,13 @@ module.exports = {
      * https://typescript-eslint.io/rules/no-unnecessary-type-constraint
      */
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
+
+    /**
+     * https://typescript-eslint.io/rules/no-unsafe-declaration-merging
+     *
+     * Handled by `@typescript-eslint/no-redeclare`.
+     */
+    '@typescript-eslint/no-unsafe-declaration-merging': 'off',
 
     /**
      * https://typescript-eslint.io/rules/no-unused-expressions
