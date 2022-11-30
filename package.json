@@ -65,7 +65,7 @@
     "eslint-plugin-react": "7",
     "eslint-plugin-react-hooks": "4",
     "eslint-plugin-sort-destructure-keys": "1",
-    "eslint-plugin-unicorn": "44",
+    "eslint-plugin-unicorn": "45",
     "prettier": "2"
   },
   "peerDependenciesMeta": {

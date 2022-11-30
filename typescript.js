@@ -356,6 +356,7 @@ module.exports = {
           'public-static-field',
           'protected-static-field',
           'private-static-field',
+          '#private-static-field',
 
           'public-decorated-field',
           'protected-decorated-field',
@@ -364,16 +365,16 @@ module.exports = {
           'public-instance-field',
           'protected-instance-field',
           'private-instance-field',
+          '#private-instance-field',
 
           'public-abstract-field',
-          'protected-abstract-field',
-          'private-abstract-field',
 
           'signature',
 
           'public-static-method',
           'protected-static-method',
           'private-static-method',
+          '#private-static-method',
 
           'public-constructor',
           'protected-constructor',
@@ -386,10 +387,10 @@ module.exports = {
           'public-instance-method',
           'protected-instance-method',
           'private-instance-method',
+          '#private-instance-method',
 
           'public-abstract-method',
           'protected-abstract-method',
-          'private-abstract-method',
         ],
       },
     ],
@@ -720,9 +721,16 @@ module.exports = {
     'space-before-function-paren': 'off',
 
     /**
-     * https://typescript-eslint.io/rules/sort-type-union-intersection-members
+     * https://typescript-eslint.io/rules/sort-type-union-constituents
      */
-    '@typescript-eslint/sort-type-union-intersection-members': 'error',
+    '@typescript-eslint/sort-type-constituents': 'error',
+
+    /**
+     * https://typescript-eslint.io/rules/sort-type-union-intersection-members
+     *
+     * @deprecated
+     */
+    '@typescript-eslint/sort-type-union-intersection-members': 'off',
 
     /**
      * https://typescript-eslint.io/rules/space-before-blocks

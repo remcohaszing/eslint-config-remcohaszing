@@ -254,6 +254,11 @@ module.exports = {
   'no-empty-function': 'error',
 
   /**
+   * https://eslint.org/docs/latest/rules/empty-static-block
+   */
+  'no-empty-static-block': 'error',
+
+  /**
    * https://eslint.org/docs/latest/rules/no-eq-null
    */
   'no-eq-null': 'off',
@@ -381,8 +386,10 @@ module.exports = {
 
   /**
    * https://eslint.org/docs/latest/rules/no-negated-condition
+   *
+   * Handled by `unicorn/no-negated-condition`.
    */
-  'no-negated-condition': 'error',
+  'no-negated-condition': 'off',
 
   /**
    * https://eslint.org/docs/latest/rules/no-nested-ternary

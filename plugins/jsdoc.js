@@ -352,6 +352,11 @@ module.exports = {
     'jsdoc/tag-lines': ['error', 'never', { dropEndLines: true }],
 
     /**
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/text-escaping.md
+     */
+    'jsdoc/text-escaping': 'off',
+
+    /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/valid-types.md
      */
     'jsdoc/valid-types': 'error',

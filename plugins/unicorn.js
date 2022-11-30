@@ -179,6 +179,11 @@ module.exports = {
     'unicorn/no-this-assignment': 'error',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-typeof-undefined.md
+     */
+    'unicorn/no-typeof-undefined': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-fn-reference-in-iterator.md
      *
      * @deprecated
@@ -209,6 +214,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-lonely-if.md
      */
     'unicorn/no-lonely-if': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-condition.md
+     */
+    'unicorn/no-negated-condition': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-nested-ternary.md
@@ -553,6 +563,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-has.md
      */
     'unicorn/prefer-set-has': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-size.md
+     */
+    'unicorn/prefer-set-size': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-starts-ends-with.md
