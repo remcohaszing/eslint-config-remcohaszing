@@ -29,7 +29,14 @@ module.exports = {
   /**
    * https://eslint.org/docs/latest/rules/capitalized-comments
    */
-  'capitalized-comments': ['error', 'always', { ignoreConsecutiveComments: true }],
+  'capitalized-comments': [
+    'error',
+    'always',
+    {
+      ignoreConsecutiveComments: true,
+      ignorePattern: /^\s*(c8|type-coverage:|webpack\w)/.source,
+    },
+  ],
 
   /**
    * https://eslint.org/docs/latest/rules/class-methods-use-this
