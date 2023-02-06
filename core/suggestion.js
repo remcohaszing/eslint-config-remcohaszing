@@ -514,7 +514,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/latest/rules/no-restricted-properties
    */
-  'no-restricted-properties': ['error', { property: 'prototype', message: 'Use a class instead.' }],
+  'no-restricted-properties': 'off',
 
   /**
    * https://eslint.org/docs/latest/rules/no-restricted-syntax
