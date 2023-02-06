@@ -147,6 +147,7 @@ for (const name of ['deprecated', 'layout', 'problem', 'suggestion']) {
 for (const name of [
   'eslint-comments',
   'import',
+  'jest-formatting',
   'jsdoc',
   'n',
   'prettier',

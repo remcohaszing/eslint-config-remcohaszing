@@ -6,7 +6,6 @@
 [![codecov](https://codecov.io/gh/remcohaszing/eslint-config/branch/main/graph/badge.svg)](https://codecov.io/gh/remcohaszing/eslint-config)
 [![npm](https://img.shields.io/npm/v/eslint-config-remcohaszing)](https://www.npmjs.com/package/eslint-config-remcohaszing)
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
-[![jest](https://jestjs.io/img/jest-badge.svg)](https://jestjs.io)
 
 This is a strict shareable ESLint configuration. All ESLint core rules and a variety of ESLint
 plugins have been carefully considered. Overrides are used to apply rules based on context.
@@ -187,26 +186,6 @@ overrides:
       - 'src/**'
     extends:
       - remcohaszing/preact
-```
-
-### Jest
-
-This package also includes an additional ESLint preset for Jest tests. This requires some additional
-dependencies:
-
-```sh
-npm install --save-dev \
-  eslint-plugin-jest \
-  eslint-plugin-jest-formatting
-```
-
-Then add the configuration to the `extends` field of the ESLint configuration:
-
-```yaml
-root: true
-extends:
-  - remcohaszing
-  - remcohaszing/jest
 ```
 
 ### Markdown
