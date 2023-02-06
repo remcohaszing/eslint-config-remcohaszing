@@ -493,7 +493,23 @@ module.exports = {
   /**
    * https://eslint.org/docs/latest/rules/no-restricted-imports
    */
-  'no-restricted-imports': 'off',
+  'no-restricted-imports': [
+    'error',
+    { name: 'node:assert', message: 'Use node:assert/strict instead.' },
+    { name: 'node:test', importNames: ['it'], message: 'Use test instead.' },
+    { name: 'node:dns', importNames: ['promises'], message: 'Use node:dns/promises instead.' },
+    { name: 'node:fs', importNames: ['promises'], message: 'Use node:fs/promises instead.' },
+    {
+      name: 'node:stream',
+      importNames: ['promises'],
+      message: 'Use node:stream/promises instead.',
+    },
+    {
+      name: 'node:timers',
+      importNames: ['promises'],
+      message: 'Use node:timers/promises instead.',
+    },
+  ],
 
   /**
    * https://eslint.org/docs/latest/rules/no-restricted-properties
