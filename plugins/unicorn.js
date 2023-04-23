@@ -48,7 +48,7 @@ module.exports = {
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/expiring-todo-comments.md
      */
-    'unicorn/expiring-todo-comments': 'off',
+    'unicorn/expiring-todo-comments': ['warn', { allowWarningComments: false }],
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/explicit-length-check.md
