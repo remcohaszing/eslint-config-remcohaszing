@@ -42,6 +42,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: [eslint, pack, prettier, test]
     if: startsWith(github.ref, 'refs/tags/')
+    permissions:
+      id-token: write
     steps:
       - uses: actions/setup-node@v3
         with:
