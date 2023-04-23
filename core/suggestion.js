@@ -449,14 +449,8 @@ module.exports = {
     'error',
     {
       props: true,
-      ignorePropertyModificationsFor: [
-        // Array reducers.
-        'acc',
-        'accumulator',
-
-        // Koa context.
-        'ctx'
-      ]
+      // Koa context.
+      ignorePropertyModificationsFor: ['ctx']
     }
   ],
 
