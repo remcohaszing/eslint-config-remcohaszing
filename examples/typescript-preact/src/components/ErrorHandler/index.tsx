@@ -1,4 +1,4 @@
-import { Component, ComponentChild, ComponentChildren } from 'preact';
+import { Component, type ComponentChild, type ComponentChildren } from 'preact';
 
 interface ErrorHandlerProps {
   /**

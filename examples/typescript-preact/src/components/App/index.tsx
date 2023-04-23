@@ -1,4 +1,4 @@
-import { VNode } from 'preact';
+import { type VNode } from 'preact';
 
 import { ErrorHandler } from '../ErrorHandler/index.js';
 import { ItemList } from '../ItemList/index.js';

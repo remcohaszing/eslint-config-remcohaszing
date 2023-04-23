@@ -280,7 +280,7 @@ module.exports = {
      */
     '@typescript-eslint/consistent-type-imports': [
       'error',
-      { prefer: 'no-type-imports', disallowTypeAnnotations: false },
+      { disallowTypeAnnotations: false, fixStyle: 'inline-type-imports' },
     ],
 
     /**

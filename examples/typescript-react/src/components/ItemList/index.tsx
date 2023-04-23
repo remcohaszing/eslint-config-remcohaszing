@@ -1,6 +1,6 @@
-import { ReactElement, useCallback, useState } from 'react';
+import { type ReactElement, useCallback, useState } from 'react';
 
-import { Item } from '../../types.js';
+import { type Item } from '../../types.js';
 import { ItemForm } from '../ItemForm/index.js';
 
 /**

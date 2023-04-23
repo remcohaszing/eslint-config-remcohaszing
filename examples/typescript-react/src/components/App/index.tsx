@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { type ReactElement } from 'react';
 
 import { ErrorHandler } from '../ErrorHandler/index.js';
 import { ItemList } from '../ItemList/index.js';

@@ -17,7 +17,7 @@ module.exports = {
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/consistent-type-specifier-style.md
      */
-    'import/consistent-type-specifier-style': 'error',
+    'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
 
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/default.md

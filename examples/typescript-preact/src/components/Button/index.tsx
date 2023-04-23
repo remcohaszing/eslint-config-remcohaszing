@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { ComponentProps, VNode } from 'preact';
+import { type ComponentProps, type VNode } from 'preact';
 
 interface ButtonProps extends ComponentProps<'button'> {
   /**

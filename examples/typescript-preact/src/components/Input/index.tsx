@@ -1,4 +1,4 @@
-import { ComponentChild, JSX, VNode } from 'preact';
+import { type ComponentChild, type JSX, type VNode } from 'preact';
 
 interface InputProps {
   /**

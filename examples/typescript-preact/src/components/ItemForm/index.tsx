@@ -1,7 +1,7 @@
-import { JSX, VNode } from 'preact';
+import { type JSX, type VNode } from 'preact';
 import { useCallback, useState } from 'preact/hooks';
 
-import { Item } from '../../types.js';
+import { type Item } from '../../types.js';
 import { Button } from '../Button/index.js';
 import { ErrorButton } from '../ErrorButton/index.js';
 import { Input } from '../Input/index.js';

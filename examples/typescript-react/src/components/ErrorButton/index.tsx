@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode, useCallback, useState } from 'react';
+import { type ReactElement, type ReactNode, useCallback, useState } from 'react';
 
 import { Button } from '../Button/index.js';
 

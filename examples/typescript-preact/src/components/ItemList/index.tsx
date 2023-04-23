@@ -1,7 +1,7 @@
-import { VNode } from 'preact';
+import { type VNode } from 'preact';
 import { useCallback, useState } from 'preact/hooks';
 
-import { Item } from '../../types.js';
+import { type Item } from '../../types.js';
 import { ItemForm } from '../ItemForm/index.js';
 
 /**
