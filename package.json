@@ -6,17 +6,10 @@
     "eslint",
     "eslintconfig"
   ],
-  "homepage": "https://github.com/remcohaszing/eslint-config#readme",
-  "bugs": {
-    "url": "https://github.com/remcohaszing/eslint-config/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/remcohaszing/eslint-config.git"
-  },
-  "funding": {
-    "url": "https://github.com/sponsors/remcohaszing"
-  },
+  "homepage": "https://github.com/remcohaszing/eslint-config-remcohaszing#readme",
+  "bugs": "https://github.com/remcohaszing/eslint-config-remcohaszing/issues",
+  "repository": "remcohaszing/eslint-config-remcohaszing",
+  "funding": "https://github.com/sponsors/remcohaszing",
   "license": "MIT",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
   "files": [

@@ -2,8 +2,8 @@
 
 > A strict ESLint configuration
 
-[![build status](https://github.com/remcohaszing/eslint-config/workflows/ci/badge.svg)](https://github.com/remcohaszing/eslint-config/actions)
-[![codecov](https://codecov.io/gh/remcohaszing/eslint-config/branch/main/graph/badge.svg)](https://codecov.io/gh/remcohaszing/eslint-config)
+[![build status](https://github.com/remcohaszing/eslint-config-remcohaszing/workflows/ci/badge.svg)](https://github.com/remcohaszing/eslint-config-remcohaszing/actions)
+[![codecov](https://codecov.io/gh/remcohaszing/eslint-config-remcohaszing/branch/main/graph/badge.svg)](https://codecov.io/gh/remcohaszing/eslint-config-remcohaszing)
 [![npm](https://img.shields.io/npm/v/eslint-config-remcohaszing)](https://www.npmjs.com/package/eslint-config-remcohaszing)
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
 
@@ -127,14 +127,9 @@ last 2 safari versions
 
 ### TypeScript
 
-This configuration enabled ESLint for TypeScript automatically. This requires some additional
-dependencies to have been installed:
+This configuration enabled ESLint for TypeScript automatically.
 
-```sh
-npm install --save-dev @typescript-eslint/eslint-config
-```
-
-Some rules from `@typescript-eslint/eslint-config` require TypeScript type checking features to be
+Some rules from `@typescript-eslint/eslint-plugin` require TypeScript type checking features to be
 enabled. Unfortunately, this makes ESLint slow. Enabling these rules is recommended for small
 projects only. To enable this, add the following to `.eslintrc.yaml`:
 
