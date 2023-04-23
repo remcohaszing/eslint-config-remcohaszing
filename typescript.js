@@ -1,5 +1,5 @@
-const allowedProperties = require('./utils/allowedProperties.js');
-const prettier = require('./utils/prettier.js');
+const allowedProperties = require('./utils/allowedProperties.js')
+const prettier = require('./utils/prettier.js')
 
 /**
  * Configuration for TypeScript specifically that don’t require type checking.
@@ -151,17 +151,17 @@ module.exports = {
           'objectLiteralMethod',
           'objectLiteralProperty',
           'typeMethod',
-          'typeProperty',
+          'typeProperty'
         ],
         format: null,
-        modifiers: ['requiresQuotes'],
+        modifiers: ['requiresQuotes']
       },
       {
         selector: 'default',
         format: ['camelCase', 'PascalCase'],
         leadingUnderscore: 'forbid',
         trailingUnderscore: 'forbid',
-        filter: { regex: `^(${allowedProperties.join('|')})$`, match: false },
+        filter: { regex: `^(${allowedProperties.join('|')})$`, match: false }
       },
 
       // PropertyLike
@@ -169,7 +169,7 @@ module.exports = {
       {
         selector: 'variable',
         modifiers: ['const'],
-        format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+        format: ['camelCase', 'PascalCase', 'UPPER_CASE']
       },
       { selector: 'function', format: ['camelCase', 'PascalCase'] },
       { selector: 'parameter', format: ['camelCase', 'PascalCase'] },
@@ -178,7 +178,7 @@ module.exports = {
       {
         selector: 'property',
         format: ['camelCase', 'PascalCase'],
-        filter: { regex: `^(${allowedProperties.join('|')})$`, match: false },
+        filter: { regex: `^(${allowedProperties.join('|')})$`, match: false }
       },
       { selector: 'parameterProperty', format: ['PascalCase'] },
       { selector: 'method', format: ['camelCase'] },
@@ -186,7 +186,7 @@ module.exports = {
       { selector: 'enumMember', format: ['camelCase', 'PascalCase'] },
 
       // TypeLike
-      { selector: 'typeLike', format: ['PascalCase'] },
+      { selector: 'typeLike', format: ['PascalCase'] }
     ],
 
     /**
@@ -208,8 +208,8 @@ module.exports = {
         'ts-expect-error': 'allow-with-description',
         'ts-ignore': false,
         'ts-nocheck': true,
-        'ts-check': true,
-      },
+        'ts-check': true
+      }
     ],
 
     /**
@@ -280,7 +280,7 @@ module.exports = {
      */
     '@typescript-eslint/consistent-type-imports': [
       'error',
-      { disallowTypeAnnotations: false, fixStyle: 'inline-type-imports' },
+      { disallowTypeAnnotations: false, fixStyle: 'inline-type-imports' }
     ],
 
     /**
@@ -353,8 +353,8 @@ module.exports = {
         allowEnumStart: true,
         allowInterfaceStart: true,
         allowModuleStart: true,
-        allowTypeStart: true,
-      },
+        allowTypeStart: true
+      }
     ],
     'lines-around-comment': 'off',
 
@@ -415,9 +415,9 @@ module.exports = {
           '#private-instance-method',
 
           'public-abstract-method',
-          'protected-abstract-method',
-        ],
-      },
+          'protected-abstract-method'
+        ]
+      }
     ],
 
     /**
@@ -599,8 +599,8 @@ module.exports = {
       {
         hoist: 'all',
         ignoreFunctionTypeParameterNameValueShadow: false,
-        ignoreTypeValueShadow: false,
-      },
+        ignoreTypeValueShadow: false
+      }
     ],
     'no-shadow': 'off',
 
@@ -730,7 +730,7 @@ module.exports = {
     '@typescript-eslint/quotes': [
       'error',
       prettier.ts.singleQuote ? 'single' : 'double',
-      { avoidEscape: true, allowTemplateLiterals: false },
+      { avoidEscape: true, allowTemplateLiterals: false }
     ],
     quotes: 'off',
 
@@ -796,6 +796,6 @@ module.exports = {
     /**
      * https://typescript-eslint.io/rules/unified-signatures
      */
-    '@typescript-eslint/unified-signatures': 'error',
-  },
-};
+    '@typescript-eslint/unified-signatures': 'error'
+  }
+}

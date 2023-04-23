@@ -1,4 +1,4 @@
-const obsoleteHTMLElements = require('./obsoleteHTMLElements.js');
+const obsoleteHTMLElements = require('./obsoleteHTMLElements.js')
 
 module.exports = {
   /**
@@ -7,7 +7,7 @@ module.exports = {
   'react/boolean-prop-naming': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -16,7 +16,7 @@ module.exports = {
   'react/button-has-type': {
     jsx: ['error', { button: true, submit: true, reset: false }],
     preact: ['error', { button: true, submit: true, reset: false }],
-    react: ['error', { button: true, submit: true, reset: false }],
+    react: ['error', { button: true, submit: true, reset: false }]
   },
 
   /**
@@ -25,7 +25,7 @@ module.exports = {
   'react/default-props-match-prop-types': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -34,7 +34,7 @@ module.exports = {
   'react/destructuring-assignment': {
     jsx: 'off',
     preact: ['error', 'always', { ignoreClassFields: true }],
-    react: ['error', 'always', { ignoreClassFields: true }],
+    react: ['error', 'always', { ignoreClassFields: true }]
   },
 
   /**
@@ -43,7 +43,7 @@ module.exports = {
   'react/display-name': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -52,7 +52,7 @@ module.exports = {
   'react/forbid-component-props': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -61,7 +61,7 @@ module.exports = {
   'react/forbid-dom-props': {
     jsx: ['error', { forbid: [{ propName: 'style', message: 'Use a CSS class instead' }] }],
     preact: ['error', { forbid: [{ propName: 'style', message: 'Use a CSS class instead' }] }],
-    react: ['error', { forbid: [{ propName: 'style', message: 'Use a CSS class instead' }] }],
+    react: ['error', { forbid: [{ propName: 'style', message: 'Use a CSS class instead' }] }]
   },
 
   /**
@@ -70,7 +70,7 @@ module.exports = {
   'react/forbid-elements': {
     jsx: ['error', { forbid: obsoleteHTMLElements }],
     preact: ['error', { forbid: obsoleteHTMLElements }],
-    react: ['error', { forbid: obsoleteHTMLElements }],
+    react: ['error', { forbid: obsoleteHTMLElements }]
   },
 
   /**
@@ -79,7 +79,7 @@ module.exports = {
   'react/forbid-foreign-prop-types': {
     jsx: 'off',
     preact: 'off',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -88,7 +88,7 @@ module.exports = {
   'react/forbid-prop-types': {
     jsx: 'off',
     preact: 'off',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -98,12 +98,12 @@ module.exports = {
     jsx: 'off',
     preact: [
       'error',
-      { namedComponents: 'function-declaration', unnamedComponents: 'arrow-function' },
+      { namedComponents: 'function-declaration', unnamedComponents: 'arrow-function' }
     ],
     react: [
       'error',
-      { namedComponents: 'function-declaration', unnamedComponents: 'arrow-function' },
-    ],
+      { namedComponents: 'function-declaration', unnamedComponents: 'arrow-function' }
+    ]
   },
 
   /**
@@ -112,7 +112,7 @@ module.exports = {
   'react/hook-use-state': {
     jsx: 'off',
     preact: ['error', { allowDestructuredState: true }],
-    react: ['error', { allowDestructuredState: true }],
+    react: ['error', { allowDestructuredState: true }]
   },
 
   /**
@@ -121,7 +121,7 @@ module.exports = {
   'react/iframe-missing-sandbox': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -130,7 +130,7 @@ module.exports = {
   'react/jsx-boolean-value': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -141,7 +141,7 @@ module.exports = {
   'react/jsx-child-element-spacing': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -152,7 +152,7 @@ module.exports = {
   'react/jsx-closing-bracket-location': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -163,7 +163,7 @@ module.exports = {
   'react/jsx-closing-tag-location': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -172,7 +172,7 @@ module.exports = {
   'react/jsx-curly-brace-presence': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -183,7 +183,7 @@ module.exports = {
   'react/jsx-curly-newline': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -194,7 +194,7 @@ module.exports = {
   'react/jsx-curly-spacing': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -205,7 +205,7 @@ module.exports = {
   'react/jsx-equals-spacing': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -214,7 +214,7 @@ module.exports = {
   'react/jsx-filename-extension': {
     jsx: ['error', { allow: 'as-needed', extensions: ['.jsx', '.tsx'] }],
     preact: ['error', { allow: 'as-needed', extensions: ['.jsx', '.tsx'] }],
-    react: ['error', { allow: 'as-needed', extensions: ['.jsx', '.tsx'] }],
+    react: ['error', { allow: 'as-needed', extensions: ['.jsx', '.tsx'] }]
   },
 
   /**
@@ -225,7 +225,7 @@ module.exports = {
   'react/jsx-first-prop-new-line': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -236,7 +236,7 @@ module.exports = {
   'react/jsx-fragments': {
     jsx: 'off',
     preact: 'off',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -245,7 +245,7 @@ module.exports = {
   'react/jsx-handler-names': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -256,7 +256,7 @@ module.exports = {
   'react/jsx-indent': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -267,7 +267,7 @@ module.exports = {
   'react/jsx-indent-props': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -276,7 +276,7 @@ module.exports = {
   'react/jsx-key': {
     jsx: 'off',
     preact: ['error', { checkFragmentShorthand: true, checkKeyMustBeforeSpread: true }],
-    react: ['error', { checkFragmentShorthand: true, checkKeyMustBeforeSpread: true }],
+    react: ['error', { checkFragmentShorthand: true, checkKeyMustBeforeSpread: true }]
   },
 
   /**
@@ -285,7 +285,7 @@ module.exports = {
   'react/jsx-max-depth': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -296,7 +296,7 @@ module.exports = {
   'react/jsx-max-props-per-line': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -305,7 +305,7 @@ module.exports = {
   'react/jsx-newline': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -314,7 +314,7 @@ module.exports = {
   'react/jsx-no-bind': {
     jsx: 'off',
     preact: ['error', { allowArrowFunctions: true, ignoreRefs: true }],
-    react: ['error', { allowArrowFunctions: true, ignoreRefs: true }],
+    react: ['error', { allowArrowFunctions: true, ignoreRefs: true }]
   },
 
   /**
@@ -323,7 +323,7 @@ module.exports = {
   'react/jsx-no-comment-textnodes': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -332,7 +332,7 @@ module.exports = {
   'react/jsx-no-constructed-context-values': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -341,7 +341,7 @@ module.exports = {
   'react/jsx-no-duplicate-props': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -350,7 +350,7 @@ module.exports = {
   'react/jsx-no-literals': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -359,7 +359,7 @@ module.exports = {
   'react/jsx-no-leaked-render': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -368,7 +368,7 @@ module.exports = {
   'react/jsx-no-script-url': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -377,7 +377,7 @@ module.exports = {
   'react/jsx-no-target-blank': {
     jsx: ['error', { forms: true }],
     preact: ['error', { forms: true }],
-    react: ['error', { forms: true }],
+    react: ['error', { forms: true }]
   },
 
   /**
@@ -386,7 +386,7 @@ module.exports = {
   'react/jsx-no-undef': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -395,7 +395,7 @@ module.exports = {
   'react/jsx-no-useless-fragment': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -406,7 +406,7 @@ module.exports = {
   'react/jsx-one-expression-per-line': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -415,7 +415,7 @@ module.exports = {
   'react/jsx-pascal-case': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -426,7 +426,7 @@ module.exports = {
   'react/jsx-props-no-multi-spaces': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -435,7 +435,7 @@ module.exports = {
   'react/jsx-props-no-spreading': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -446,7 +446,7 @@ module.exports = {
   'react/jsx-sort-default-props': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -455,7 +455,7 @@ module.exports = {
   'react/jsx-sort-props': {
     jsx: ['error', { ignoreCase: true }],
     preact: ['error', { ignoreCase: true }],
-    react: ['error', { ignoreCase: true }],
+    react: ['error', { ignoreCase: true }]
   },
 
   /**
@@ -466,7 +466,7 @@ module.exports = {
   'react/jsx-space-before-closing': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -477,7 +477,7 @@ module.exports = {
   'react/jsx-tag-spacing': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -486,7 +486,7 @@ module.exports = {
   'react/jsx-uses-react': {
     jsx: 'error',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -495,7 +495,7 @@ module.exports = {
   'react/jsx-uses-vars': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -506,7 +506,7 @@ module.exports = {
   'react/jsx-wrap-multilines': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -515,7 +515,7 @@ module.exports = {
   'react/no-access-state-in-setstate': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -524,7 +524,7 @@ module.exports = {
   'react/no-adjacent-inline-elements': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -533,7 +533,7 @@ module.exports = {
   'react/no-array-index-key': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -542,7 +542,7 @@ module.exports = {
   'react/no-arrow-function-lifecycle': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -551,7 +551,7 @@ module.exports = {
   'react/no-children-prop': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -560,7 +560,7 @@ module.exports = {
   'react/no-danger': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -569,7 +569,7 @@ module.exports = {
   'react/no-danger-with-children': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -578,7 +578,7 @@ module.exports = {
   'react/no-deprecated': {
     jsx: 'off',
     preact: 'off',
-    react: 'warn',
+    react: 'warn'
   },
 
   /**
@@ -587,7 +587,7 @@ module.exports = {
   'react/no-did-mount-set-state': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -596,7 +596,7 @@ module.exports = {
   'react/no-did-update-set-state': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -605,7 +605,7 @@ module.exports = {
   'react/no-direct-mutation-state': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -614,7 +614,7 @@ module.exports = {
   'react/no-find-dom-node': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -623,7 +623,7 @@ module.exports = {
   'react/no-is-mounted': {
     jsx: 'off',
     preact: 'off',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -632,7 +632,7 @@ module.exports = {
   'react/no-invalid-html-attribute': {
     jsx: 'off',
     preact: 'off',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -643,7 +643,7 @@ module.exports = {
   'react/no-multi-comp': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -652,7 +652,7 @@ module.exports = {
   'react/no-namespace': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -661,7 +661,7 @@ module.exports = {
   'react/no-object-type-as-default-prop': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -670,7 +670,7 @@ module.exports = {
   'react/no-redundant-should-component-update': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -679,7 +679,7 @@ module.exports = {
   'react/no-render-return-value': {
     jsx: 'off',
     preact: 'off',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -688,7 +688,7 @@ module.exports = {
   'react/no-set-state': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -697,7 +697,7 @@ module.exports = {
   'react/no-string-refs': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -706,7 +706,7 @@ module.exports = {
   'react/no-this-in-sfc': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -715,7 +715,7 @@ module.exports = {
   'react/no-typos': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -724,7 +724,7 @@ module.exports = {
   'react/no-unescaped-entities': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -733,7 +733,7 @@ module.exports = {
   'react/no-unknown-property': {
     jsx: 'off',
     preact: ['error', { ignore: ['class'] }],
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -742,7 +742,7 @@ module.exports = {
   'react/no-unsafe': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -751,7 +751,7 @@ module.exports = {
   'react/no-unused-class-component-methods': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -760,7 +760,7 @@ module.exports = {
   'react/no-unused-prop-types': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -769,7 +769,7 @@ module.exports = {
   'react/no-unused-state': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -778,7 +778,7 @@ module.exports = {
   'react/no-will-update-set-state': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -787,7 +787,7 @@ module.exports = {
   'react/prefer-es6-class': {
     jsx: 'off',
     preact: 'off',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -796,7 +796,7 @@ module.exports = {
   'react/prefer-exact-props': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -805,7 +805,7 @@ module.exports = {
   'react/prefer-read-only-props': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -814,7 +814,7 @@ module.exports = {
   'react/prefer-stateless-function': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -823,7 +823,7 @@ module.exports = {
   'react/prop-types': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -832,7 +832,7 @@ module.exports = {
   'react/react-in-jsx-scope': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -841,7 +841,7 @@ module.exports = {
   'react/require-default-props': {
     jsx: 'off',
     preact: ['error', { forbidDefaultForRequired: true, ignoreFunctionalComponents: true }],
-    react: ['error', { forbidDefaultForRequired: true, ignoreFunctionalComponents: true }],
+    react: ['error', { forbidDefaultForRequired: true, ignoreFunctionalComponents: true }]
   },
 
   /**
@@ -850,7 +850,7 @@ module.exports = {
   'react/require-optimization': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -859,7 +859,7 @@ module.exports = {
   'react/require-render-return': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -868,7 +868,7 @@ module.exports = {
   'react/self-closing-comp': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -888,10 +888,10 @@ module.exports = {
           'lifecycle',
           'instance-methods',
           'everything-else',
-          'render',
-        ],
-      },
-    ],
+          'render'
+        ]
+      }
+    ]
   },
 
   /**
@@ -900,7 +900,7 @@ module.exports = {
   'react/sort-default-props': {
     jsx: ['off', { ignoreCase: true }],
     preact: ['error', { ignoreCase: true }],
-    react: ['error', { ignoreCase: true }],
+    react: ['error', { ignoreCase: true }]
   },
 
   /**
@@ -909,7 +909,7 @@ module.exports = {
   'react/sort-prop-types': {
     jsx: ['off', { ignoreCase: true }],
     preact: ['error', { ignoreCase: true }],
-    react: ['error', { ignoreCase: true }],
+    react: ['error', { ignoreCase: true }]
   },
 
   /**
@@ -918,7 +918,7 @@ module.exports = {
   'react/state-in-constructor': {
     jsx: 'off',
     preact: ['error', 'never'],
-    react: ['error', 'never'],
+    react: ['error', 'never']
   },
 
   /**
@@ -927,7 +927,7 @@ module.exports = {
   'react/static-property-placement': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -936,7 +936,7 @@ module.exports = {
   'react/style-prop-object': {
     jsx: 'off',
     preact: 'off',
-    react: 'off',
+    react: 'off'
   },
 
   /**
@@ -945,7 +945,7 @@ module.exports = {
   'react/void-dom-elements-no-children': {
     jsx: 'error',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -954,7 +954,7 @@ module.exports = {
   'react-hooks/rules-of-hooks': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
+    react: 'error'
   },
 
   /**
@@ -963,6 +963,6 @@ module.exports = {
   'react-hooks/exhaustive-deps': {
     jsx: 'off',
     preact: 'error',
-    react: 'error',
-  },
-};
+    react: 'error'
+  }
+}

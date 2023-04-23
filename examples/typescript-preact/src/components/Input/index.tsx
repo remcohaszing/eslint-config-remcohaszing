@@ -1,32 +1,32 @@
-import { type ComponentChild, type JSX, type VNode } from 'preact';
+import { type ComponentChild, type JSX, type VNode } from 'preact'
 
 interface InputProps {
   /**
    * The label to render for the input.
    */
-  label: ComponentChild;
+  label: ComponentChild
 
   /**
    * The name of the input field.
    *
    * This will also be used as the id.
    */
-  name: string;
+  name: string
 
   /**
    * The event handler to call when the input changes.
    */
-  onChange: JSX.GenericEventHandler<HTMLInputElement>;
+  onChange: JSX.GenericEventHandler<HTMLInputElement>
 
   /**
    * The input type.
    */
-  type?: 'text' | 'url';
+  type?: 'text' | 'url'
 
   /**
    * The current value of the input.
    */
-  value: string;
+  value: string
 }
 
 /**
@@ -40,5 +40,5 @@ export function Input({ label, name, ...props }: InputProps): VNode {
       </label>
       <input className="input" id={name} name={name} {...props} />
     </div>
-  );
+  )
 }

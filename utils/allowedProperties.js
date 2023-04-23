@@ -29,5 +29,5 @@ module.exports = [
   'theme_color',
 
   // React
-  '__html',
-];
+  '__html'
+]

@@ -15,7 +15,7 @@ module.exports = {
      */
     '@typescript-eslint/triple-slash-reference': [
       'error',
-      { lib: 'never', path: 'never', types: 'prefer-import' },
+      { lib: 'never', path: 'never', types: 'prefer-import' }
     ],
 
     /**
@@ -26,6 +26,6 @@ module.exports = {
     /**
      * https://typescript-eslint.io/rules/no-extraneous-class
      */
-    '@typescript-eslint/no-extraneous-class': 'off',
-  },
-};
+    '@typescript-eslint/no-extraneous-class': 'off'
+  }
+}

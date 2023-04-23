@@ -1,6 +1,6 @@
-import 'bulma/css/bulma.css';
-import { render } from 'preact';
+import 'bulma/css/bulma.css'
+import { render } from 'preact'
 
-import { App } from './components/App/index.js';
+import { App } from './components/App/index.js'
 
-render(<App />, document.getElementById('app')!);
+render(<App />, document.getElementById('app')!)

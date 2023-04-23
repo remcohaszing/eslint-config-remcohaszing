@@ -89,9 +89,9 @@ module.exports = {
           preact: { named: true },
           'preact/compat': { named: true },
           'preact/hooks': { named: true },
-          react: { named: true },
-        },
-      },
+          react: { named: true }
+        }
+      }
     ],
 
     /**
@@ -690,6 +690,6 @@ module.exports = {
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md
      */
-    'unicorn/throw-new-error': 'error',
-  },
-};
+    'unicorn/throw-new-error': 'error'
+  }
+}

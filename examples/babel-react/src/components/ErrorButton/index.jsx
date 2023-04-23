@@ -1,24 +1,24 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react'
 
-import { Button } from '../Button/index.js';
+import { Button } from '../Button/index.js'
 
 /**
  * Render a button which, when clicked, cause a render error.
  */
 export function ErrorButton() {
-  const [ok, setOk] = useState(true);
+  const [ok, setOk] = useState(true)
 
   const onClick = useCallback(() => {
-    setOk();
-  }, []);
+    setOk()
+  }, [])
 
   if (!ok) {
-    return;
+    return
   }
 
   return (
     <Button className="is-danger" onClick={onClick}>
       Crash
     </Button>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import { addAsync, addPromise, addSync } from './add.js';
-import { type Callback } from './types.js';
+import { addAsync, addPromise, addSync } from './add.js'
+import { type Callback } from './types.js'
 
 /**
  * Substract y from x synchronously.
@@ -9,7 +9,7 @@ import { type Callback } from './types.js';
  * @returns The difference between x and y.
  */
 export function substractSync(x: number, y: number): number {
-  return addSync(x, -y);
+  return addSync(x, -y)
 }
 
 /**
@@ -22,11 +22,11 @@ export function substractSync(x: number, y: number): number {
 export function substractAsync(x: number, y: number, cb: Callback<number>): void {
   addAsync(x, -y, (error, result) => {
     if (error) {
-      cb(error);
-      return;
+      cb(error)
+      return
     }
-    cb(null, result);
-  });
+    cb(null, result)
+  })
 }
 
 /**
@@ -37,6 +37,6 @@ export function substractAsync(x: number, y: number, cb: Callback<number>): void
  * @returns The difference between x and y wrapped in a promise.
  */
 export async function substractPromise(x: number, y: number): Promise<number> {
-  const sum = await addPromise(x, -y);
-  return sum;
+  const sum = await addPromise(x, -y)
+  return sum
 }

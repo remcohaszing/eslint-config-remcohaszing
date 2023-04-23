@@ -1,41 +1,41 @@
-import { type ChangeEvent, type FormEvent, type ReactElement, useCallback, useState } from 'react';
+import { type ChangeEvent, type FormEvent, type ReactElement, useCallback, useState } from 'react'
 
-import { type Item } from '../../types.js';
-import { Button } from '../Button/index.js';
-import { ErrorButton } from '../ErrorButton/index.js';
-import { Input } from '../Input/index.js';
+import { type Item } from '../../types.js'
+import { Button } from '../Button/index.js'
+import { ErrorButton } from '../ErrorButton/index.js'
+import { Input } from '../Input/index.js'
 
 interface ItemFormProps {
   /**
    * Called when the form is submitted
    */
-  onSubmit: (item: Item) => void;
+  onSubmit: (item: Item) => void
 }
 
 /**
  * A form for editing an item.
  */
 export function ItemForm({ onSubmit }: ItemFormProps): ReactElement {
-  const [item, setItem] = useState<Item>({ text: '', link: '' });
+  const [item, setItem] = useState<Item>({ text: '', link: '' })
 
   const handleChange = useCallback(
     ({ currentTarget }: ChangeEvent<HTMLInputElement>) => {
       setItem({
         ...item,
-        [currentTarget.name]: currentTarget.value,
-      });
+        [currentTarget.name]: currentTarget.value
+      })
     },
-    [item],
-  );
+    [item]
+  )
 
   const handleSubmit = useCallback(
     (event: FormEvent<HTMLFormElement>) => {
-      event.preventDefault();
-      onSubmit(item);
-      setItem({ text: '', link: '' });
+      event.preventDefault()
+      onSubmit(item)
+      setItem({ text: '', link: '' })
     },
-    [item, onSubmit],
-  );
+    [item, onSubmit]
+  )
 
   return (
     <form noValidate onSubmit={handleSubmit}>
@@ -46,5 +46,5 @@ export function ItemForm({ onSubmit }: ItemFormProps): ReactElement {
         Add
       </Button>
     </form>
-  );
+  )
 }

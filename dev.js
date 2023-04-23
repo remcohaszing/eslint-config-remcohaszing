@@ -12,8 +12,8 @@ module.exports = {
         devDependencies: true,
         optionalDependencies: true,
         peerDependencies: true,
-        bundledDependencies: true,
-      },
+        bundledDependencies: true
+      }
     ],
 
     /**
@@ -38,6 +38,6 @@ module.exports = {
      *
      * This is an optimization that’s not important for tests or confiurations.
      */
-    'unicorn/consistent-function-scoping': 'off',
-  },
-};
+    'unicorn/consistent-function-scoping': 'off'
+  }
+}

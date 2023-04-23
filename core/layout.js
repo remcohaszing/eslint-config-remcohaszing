@@ -1,4 +1,4 @@
-const prettier = require('../utils/prettier.js');
+const prettier = require('../utils/prettier.js')
 
 /**
  * These rules relate to style guidelines, and are therefore quite subjective.
@@ -179,8 +179,8 @@ module.exports = {
       allowBlockStart: true,
       allowObjectStart: true,
       allowArrayStart: true,
-      allowClassStart: true,
-    },
+      allowClassStart: true
+    }
   ],
 
   /**
@@ -199,8 +199,8 @@ module.exports = {
       ignoreUrls: true,
       ignoreRegExpLiterals: true,
       ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-    },
+      ignoreTemplateLiterals: true
+    }
   ],
 
   /**
@@ -331,7 +331,7 @@ module.exports = {
   quotes: [
     'error',
     prettier.js.singleQuote ? 'single' : 'double',
-    { avoidEscape: true, allowTemplateLiterals: false },
+    { avoidEscape: true, allowTemplateLiterals: false }
   ],
 
   /**
@@ -444,5 +444,5 @@ module.exports = {
    *
    * Prettier
    */
-  'yield-star-spacing': 'off',
-};
+  'yield-star-spacing': 'off'
+}

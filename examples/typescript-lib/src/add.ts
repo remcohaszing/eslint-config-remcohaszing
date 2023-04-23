@@ -1,4 +1,4 @@
-import { type Callback } from './types.js';
+import { type Callback } from './types.js'
 
 /**
  * Add x and y synchronously.
@@ -8,7 +8,7 @@ import { type Callback } from './types.js';
  * @returns The sum of x and y.
  */
 export function addSync(x: number, y: number): number {
-  return x + y;
+  return x + y
 }
 
 /**
@@ -19,7 +19,7 @@ export function addSync(x: number, y: number): number {
  * @param cb The callback that will be called with the sum of x and y.
  */
 export function addAsync(x: number, y: number, cb: Callback<number>): void {
-  cb(null, x + y);
+  cb(null, x + y)
 }
 
 /**
@@ -31,7 +31,7 @@ export function addAsync(x: number, y: number, cb: Callback<number>): void {
  */
 export async function addPromise(x: number, y: number): Promise<number> {
   const sum = await new Promise<number>((resolve) => {
-    resolve(x + y);
-  });
-  return sum;
+    resolve(x + y)
+  })
+  return sum
 }

@@ -1,28 +1,28 @@
-import { Component, type ComponentChild, type ComponentChildren } from 'preact';
+import { Component, type ComponentChild, type ComponentChildren } from 'preact'
 
 interface ErrorHandlerProps {
   /**
    * The elements to try to render.
    */
-  children: ComponentChildren;
+  children: ComponentChildren
 }
 
 interface State {
   /**
    * The error that was thrown.
    */
-  error?: Error | null;
+  error?: Error | null
 }
 
 /**
  * Render children, and render a stack trace if an error occurs while rendering.
  */
 export class ErrorHandler extends Component<ErrorHandlerProps, State> {
-  static defaultProps = {};
+  static defaultProps = {}
 
   state: State = {
-    error: null,
-  };
+    error: null
+  }
 
   /**
    * Handle an error thrown caused by a component on the React tree.
@@ -30,12 +30,12 @@ export class ErrorHandler extends Component<ErrorHandlerProps, State> {
    * @param error The error that was thrown
    */
   componentDidCatch(error: Error): void {
-    this.setState({ error });
+    this.setState({ error })
   }
 
   render(): ComponentChild {
-    const { children } = this.props;
-    const { error } = this.state;
+    const { children } = this.props
+    const { error } = this.state
 
     if (error) {
       return (
@@ -45,9 +45,9 @@ export class ErrorHandler extends Component<ErrorHandlerProps, State> {
             {error instanceof Error ? error.message : JSON.stringify(error, undefined, 2)}
           </pre>
         </>
-      );
+      )
     }
 
-    return children;
+    return children
   }
 }

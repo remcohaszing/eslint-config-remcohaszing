@@ -1,41 +1,41 @@
-import PropTypes from 'prop-types';
-import { useCallback, useState } from 'react';
+import PropTypes from 'prop-types'
+import { useCallback, useState } from 'react'
 
-import { Button } from '../Button/index.js';
-import { ErrorButton } from '../ErrorButton/index.js';
-import { Input } from '../Input/index.js';
+import { Button } from '../Button/index.js'
+import { ErrorButton } from '../ErrorButton/index.js'
+import { Input } from '../Input/index.js'
 
 const propTypes = {
   /**
    * Called when the form is submitted
    */
-  onSubmit: PropTypes.func.isRequired,
-};
+  onSubmit: PropTypes.func.isRequired
+}
 
 /**
  * A form for editing an item.
  */
 export function ItemForm({ onSubmit }) {
-  const [item, setItem] = useState({ text: '', link: '' });
+  const [item, setItem] = useState({ text: '', link: '' })
 
   const handleChange = useCallback(
     ({ currentTarget }) => {
       setItem({
         ...item,
-        [currentTarget.name]: currentTarget.value,
-      });
+        [currentTarget.name]: currentTarget.value
+      })
     },
-    [item],
-  );
+    [item]
+  )
 
   const handleSubmit = useCallback(
     (event) => {
-      event.preventDefault();
-      onSubmit(item);
-      setItem({ text: '', link: '' });
+      event.preventDefault()
+      onSubmit(item)
+      setItem({ text: '', link: '' })
     },
-    [item, onSubmit],
-  );
+    [item, onSubmit]
+  )
 
   return (
     <form noValidate onSubmit={handleSubmit}>
@@ -46,7 +46,7 @@ export function ItemForm({ onSubmit }) {
         Add
       </Button>
     </form>
-  );
+  )
 }
 
-ItemForm.propTypes = propTypes;
+ItemForm.propTypes = propTypes

@@ -117,5 +117,5 @@ module.exports = {
   /**
    * https://eslint.org/docs/latest/rules/valid-jsdoc
    */
-  'valid-jsdoc': 'off',
-};
+  'valid-jsdoc': 'off'
+}

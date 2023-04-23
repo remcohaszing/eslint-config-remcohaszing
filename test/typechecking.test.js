@@ -1,8 +1,8 @@
-const assert = require('node:assert/strict');
-const { test } = require('node:test');
+const assert = require('node:assert/strict')
+const { test } = require('node:test')
 
-const plugin = require('@typescript-eslint/eslint-plugin');
-const config = require('eslint-config-remcohaszing/typechecking');
+const plugin = require('@typescript-eslint/eslint-plugin')
+const config = require('eslint-config-remcohaszing/typechecking')
 
 test('define all rules from @typescript-eslint/eslint-plugin with type checking', () => {
   assert.deepEqual(
@@ -12,9 +12,9 @@ test('define all rules from @typescript-eslint/eslint-plugin with type checking'
     Object.entries(plugin.rules)
       .filter(([, { meta }]) => meta.docs.requiresTypeChecking)
       .map(([rule]) => `@typescript-eslint/${rule}`)
-      .sort(),
-  );
-});
+      .sort()
+  )
+})
 
 for (const [ruleName, { meta }] of Object.entries(plugin.rules)) {
   if (meta.deprecated && meta.docs.requiresTypeChecking) {
@@ -22,8 +22,8 @@ for (const [ruleName, { meta }] of Object.entries(plugin.rules)) {
       assert.equal(
         config.overrides[0].rules[`@typescript-eslint/${ruleName}`],
         'off',
-        `expected @typescript-eslint/${ruleName} to be disabled`,
-      );
-    });
+        `expected @typescript-eslint/${ruleName} to be disabled`
+      )
+    })
   }
 }

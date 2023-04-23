@@ -1,23 +1,23 @@
-const getIgnorePatterns = require('./utils/getIgnorePatterns.js');
+const getIgnorePatterns = require('./utils/getIgnorePatterns.js')
 
 /**
  * https://github.com/github/markup/blob/master/lib/github/markup/markdown.rb#L34
  */
-const markdown = '**/*.{md,mkd,mkdn,mdwn,mdown,markdown}';
+const markdown = '**/*.{md,mkd,mkdn,mdwn,mdown,markdown}'
 
 module.exports = {
   env: {
     browser: true,
     es2022: true,
-    node: true,
+    node: true
   },
   ignorePatterns: getIgnorePatterns(),
   parserOptions: {
     ecmaVersion: 'latest',
     ecmaFeatures: {
-      impliedStrict: true,
+      impliedStrict: true
     },
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: [],
   rules: {},
@@ -28,7 +28,7 @@ module.exports = {
      */
     {
       files: ['*.ts', '*.tsx'],
-      extends: ['remcohaszing/typescript'],
+      extends: ['remcohaszing/typescript']
     },
 
     /**
@@ -36,7 +36,7 @@ module.exports = {
      */
     {
       files: ['*.d.ts'],
-      extends: ['remcohaszing/dts'],
+      extends: ['remcohaszing/dts']
     },
 
     /**
@@ -44,7 +44,7 @@ module.exports = {
      */
     {
       files: ['*.jsx', '*.tsx'],
-      extends: ['remcohaszing/jsx'],
+      extends: ['remcohaszing/jsx']
     },
 
     /**
@@ -65,9 +65,9 @@ module.exports = {
         '*rc.*',
         '**/config/**',
         '**/test/**',
-        '**/__mocks__/**',
+        '**/__mocks__/**'
       ],
-      extends: ['remcohaszing/dev'],
+      extends: ['remcohaszing/dev']
     },
 
     /**
@@ -76,7 +76,7 @@ module.exports = {
     {
       files: [markdown],
       plugins: ['markdown'],
-      processor: 'markdown/markdown',
+      processor: 'markdown/markdown'
     },
 
     /**
@@ -116,15 +116,15 @@ module.exports = {
          *
          * Check the code using Prettier CLI instead.
          */
-        'prettier/prettier': 'off',
-      },
+        'prettier/prettier': 'off'
+      }
     },
 
     /**
      * Lint code blocks tagged with `javascript`.
      */
     {
-      files: [`${markdown}/*.javascript`],
+      files: [`${markdown}/*.javascript`]
     },
 
     /**
@@ -134,14 +134,14 @@ module.exports = {
      */
     {
       files: [`${markdown}/*.typescript`],
-      extends: ['remcohaszing/typescript'],
-    },
-  ],
-};
+      extends: ['remcohaszing/typescript']
+    }
+  ]
+}
 
 for (const name of ['deprecated', 'layout', 'problem', 'suggestion']) {
-  const rules = require(`./core/${name}`);
-  Object.assign(module.exports.rules, rules);
+  const rules = require(`./core/${name}`)
+  Object.assign(module.exports.rules, rules)
 }
 
 for (const name of [
@@ -152,10 +152,10 @@ for (const name of [
   'n',
   'prettier',
   'sort-destructure-keys',
-  'unicorn',
+  'unicorn'
 ]) {
-  const preset = require(`./plugins/${name}.js`);
-  module.exports.plugins.push(name);
-  Object.assign(module.exports.rules, preset.rules);
-  Object.assign(module.exports.settings, preset.settings);
+  const preset = require(`./plugins/${name}.js`)
+  module.exports.plugins.push(name)
+  Object.assign(module.exports.rules, preset.rules)
+  Object.assign(module.exports.settings, preset.settings)
 }

@@ -10,19 +10,19 @@ def hello():
 ```
 
 ```jsx
-import { h } from 'mini-jsx';
+import { h } from 'mini-jsx'
 
 export function hello() {
-  return <div>Hello</div>;
+  return <div>Hello</div>
 }
 
-console.log(hello());
+console.log(hello())
 ```
 
 ```typescript
 function getRandomNumber(): Promise<number> {
-  return 4;
+  return 4
 }
 
-console.log(getRandomNumber());
+console.log(getRandomNumber())
 ```

@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 const propTypes = {
   /**
@@ -26,8 +26,8 @@ const propTypes = {
   /**
    * The current value of the input.
    */
-  value: PropTypes.string.isRequired,
-};
+  value: PropTypes.string.isRequired
+}
 
 /**
  * Render a Bulma styled input element.
@@ -40,7 +40,7 @@ export function Input({ label, name, ...props }) {
       </label>
       <input className="input" id={name} name={name} {...props} />
     </div>
-  );
+  )
 }
 
-Input.propTypes = propTypes;
+Input.propTypes = propTypes

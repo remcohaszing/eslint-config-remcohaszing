@@ -3,6 +3,6 @@
  */
 module.exports = {
   rules: {
-    'sort-destructure-keys/sort-destructure-keys': 'error',
-  },
-};
+    'sort-destructure-keys/sort-destructure-keys': 'error'
+  }
+}

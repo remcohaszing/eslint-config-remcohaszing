@@ -1,6 +1,6 @@
-const confusingBrowserGlobals = require('confusing-browser-globals');
+const confusingBrowserGlobals = require('confusing-browser-globals')
 
-const allowedProperties = require('../utils/allowedProperties.js');
+const allowedProperties = require('../utils/allowedProperties.js')
 
 /**
  * These rules relate to better ways of doing things to help you avoid problems.
@@ -34,8 +34,8 @@ module.exports = {
     'always',
     {
       ignoreConsecutiveComments: true,
-      ignorePattern: /^\s*(c8|type-coverage:|webpack\w)/.source,
-    },
+      ignorePattern: /^\s*(c8|type-coverage:|webpack\w)/.source
+    }
   ],
 
   /**
@@ -455,9 +455,9 @@ module.exports = {
         'accumulator',
 
         // Koa context.
-        'ctx',
-      ],
-    },
+        'ctx'
+      ]
+    }
   ],
 
   /**
@@ -502,13 +502,13 @@ module.exports = {
     {
       name: 'node:stream',
       importNames: ['promises'],
-      message: 'Use node:stream/promises instead.',
+      message: 'Use node:stream/promises instead.'
     },
     {
       name: 'node:timers',
       importNames: ['promises'],
-      message: 'Use node:timers/promises instead.',
-    },
+      message: 'Use node:timers/promises instead.'
+    }
   ],
 
   /**
@@ -525,8 +525,8 @@ module.exports = {
       // `value.toString()`
       selector:
         'CallExpression[callee.property.name="toString"][callee.optional=false][arguments.length=0][optional=false]',
-      message: 'Use String() instead.',
-    },
+      message: 'Use String() instead.'
+    }
   ],
 
   /**
@@ -815,5 +815,5 @@ module.exports = {
   /**
    * https://eslint.org/docs/latest/rules/yoda
    */
-  yoda: 'error',
-};
+  yoda: 'error'
+}

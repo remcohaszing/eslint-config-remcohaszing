@@ -1,8 +1,8 @@
 /**
  * Any function declaration whose name starts woth a lower case character.
  */
-const NON_COMPONENT_FUNCTION = 'FunctionDeclaration[id.name=/^[a-z]/]';
-const METHOD_DEFINITION = 'MethodDefinition';
+const NON_COMPONENT_FUNCTION = 'FunctionDeclaration[id.name=/^[a-z]/]'
+const METHOD_DEFINITION = 'MethodDefinition'
 
 /**
  * https://github.com/gajus/eslint-plugin-jsdoc
@@ -63,9 +63,9 @@ module.exports = {
         todo: false,
         tutorial: false,
         variation: false,
-        version: false,
-      },
-    },
+        version: false
+      }
+    }
   },
   rules: {
     /**
@@ -87,7 +87,7 @@ module.exports = {
      */
     'jsdoc/check-examples': [
       'off',
-      { exampleCodeRegex: /```(?:js|jsx|javascript|ts|tsx|typescript)\r?\n([\S\s]*)```/.source },
+      { exampleCodeRegex: /```(?:js|jsx|javascript|ts|tsx|typescript)\r?\n([\S\s]*)```/.source }
     ],
 
     /**
@@ -95,7 +95,7 @@ module.exports = {
      */
     'jsdoc/check-indentation': [
       'error',
-      { excludeTags: ['example', 'param', 'returns', 'throws', 'todo'] },
+      { excludeTags: ['example', 'param', 'returns', 'throws', 'todo'] }
     ],
 
     /**
@@ -163,10 +163,10 @@ module.exports = {
           {
             tags: ['param'],
             allowName: '/^[a-z][a-z\\d]*$/i',
-            message: 'Parameters names should be camel case',
-          },
-        ],
-      },
+            message: 'Parameters names should be camel case'
+          }
+        ]
+      }
     ],
 
     /**
@@ -177,8 +177,8 @@ module.exports = {
       {
         noSingleLineBlocks: true,
         noZeroLineText: true,
-        singleLineTags: ['jsx', 'jsxFrag', 'jsxImportSource', 'jsxRuntime', 'type'],
-      },
+        singleLineTags: ['jsx', 'jsxFrag', 'jsxImportSource', 'jsxRuntime', 'type']
+      }
     ],
 
     /**
@@ -261,9 +261,9 @@ module.exports = {
           'ExportNamedDeclaration > ClassDeclaration',
           'FunctionDeclaration',
           'TSIndexSignature',
-          'TSPropertySignature',
-        ],
-      },
+          'TSPropertySignature'
+        ]
+      }
     ],
 
     /**
@@ -275,8 +275,8 @@ module.exports = {
         checkDestructured: false,
         checkDestructuredRoots: true,
         contexts: [METHOD_DEFINITION, NON_COMPONENT_FUNCTION],
-        unnamedRootBase: ['arg'],
-      },
+        unnamedRootBase: ['arg']
+      }
     ],
 
     /**
@@ -367,6 +367,6 @@ module.exports = {
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/valid-types.md
      */
-    'jsdoc/valid-types': 'error',
-  },
-};
+    'jsdoc/valid-types': 'error'
+  }
+}

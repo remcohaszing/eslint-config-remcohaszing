@@ -6,7 +6,7 @@ module.exports = {
     {
       files: ['*.cts', '*.mts', '*.ts', '*.tsx'],
       parserOptions: {
-        project: true,
+        project: true
       },
       rules: {
         /**
@@ -214,7 +214,7 @@ module.exports = {
          */
         '@typescript-eslint/restrict-template-expressions': [
           'error',
-          { allowNumber: true, allowBoolean: true, allowAny: false, allowNullish: true },
+          { allowNumber: true, allowBoolean: true, allowAny: false, allowNullish: true }
         ],
 
         /**
@@ -235,8 +235,8 @@ module.exports = {
         /**
          * https://typescript-eslint.io/rules/unbound-method
          */
-        '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
-      },
-    },
-  ],
-};
+        '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }]
+      }
+    }
+  ]
+}

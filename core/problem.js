@@ -294,5 +294,5 @@ module.exports = {
   /**
    * https://eslint.org/docs/latest/rules/valid-typeof
    */
-  'valid-typeof': 'error',
-};
+  'valid-typeof': 'error'
+}

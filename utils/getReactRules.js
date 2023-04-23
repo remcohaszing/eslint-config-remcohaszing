@@ -1,4 +1,4 @@
-const rules = require('./react.js');
+const rules = require('./react.js')
 
 /**
  * Get rules from `eslint-plugin-react` for a given context.
@@ -6,11 +6,11 @@ const rules = require('./react.js');
  * @param {string} context One of `'jsx'`, `'preact'`, or `'react'`.
  */
 module.exports = (context) => {
-  const contextRules = {};
+  const contextRules = {}
   for (const [rule, config] of Object.entries(rules)) {
     if (config[context] !== 'off') {
-      contextRules[rule] = config[context];
+      contextRules[rule] = config[context]
     }
   }
-  return contextRules;
-};
+  return contextRules
+}

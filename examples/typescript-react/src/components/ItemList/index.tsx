@@ -1,18 +1,18 @@
-import { type ReactElement, useCallback, useState } from 'react';
+import { type ReactElement, useCallback, useState } from 'react'
 
-import { type Item } from '../../types.js';
-import { ItemForm } from '../ItemForm/index.js';
+import { type Item } from '../../types.js'
+import { ItemForm } from '../ItemForm/index.js'
 
 /**
  * Display a list of items.
  */
 export function ItemList(): ReactElement {
-  const [items, setItems] = useState<Item[]>([]);
+  const [items, setItems] = useState<Item[]>([])
 
   const addItem = useCallback(
     (item: Item) => setItems([{ ...item, id: items.length }, ...items]),
-    [items],
-  );
+    [items]
+  )
 
   return (
     <div>
@@ -35,5 +35,5 @@ export function ItemList(): ReactElement {
         <p>No items to display.</p>
       )}
     </div>
-  );
+  )
 }

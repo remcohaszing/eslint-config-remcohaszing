@@ -1,8 +1,8 @@
-const assert = require('node:assert/strict');
-const { test } = require('node:test');
+const assert = require('node:assert/strict')
+const { test } = require('node:test')
 
-const config = require('eslint-config-remcohaszing/jsx');
-const pluginJsxA11y = require('eslint-plugin-jsx-a11y');
+const config = require('eslint-config-remcohaszing/jsx')
+const pluginJsxA11y = require('eslint-plugin-jsx-a11y')
 
 test('define all rules from eslint-plugin-jsx-a11y', () => {
   assert.deepEqual(
@@ -11,9 +11,9 @@ test('define all rules from eslint-plugin-jsx-a11y', () => {
       .sort(),
     Object.keys(pluginJsxA11y.rules)
       .map((rule) => `jsx-a11y/${rule}`)
-      .sort(),
-  );
-});
+      .sort()
+  )
+})
 
 for (const [ruleName, { meta }] of Object.entries(pluginJsxA11y.rules)) {
   if (meta.deprecated) {
@@ -21,8 +21,8 @@ for (const [ruleName, { meta }] of Object.entries(pluginJsxA11y.rules)) {
       assert.equal(
         config.rules[`jsx-a11y/${ruleName}`],
         'off',
-        `expected jsx-a11y/${ruleName} to be disabled`,
-      );
-    });
+        `expected jsx-a11y/${ruleName} to be disabled`
+      )
+    })
   }
 }

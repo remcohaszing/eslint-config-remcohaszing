@@ -1,4 +1,4 @@
-const { typesOnlyPackages } = require('../utils/constants.js');
+const { typesOnlyPackages } = require('../utils/constants.js')
 
 /**
  * https://github.com/eslint-community/eslint-plugin-n
@@ -7,8 +7,8 @@ module.exports = {
   settings: {
     node: {
       tryExtensions: [],
-      version: '>=16.0.0',
-    },
+      version: '>=16.0.0'
+    }
   },
   rules: {
     /**
@@ -218,6 +218,6 @@ module.exports = {
     /**
      * https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/shebang.md
      */
-    'n/shebang': 'error',
-  },
-};
+    'n/shebang': 'error'
+  }
+}

@@ -46,6 +46,6 @@ module.exports = {
     /**
      * https://weiran-zsd.github.io/eslint-plugin-eslint-comments/rules/require-description.html
      */
-    'eslint-comments/require-description': 'off',
-  },
-};
+    'eslint-comments/require-description': 'off'
+  }
+}

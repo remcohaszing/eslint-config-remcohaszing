@@ -5,13 +5,13 @@ module.exports = {
   settings: {
     'import/extensions': [],
     'import/parsers': {
-      '@typescript-eslint/parser': ['.cts', '.mts', '.ts', '.tsx'],
+      '@typescript-eslint/parser': ['.cts', '.mts', '.ts', '.tsx']
     },
     'import/resolver': {
       node: {
-        extensions: [],
-      },
-    },
+        extensions: []
+      }
+    }
   },
   rules: {
     /**
@@ -104,8 +104,8 @@ module.exports = {
         allowCallExpression: true,
         allowLiteral: true,
         allowNew: true,
-        allowObject: true,
-      },
+        allowObject: true
+      }
     ],
 
     /**
@@ -158,8 +158,8 @@ module.exports = {
         devDependencies: false,
         optionalDependencies: true,
         peerDependencies: true,
-        bundledDependencies: true,
-      },
+        bundledDependencies: true
+      }
     ],
 
     /**
@@ -240,8 +240,8 @@ module.exports = {
       {
         caseSensitiveStrict: true,
         commonjs: true,
-        ignore: [/^[@a-z]/.source, /[!*]/.source, /.\.(cjs|js|mjs)$/.source],
-      },
+        ignore: [/^[@a-z]/.source, /[!*]/.source, /.\.(cjs|js|mjs)$/.source]
+      }
     ],
 
     /**
@@ -270,8 +270,8 @@ module.exports = {
         alphabetize: { order: 'asc', caseInsensitive: true },
         groups: ['builtin', 'external', 'internal', ['parent', 'sibling', 'index'], 'object'],
         'newlines-between': 'always',
-        warnOnUnassignedImports: true,
-      },
+        warnOnUnassignedImports: true
+      }
     ],
 
     /**
@@ -282,6 +282,6 @@ module.exports = {
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/unambiguous.md
      */
-    'import/unambiguous': 'off',
-  },
-};
+    'import/unambiguous': 'off'
+  }
+}

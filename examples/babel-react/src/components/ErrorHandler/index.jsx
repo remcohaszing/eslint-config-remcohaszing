@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import { Component } from 'react';
+import PropTypes from 'prop-types'
+import { Component } from 'react'
 
 /**
  * Render children, and render a stack trace if an error occurs while rendering.
@@ -9,13 +9,13 @@ export class ErrorHandler extends Component {
     /**
      * The elements to try to render.
      */
-    children: PropTypes.node.isRequired,
-  };
+    children: PropTypes.node.isRequired
+  }
 
   state = {
     error: null,
-    errorInfo: null,
-  };
+    errorInfo: null
+  }
 
   /**
    * Handle an error thrown caused by a component on the React tree.
@@ -24,12 +24,12 @@ export class ErrorHandler extends Component {
    * @param {object} errorInfo The React error information
    */
   componentDidCatch(error, errorInfo) {
-    this.setState({ error, errorInfo });
+    this.setState({ error, errorInfo })
   }
 
   render() {
-    const { children } = this.props;
-    const { error, errorInfo } = this.state;
+    const { children } = this.props
+    const { error, errorInfo } = this.state
 
     if (error || errorInfo) {
       return (
@@ -40,9 +40,9 @@ export class ErrorHandler extends Component {
             {errorInfo?.componentStack}
           </pre>
         </>
-      );
+      )
     }
 
-    return children;
+    return children
   }
 }

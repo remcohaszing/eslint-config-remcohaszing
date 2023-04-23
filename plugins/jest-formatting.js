@@ -38,6 +38,6 @@ module.exports = {
     /**
      * https://github.com/dangreenisrael/eslint-plugin-jest-formatting/blob/master/docs/rules/padding-around-test-blocks.md
      */
-    'jest-formatting/padding-around-test-blocks': 'error',
-  },
-};
+    'jest-formatting/padding-around-test-blocks': 'error'
+  }
+}

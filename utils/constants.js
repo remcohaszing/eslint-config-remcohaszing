@@ -8,10 +8,10 @@ module.exports.dtOnlyPackages = [
   'mdast',
   'unist',
   'web-app-manifest',
-  'xast',
-];
+  'xast'
+]
 
 /**
  * Known packages that export only type definitions, but which don’t contain a JavaScript file.
  */
-module.exports.typesOnlyPackages = ['@fortawesome/fontawesome-common-types'];
+module.exports.typesOnlyPackages = ['@fortawesome/fontawesome-common-types']

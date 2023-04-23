@@ -1,32 +1,32 @@
-import { type ChangeEventHandler, type ReactElement, type ReactNode } from 'react';
+import { type ChangeEventHandler, type ReactElement, type ReactNode } from 'react'
 
 interface InputProps {
   /**
    * The label to render for the input.
    */
-  label: ReactNode;
+  label: ReactNode
 
   /**
    * The name of the input field.
    *
    * This will also be used as the id.
    */
-  name: string;
+  name: string
 
   /**
    * The event handler to call when the input changes.
    */
-  onChange: ChangeEventHandler<HTMLInputElement>;
+  onChange: ChangeEventHandler<HTMLInputElement>
 
   /**
    * The input type.
    */
-  type?: 'text' | 'url';
+  type?: 'text' | 'url'
 
   /**
    * The current value of the input.
    */
-  value: string;
+  value: string
 }
 
 /**
@@ -40,5 +40,5 @@ export function Input({ label, name, ...props }: InputProps): ReactElement {
       </label>
       <input className="input" id={name} name={name} {...props} />
     </div>
-  );
+  )
 }

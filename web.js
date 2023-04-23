@@ -37,6 +37,6 @@ module.exports = {
     /**
      * https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unsupported-features/node-builtins.md
      */
-    'n/no-unsupported-features/node-builtins': 'off',
-  },
-};
+    'n/no-unsupported-features/node-builtins': 'off'
+  }
+}

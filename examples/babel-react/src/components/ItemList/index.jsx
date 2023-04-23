@@ -1,17 +1,17 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react'
 
-import { ItemForm } from '../ItemForm/index.js';
+import { ItemForm } from '../ItemForm/index.js'
 
 /**
  * Display a list of items.
  */
 export function ItemList() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState([])
 
   const addItem = useCallback(
     (item) => setItems([{ ...item, id: items.length }, ...items]),
-    [items],
-  );
+    [items]
+  )
 
   return (
     <div>
@@ -34,5 +34,5 @@ export function ItemList() {
         <p>No items to display.</p>
       )}
     </div>
-  );
+  )
 }

@@ -1,19 +1,19 @@
-import { type VNode } from 'preact';
-import { useCallback, useState } from 'preact/hooks';
+import { type VNode } from 'preact'
+import { useCallback, useState } from 'preact/hooks'
 
-import { type Item } from '../../types.js';
-import { ItemForm } from '../ItemForm/index.js';
+import { type Item } from '../../types.js'
+import { ItemForm } from '../ItemForm/index.js'
 
 /**
  * Display a list of items.
  */
 export function ItemList(): VNode {
-  const [items, setItems] = useState<Item[]>([]);
+  const [items, setItems] = useState<Item[]>([])
 
   const addItem = useCallback(
     (item: Item) => setItems([{ ...item, id: items.length }, ...items]),
-    [items],
-  );
+    [items]
+  )
 
   return (
     <div>
@@ -36,5 +36,5 @@ export function ItemList(): VNode {
         <p>No items to display.</p>
       )}
     </div>
-  );
+  )
 }
