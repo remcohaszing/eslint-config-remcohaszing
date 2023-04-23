@@ -7,6 +7,7 @@ module.exports = {
   settings: {
     node: {
       tryExtensions: [],
+      version: '>=16.0.0',
     },
   },
   rules: {

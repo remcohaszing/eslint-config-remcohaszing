@@ -13,6 +13,11 @@ module.exports = {
     'jsx-a11y/alt-text': 'error',
 
     /**
+     * https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/anchor-ambiguous-text.md
+     */
+    'jsx-a11y/anchor-ambiguous-text': 'off',
+
+    /**
      * https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/anchor-has-content.md
      */
     'jsx-a11y/anchor-has-content': 'error',
@@ -122,6 +127,11 @@ module.exports = {
     'jsx-a11y/no-access-key': 'off',
 
     /**
+     * https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/no-aria-hidden-on-focusable.md
+     */
+    'jsx-a11y/no-aria-hidden-on-focusable': 'error',
+
+    /**
      * https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/no-autofocus.md
      */
     'jsx-a11y/no-autofocus': 'error',
@@ -165,6 +175,11 @@ module.exports = {
      * https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/no-static-element-interactions.md
      */
     'jsx-a11y/no-static-element-interactions': 'error',
+
+    /**
+     * https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/prefer-tag-over-role.md
+     */
+    'jsx-a11y/prefer-tag-over-role': 'error',
 
     /**
      * https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/role-has-required-aria-props.md

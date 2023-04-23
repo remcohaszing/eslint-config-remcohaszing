@@ -175,7 +175,12 @@ module.exports = {
    */
   'lines-around-comment': [
     'error',
-    { allowBlockStart: true, allowObjectStart: true, allowArrayStart: true, allowClassStart: true },
+    {
+      allowBlockStart: true,
+      allowObjectStart: true,
+      allowArrayStart: true,
+      allowClassStart: true,
+    },
   ],
 
   /**

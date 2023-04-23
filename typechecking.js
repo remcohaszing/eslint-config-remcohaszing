@@ -4,9 +4,9 @@
 module.exports = {
   overrides: [
     {
-      files: ['.cts', '.mts', '*.ts', '*.tsx'],
+      files: ['*.cts', '*.mts', '*.ts', '*.tsx'],
       parserOptions: {
-        project: 'tsconfig.json',
+        project: true,
       },
       rules: {
         /**
@@ -38,6 +38,11 @@ module.exports = {
         '@typescript-eslint/no-confusing-void-expression': 'off',
 
         /**
+         * https://typescript-eslint.io/rules/no-duplicate-type-constituents
+         */
+        '@typescript-eslint/no-duplicate-type-constituents': 'error',
+
+        /**
          * https://typescript-eslint.io/rules/no-base-to-string
          */
         '@typescript-eslint/no-base-to-string': 'error',
@@ -66,6 +71,11 @@ module.exports = {
          * https://typescript-eslint.io/rules/no-meaningless-void-operator
          */
         '@typescript-eslint/no-meaningless-void-operator': 'error',
+
+        /**
+         * https://typescript-eslint.io/rules/no-mixed-enums
+         */
+        '@typescript-eslint/no-mixed-enums': 'off',
 
         /**
          * https://typescript-eslint.io/rules/no-redundant-type-constituents
@@ -116,6 +126,11 @@ module.exports = {
          * https://typescript-eslint.io/rules/no-unsafe-call
          */
         '@typescript-eslint/no-unsafe-call': 'error',
+
+        /**
+         * https://typescript-eslint.io/rules/no-unsafe-enum-comparison
+         */
+        '@typescript-eslint/no-unsafe-enum-comparison': 'error',
 
         /**
          * https://typescript-eslint.io/rules/no-unsafe-member-access

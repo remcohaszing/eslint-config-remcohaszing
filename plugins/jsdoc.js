@@ -93,12 +93,15 @@ module.exports = {
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-indentation.md
      */
-    'jsdoc/check-indentation': 'error',
+    'jsdoc/check-indentation': [
+      'error',
+      { excludeTags: ['example', 'param', 'returns', 'throws', 'todo'] },
+    ],
 
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-line-alignment.md
      */
-    'jsdoc/check-line-alignment': 'off',
+    'jsdoc/check-line-alignment': ['error', 'never', { wrapIndent: '  ' }],
 
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/check-param-names.md
@@ -141,6 +144,11 @@ module.exports = {
     'jsdoc/implements-on-classes': 'off',
 
     /**
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/informative-docs.md
+     */
+    'jsdoc/informative-docs': 'off',
+
+    /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/match-description.md
      */
     'jsdoc/match-description': 'off',
@@ -174,9 +182,9 @@ module.exports = {
     ],
 
     /**
-     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/newline-after-description.md
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-blank-block-descriptions.md
      */
-    'jsdoc/newline-after-description': 'error',
+    'jsdoc/no-blank-block-descriptions': 'error',
 
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-bad-blocks.md
@@ -349,7 +357,7 @@ module.exports = {
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/tag-lines.md
      */
-    'jsdoc/tag-lines': ['error', 'never', { dropEndLines: true }],
+    'jsdoc/tag-lines': ['error', 'never', { applyToEndTag: false, startLines: 1, endLines: 0 }],
 
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/text-escaping.md

@@ -111,8 +111,8 @@ module.exports = {
    */
   'react/hook-use-state': {
     jsx: 'off',
-    preact: 'error',
-    react: 'error',
+    preact: ['error', { allowDestructuredState: true }],
+    react: ['error', { allowDestructuredState: true }],
   },
 
   /**
@@ -440,11 +440,13 @@ module.exports = {
 
   /**
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-default-props.md
+   *
+   * @deprecated
    */
   'react/jsx-sort-default-props': {
-    jsx: ['off', { ignoreCase: true }],
-    preact: ['error', { ignoreCase: true }],
-    react: ['error', { ignoreCase: true }],
+    jsx: 'off',
+    preact: 'off',
+    react: 'off',
   },
 
   /**
@@ -651,6 +653,15 @@ module.exports = {
     jsx: 'off',
     preact: 'error',
     react: 'error',
+  },
+
+  /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-object-type-as-default-prop.md
+   */
+  'react/no-object-type-as-default-prop': {
+    jsx: 'off',
+    preact: 'off',
+    react: 'off',
   },
 
   /**
@@ -881,6 +892,15 @@ module.exports = {
         ],
       },
     ],
+  },
+
+  /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-default-props.md
+   */
+  'react/sort-default-props': {
+    jsx: ['off', { ignoreCase: true }],
+    preact: ['error', { ignoreCase: true }],
+    react: ['error', { ignoreCase: true }],
   },
 
   /**

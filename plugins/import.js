@@ -15,6 +15,11 @@ module.exports = {
   },
   rules: {
     /**
+     * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/consistent-type-specifier-style.md
+     */
+    'import/consistent-type-specifier-style': 'error',
+
+    /**
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/default.md
      */
     'import/default': 'error',
@@ -98,6 +103,7 @@ module.exports = {
         allowAnonymousFunction: false,
         allowCallExpression: true,
         allowLiteral: true,
+        allowNew: true,
         allowObject: true,
       },
     ],
@@ -135,6 +141,13 @@ module.exports = {
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/no-dynamic-require.md
      */
     'import/no-dynamic-require': 'off',
+
+    /**
+     * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/no-empty-named-blocks.md
+     *
+     * Already checked by `unicorn/import-style`
+     */
+    'import/no-empty-named-blocks': 'off',
 
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md

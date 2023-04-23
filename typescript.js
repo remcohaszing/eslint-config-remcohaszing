@@ -50,13 +50,6 @@ module.exports = {
     'no-undef': 'off',
 
     /**
-     * https://eslint.org/docs/latest/rules/lines-around-comment
-     *
-     * Causes conflicts with prettier for interfaces
-     */
-    'lines-around-comment': 'off',
-
-    /**
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/default
      *
      * Use TypeScript to determine this.
@@ -230,6 +223,13 @@ module.exports = {
     '@typescript-eslint/ban-types': 'error',
 
     /**
+     * https://typescript-eslint.io/rules/block-spacing
+     *
+     * Prettier
+     */
+    '@typescript-eslint/block-spacing': 'off',
+
+    /**
      * https://typescript-eslint.io/rules/brace-style
      *
      * // Prettier
@@ -327,11 +327,36 @@ module.exports = {
     'init-declarations': 'off',
 
     /**
+     * https://typescript-eslint.io/rules/key-spacing
+     *
+     * // Prettier
+     */
+    '@typescript-eslint/key-spacing': 'off',
+
+    /**
      * https://typescript-eslint.io/rules/keyword-spacing
      *
      * // Prettier
      */
     '@typescript-eslint/keyword-spacing': 'off',
+
+    /**
+     * https://typescript-eslint.io/rules/lines-around-comment
+     */
+    '@typescript-eslint/lines-around-comment': [
+      'error',
+      {
+        allowBlockStart: true,
+        allowObjectStart: true,
+        allowArrayStart: true,
+        allowClassStart: true,
+        allowEnumStart: true,
+        allowInterfaceStart: true,
+        allowModuleStart: true,
+        allowTypeStart: true,
+      },
+    ],
+    'lines-around-comment': 'off',
 
     /**
      * https://typescript-eslint.io/rules/lines-between-class-members
@@ -478,6 +503,11 @@ module.exports = {
      * https://typescript-eslint.io/rules/no-implicit-any-catch
      */
     '@typescript-eslint/no-implicit-any-catch': 'off',
+
+    /**
+     * https://typescript-eslint.io/rules/no-import-type-side-effects
+     */
+    '@typescript-eslint/no-import-type-side-effects': 'off',
 
     /**
      * https://typescript-eslint.io/rules/no-inferrable-types
