@@ -584,7 +584,7 @@ module.exports = {
     /**
      * https://typescript-eslint.io/rules/no-require-imports
      */
-    '@typescript-eslint/no-require-imports': 'error',
+    '@typescript-eslint/no-require-imports': 'off',
 
     /**
      * https://typescript-eslint.io/rules/no-restricted-imports
