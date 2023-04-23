@@ -10,6 +10,19 @@
 This is a strict shareable ESLint configuration. All ESLint core rules and a variety of ESLint
 plugins have been carefully considered. Overrides are used to apply rules based on context.
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Configuration](#configuration)
+  - [Settings](#settings)
+  - [Web](#web)
+  - [TypeScript](#typescript)
+  - [JSX](#jsx)
+    - [React / Preact](#react--preact)
+  - [Markdown](#markdown)
+- [Ignored files](#ignored-files)
+- [Warnings](#warnings)
+
 ## Installation
 
 Install `eslint-config-remcohaszing` using `npm`.
