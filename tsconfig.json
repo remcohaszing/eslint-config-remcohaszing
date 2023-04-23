@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "lib": ["dom", "esnext"],
     "module": "node16",
     "noEmit": true,
     "noImplicitAny": true,
