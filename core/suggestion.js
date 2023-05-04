@@ -688,7 +688,13 @@ module.exports = {
   /**
    * https://eslint.org/docs/latest/rules/prefer-destructuring
    */
-  'prefer-destructuring': 'error',
+  'prefer-destructuring': [
+    'error',
+    {
+      VariableDeclarator: { array: false, object: true },
+      AssignmentExpression: { array: false, object: false }
+    }
+  ],
 
   /**
    * https://eslint.org/docs/latest/rules/prefer-exponentiation-operator
