@@ -22,6 +22,7 @@ plugins have been carefully considered. Overrides are used to apply rules based 
   - [Markdown](#markdown)
 - [Ignored files](#ignored-files)
 - [Warnings](#warnings)
+- [License](#license)
 
 ## Installation
 
@@ -237,3 +238,7 @@ warnings cause ESLint to exit with exit code 1, run:
 ```sh
 eslint --max-warnings 0 .
 ```
+
+## License
+
+[MIT](./LICENSE.md) © [Remco Haszing](https://github.com/remcohaszing)
