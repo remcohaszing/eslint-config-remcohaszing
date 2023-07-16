@@ -1,6 +1,6 @@
 const { join } = require('node:path')
 
-const prettier = require('prettier')
+const prettier = require('@prettier/sync')
 
 /**
  * Get the Prettier configuration for a file extension.
@@ -13,7 +13,7 @@ function getConfig(extension) {
     // Prettier defaults
     printWidth: 80,
     singleQuote: false,
-    ...prettier.resolveConfig.sync(join(process.cwd(), extension), { editorconfig: true })
+    ...prettier.resolveConfig(join(process.cwd(), extension), { editorconfig: true })
   }
 }
 

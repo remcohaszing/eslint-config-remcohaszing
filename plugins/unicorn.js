@@ -276,8 +276,10 @@ module.exports = {
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-regex.md
+     *
+     * @deprecated
      */
-    'unicorn/no-unsafe-regex': 'error',
+    'unicorn/no-unsafe-regex': 'off',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-properties.md
@@ -363,10 +365,13 @@ module.exports = {
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-at.md
-     *
-     * Browsers and NodeJS don’t support this yet.
      */
-    'unicorn/prefer-at': 'off',
+    'unicorn/prefer-at': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-blob-reading-methods.md
+     */
+    'unicorn/prefer-blob-reading-methods': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-code-point.md
@@ -584,7 +589,7 @@ module.exports = {
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-replace-all.md
      */
-    'unicorn/prefer-string-replace-all': 'off',
+    'unicorn/prefer-string-replace-all': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-starts-ends-with.md

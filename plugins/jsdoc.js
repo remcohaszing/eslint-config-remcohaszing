@@ -139,6 +139,11 @@ module.exports = {
     'jsdoc/empty-tags': 'error',
 
     /**
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/imports-as-dependencies.md
+     */
+    'jsdoc/imports-as-dependencies': 'off',
+
+    /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/implements-on-classes.md
      */
     'jsdoc/implements-on-classes': 'off',
@@ -185,6 +190,11 @@ module.exports = {
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-blank-block-descriptions.md
      */
     'jsdoc/no-blank-block-descriptions': 'error',
+
+    /**
+     * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-blank-blocks.md
+     */
+    'jsdoc/no-blank-blocks': 'error',
 
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/master/.README/rules/no-bad-blocks.md

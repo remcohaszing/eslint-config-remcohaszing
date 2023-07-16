@@ -361,7 +361,7 @@ module.exports = {
     /**
      * https://typescript-eslint.io/rules/lines-between-class-members
      */
-    '@typescript-eslint/lines-between-class-members': ['error', { exceptAfterOverload: true }],
+    '@typescript-eslint/lines-between-class-members': 'error',
     'lines-between-class-members': 'off',
 
     /**
@@ -448,13 +448,6 @@ module.exports = {
     '@typescript-eslint/no-duplicate-enum-values': 'error',
 
     /**
-     * https://typescript-eslint.io/rules/no-duplicate-imports
-     *
-     * @deprecated
-     */
-    '@typescript-eslint/no-duplicate-imports': 'off',
-
-    /**
      * https://typescript-eslint.io/rules/no-dynamic-delete
      */
     '@typescript-eslint/no-dynamic-delete': 'off',
@@ -498,11 +491,6 @@ module.exports = {
      * https://typescript-eslint.io/rules/no-extraneous-class
      */
     '@typescript-eslint/no-extraneous-class': 'error',
-
-    /**
-     * https://typescript-eslint.io/rules/no-implicit-any-catch
-     */
-    '@typescript-eslint/no-implicit-any-catch': 'off',
 
     /**
      * https://typescript-eslint.io/rules/no-import-type-side-effects
@@ -569,14 +557,7 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
 
     /**
-     * https://typescript-eslint.io/rules/no-parameter-properties
-     *
-     * @deprecated
-     */
-    '@typescript-eslint/no-parameter-properties': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/no-shadow
+     * https://typescript-eslint.io/rules/no-redeclare
      */
     '@typescript-eslint/no-redeclare': ['error', { ignoreDeclarationMerge: false }],
     'no-redeclare': 'off',
@@ -715,11 +696,6 @@ module.exports = {
     '@typescript-eslint/prefer-namespace-keyword': 'error',
 
     /**
-     * https://typescript-eslint.io/rules/prefer-optional-chain
-     */
-    '@typescript-eslint/prefer-optional-chain': 'error',
-
-    /**
      * https://typescript-eslint.io/rules/prefer-ts-expect-error
      */
     '@typescript-eslint/prefer-ts-expect-error': 'error',
@@ -754,13 +730,6 @@ module.exports = {
      * https://typescript-eslint.io/rules/sort-type-union-constituents
      */
     '@typescript-eslint/sort-type-constituents': 'error',
-
-    /**
-     * https://typescript-eslint.io/rules/sort-type-union-intersection-members
-     *
-     * @deprecated
-     */
-    '@typescript-eslint/sort-type-union-intersection-members': 'off',
 
     /**
      * https://typescript-eslint.io/rules/space-before-blocks

@@ -159,6 +159,11 @@ module.exports = {
         '@typescript-eslint/prefer-nullish-coalescing': 'error',
 
         /**
+         * https://typescript-eslint.io/rules/prefer-optional-chain
+         */
+        '@typescript-eslint/prefer-optional-chain': 'error',
+
+        /**
          * https://typescript-eslint.io/rules/prefer-readonly
          */
         '@typescript-eslint/prefer-readonly': 'off',
@@ -207,7 +212,7 @@ module.exports = {
         /**
          * https://typescript-eslint.io/rules/restrict-plus-operands
          */
-        '@typescript-eslint/restrict-plus-operands': ['error', { checkCompoundAssignments: true }],
+        '@typescript-eslint/restrict-plus-operands': 'error',
 
         /**
          * https://typescript-eslint.io/rules/restrict-template-expressions

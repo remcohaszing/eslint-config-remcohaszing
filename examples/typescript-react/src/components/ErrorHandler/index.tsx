@@ -44,7 +44,7 @@ export class ErrorHandler extends Component<ErrorHandlerProps, State> {
     const { children } = this.props
     const { error, errorInfo } = this.state
 
-    if (error || errorInfo) {
+    if (error ?? errorInfo) {
       return (
         <>
           <h1 className="has-text-danger">{error?.name}</h1>
