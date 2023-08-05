@@ -219,7 +219,17 @@ module.exports = {
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-restricted-syntax.md
      */
-    'jsdoc/no-restricted-syntax': 'off',
+    'jsdoc/no-restricted-syntax': [
+      'error',
+      {
+        contexts: [
+          {
+            comment: 'JsdocBlock:has(JsdocTag[tag=typedef][parsedType.value=/object/i])',
+            message: 'Omit the object type from typedef'
+          }
+        ]
+      }
+    ],
 
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-types.md
