@@ -19,7 +19,7 @@ export function substractSync(x: number, y: number): number {
  * @param y The value to substract from x.
  * @param cb The callback that will be called with the difference between x and y.
  */
-export function substractAsync(x: number, y: number, cb: Callback<number>): void {
+export function substractAsync(x: number, y: number, cb: Callback<number>): undefined {
   addAsync(x, -y, (error, result) => {
     if (error) {
       cb(error)

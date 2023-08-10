@@ -18,7 +18,7 @@ export function addSync(x: number, y: number): number {
  * @param y The value to add to x.
  * @param cb The callback that will be called with the sum of x and y.
  */
-export function addAsync(x: number, y: number, cb: Callback<number>): void {
+export function addAsync(x: number, y: number, cb: Callback<number>): undefined {
   cb(null, x + y)
 }
 

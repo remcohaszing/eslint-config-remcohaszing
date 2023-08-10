@@ -520,6 +520,10 @@ module.exports = {
       selector:
         'CallExpression[callee.property.name="toString"][callee.optional=false][arguments.length=0][optional=false]',
       message: 'Use String() instead.'
+    },
+    {
+      selector: '[returnType.type="TSTypeAnnotation"]>TSTypeAnnotation>TSVoidKeyword',
+      message: 'Use undefined for non-returning functions of unknown for callbacks'
     }
   ],
 

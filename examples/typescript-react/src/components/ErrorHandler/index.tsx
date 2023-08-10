@@ -36,7 +36,7 @@ export class ErrorHandler extends Component<ErrorHandlerProps, State> {
    * @param error The error that was thrown
    * @param errorInfo The React error information
    */
-  componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
+  componentDidCatch(error: Error, errorInfo: ErrorInfo): undefined {
     this.setState({ error, errorInfo })
   }
 

@@ -29,7 +29,7 @@ export class ErrorHandler extends Component<ErrorHandlerProps, State> {
    *
    * @param error The error that was thrown
    */
-  componentDidCatch(error: Error): void {
+  componentDidCatch(error: Error): undefined {
     this.setState({ error })
   }
 
