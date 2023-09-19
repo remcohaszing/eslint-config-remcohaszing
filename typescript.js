@@ -505,8 +505,7 @@ module.exports = {
     /**
      * https://typescript-eslint.io/rules/no-invalid-this
      */
-    '@typescript-eslint/no-invalid-this': ['error', { capIsConstructor: false }],
-    'no-invalid-this': 'off',
+    '@typescript-eslint/no-invalid-this': 'off',
 
     /**
      * https://typescript-eslint.io/rules/no-invalid-void-type

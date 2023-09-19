@@ -337,7 +337,7 @@ module.exports = {
   /**
    * https://eslint.org/docs/latest/rules/no-invalid-this
    */
-  'no-invalid-this': ['error', { capIsConstructor: false }],
+  'no-invalid-this': 'off',
 
   /**
    * https://eslint.org/docs/latest/rules/no-iterator
