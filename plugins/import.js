@@ -135,7 +135,7 @@ module.exports = {
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/no-duplicates.md
      */
-    'import/no-duplicates': 'error',
+    'import/no-duplicates': ['error', { 'prefer-inline': true }],
 
     /**
      * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/no-dynamic-require.md
