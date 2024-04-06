@@ -6,6 +6,9 @@ const prettier = require('./utils/prettier.js')
  */
 module.exports = {
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    warnOnUnsupportedTypeScriptVersion: false
+  },
   plugins: ['@typescript-eslint'],
   rules: {
     /**
