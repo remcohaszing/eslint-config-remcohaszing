@@ -7,9 +7,9 @@
     "start": "vite"
   },
   "dependencies": {
-    "bulma": "^0.9.0",
+    "bulma": "^1.0.0",
     "classnames": "^2.0.0",
     "preact": "^10.0.0",
-    "vite": "^4.0.0"
+    "vite": "^5.0.0"
   }
 }

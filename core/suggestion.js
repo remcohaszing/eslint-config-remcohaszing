@@ -431,6 +431,11 @@ module.exports = {
   'no-nonoctal-decimal-escape': 'off',
 
   /**
+   * https://eslint.org/docs/latest/rules/no-object-constructor
+   */
+  'no-object-constructor': 'error',
+
+  /**
    * https://eslint.org/docs/latest/rules/no-octal
    *
    * This is useful for limited use cases.
