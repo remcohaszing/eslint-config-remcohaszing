@@ -3,4 +3,3 @@ overrides:
       - src/**
     extends:
       - remcohaszing/react
-      - remcohaszing/web

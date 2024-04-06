@@ -2,7 +2,6 @@ const getReactRules = require('./utils/getReactRules.js')
 const jsxA11y = require('./utils/jsx-a11y.js')
 
 module.exports = {
-  extends: ['remcohaszing/web'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true

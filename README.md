@@ -15,7 +15,6 @@ plugins have been carefully considered. Overrides are used to apply rules based 
 - [Installation](#installation)
 - [Configuration](#configuration)
   - [Settings](#settings)
-  - [Web](#web)
   - [TypeScript](#typescript)
   - [JSX](#jsx)
     - [React / Preact](#react--preact)
@@ -90,42 +89,6 @@ settings:
         - dist/$1.js
 ```
 
-### Web
-
-The default configuration works for Node.js projects. For web based projects it’s recommended to use
-the `remcohaszing/web` preset for the source files. This preset requires `eslint-plugin-compat` to
-have been installed:
-
-```sh
-npm install --save-dev eslint-plugin-compat
-```
-
-Example if the source files are in the `src` directory:
-
-```yaml
-root: true
-settings:
-  polyfills:
-    - fetch
-    - Promise
-extends:
-  - remcohaszing
-overrides:
-  - files:
-      - 'src/**'
-    extends:
-      - remcohaszing/web
-```
-
-It’s recommended to also create a `browserslist` file. For example:
-
-```browserslist
-last 2 chrome versions
-last 2 edge versions
-last 2 firefox versions
-last 2 safari versions
-```
-
 ### TypeScript
 
 This configuration enabled ESLint for TypeScript automatically.
@@ -181,7 +144,6 @@ overrides:
       - 'src/**'
     extends:
       - remcohaszing/react
-      - remcohaszing/web
 ```
 
 Preact example:

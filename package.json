@@ -32,7 +32,6 @@
   "devDependencies": {
     "eslint-config-prettier": "^8.0.0",
     "eslint-config-remcohaszing": ".",
-    "eslint-plugin-compat": "^4.0.0",
     "eslint-plugin-jest-formatting": "^3.0.0",
     "eslint-plugin-jsx-a11y": "^6.0.0",
     "eslint-plugin-react": "^7.0.0",
@@ -45,7 +44,6 @@
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "6",
     "eslint": "8",
-    "eslint-plugin-compat": "4",
     "eslint-plugin-eslint-comments": "3",
     "eslint-plugin-import": "2",
     "eslint-plugin-jest-formatting": "3",
@@ -61,9 +59,6 @@
     "prettier": "3"
   },
   "peerDependenciesMeta": {
-    "eslint-plugin-compat": {
-      "optional": true
-    },
     "eslint-plugin-jsx-a11y": {
       "optional": true
     },
