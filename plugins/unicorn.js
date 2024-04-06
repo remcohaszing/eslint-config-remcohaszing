@@ -105,6 +105,11 @@ module.exports = {
     'unicorn/no-abusive-eslint-disable': 'off',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-anonymous-default-export.md
+     */
+    'unicorn/no-anonymous-default-export': 'off',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-callback-reference.md
      */
     'unicorn/no-array-callback-reference': 'off',
@@ -140,6 +145,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-expression-member.md
      */
     'unicorn/no-await-expression-member': 'off',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-in-promise-methods.md
+     */
+    'unicorn/no-await-in-promise-methods': 'error',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-console-spaces.md
@@ -255,6 +265,11 @@ module.exports = {
     'unicorn/no-process-exit': 'off',
 
     /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-single-promise-in-promise-methods.md
+     */
+    'unicorn/no-single-promise-in-promise-methods': 'error',
+
+    /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-thenable.md
      */
     'unicorn/no-thenable': 'off',
@@ -263,6 +278,11 @@ module.exports = {
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-await.md
      */
     'unicorn/no-unnecessary-await': 'error',
+
+    /**
+     * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-polyfills.md
+     */
+    'unicorn/no-unnecessary-polyfills': 'off',
 
     /**
      * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-iife.md

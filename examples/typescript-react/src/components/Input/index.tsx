@@ -4,29 +4,29 @@ interface InputProps {
   /**
    * The label to render for the input.
    */
-  label: ReactNode
+  readonly label: ReactNode
 
   /**
    * The name of the input field.
    *
    * This will also be used as the id.
    */
-  name: string
+  readonly name: string
 
   /**
    * The event handler to call when the input changes.
    */
-  onChange: ChangeEventHandler<HTMLInputElement>
+  readonly onChange: ChangeEventHandler<HTMLInputElement>
 
   /**
    * The input type.
    */
-  type?: 'text' | 'url'
+  readonly type?: 'text' | 'url'
 
   /**
    * The current value of the input.
    */
-  value: string
+  readonly value: string
 }
 
 /**

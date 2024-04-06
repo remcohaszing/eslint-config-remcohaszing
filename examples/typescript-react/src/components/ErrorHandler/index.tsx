@@ -4,7 +4,7 @@ interface ErrorHandlerProps {
   /**
    * The elements to try to render.
    */
-  children: ReactNode
+  readonly children: ReactNode
 }
 
 interface State {

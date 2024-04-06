@@ -10,7 +10,7 @@ interface ItemFormProps {
   /**
    * Called when the form is submitted
    */
-  onSubmit: (item: Item) => unknown
+  readonly onSubmit: (item: Item) => unknown
 }
 
 /**

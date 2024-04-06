@@ -1,6 +1,6 @@
 import 'bulma/css/bulma.css'
-import { render } from 'react-dom'
+import { createRoot } from 'react-dom/client.js'
 
 import { App } from './components/App/index.js'
 
-render(<App />, document.getElementById('app'))
+createRoot(document.getElementById('app')).render(<App />)

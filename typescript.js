@@ -242,6 +242,12 @@ module.exports = {
     '@typescript-eslint/class-literal-property-style': 'error',
 
     /**
+     * https://typescript-eslint.io/rules/class-methods-use-this
+     */
+    '@typescript-eslint/class-methods-use-this': 'error',
+    'class-methods-use-this': 'off',
+
+    /**
      * https://typescript-eslint.io/rules/comma-dangle
      *
      * // Prettier
@@ -363,6 +369,13 @@ module.exports = {
      */
     '@typescript-eslint/lines-between-class-members': 'error',
     'lines-between-class-members': 'off',
+
+    /**
+     * https://typescript-eslint.io/rules/max-params
+     *
+     * // Prettier
+     */
+    '@typescript-eslint/max-params': 'off',
 
     /**
      * https://typescript-eslint.io/rules/member-delimiter-style

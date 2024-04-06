@@ -15,6 +15,11 @@ module.exports = {
         '@typescript-eslint/await-thenable': 'error',
 
         /**
+         * https://typescript-eslint.io/rules/consistent-return
+         */
+        '@typescript-eslint/consistent-return': 'off',
+
+        /**
          * https://typescript-eslint.io/rules/consistent-type-exports
          */
         '@typescript-eslint/consistent-type-exports': 'off',
@@ -31,6 +36,11 @@ module.exports = {
          * Defined in the TypeScript override.
          */
         '@typescript-eslint/naming-convention': 'error',
+
+        /**
+         * https://typescript-eslint.io/rules/no-array-delete"
+         */
+        '@typescript-eslint/no-array-delete': 'error',
 
         /**
          * https://typescript-eslint.io/rules/no-confusing-void-expression"
@@ -84,8 +94,10 @@ module.exports = {
 
         /**
          * https://typescript-eslint.io/rules/no-throw-literal
+         *
+         * @deprecated
          */
-        '@typescript-eslint/no-throw-literal': 'error',
+        '@typescript-eslint/no-throw-literal': 'off',
 
         /**
          * https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
@@ -143,9 +155,42 @@ module.exports = {
         '@typescript-eslint/no-unsafe-return': 'error',
 
         /**
+         * https://typescript-eslint.io/rules/no-unsafe-unary-minus
+         */
+        '@typescript-eslint/no-unsafe-unary-minus': 'error',
+
+        /**
+         * https://typescript-eslint.io/rules/no-useless-template-literals
+         */
+        '@typescript-eslint/no-useless-template-literals': 'error',
+
+        /**
          * https://typescript-eslint.io/rules/non-nullable-type-assertion-style
          */
         '@typescript-eslint/non-nullable-type-assertion-style': 'error',
+
+        /**
+         * https://typescript-eslint.io/rules/only-throw-error
+         */
+        '@typescript-eslint/only-throw-error': 'error',
+
+        /**
+         * https://typescript-eslint.io/rules/prefer-destructuring
+         */
+        '@typescript-eslint/prefer-destructuring': [
+          'error',
+          {
+            VariableDeclarator: { array: false, object: true },
+            AssignmentExpression: { array: false, object: false }
+          }
+        ],
+        'prefer-destructuring': 'off',
+
+        /**
+         * https://typescript-eslint.io/rules/prefer-find
+         */
+        '@typescript-eslint/prefer-find': 'error',
+        'unicorn/prefer-array-find': 'off',
 
         /**
          * https://typescript-eslint.io/rules/prefer-includes
@@ -162,6 +207,12 @@ module.exports = {
          * https://typescript-eslint.io/rules/prefer-optional-chain
          */
         '@typescript-eslint/prefer-optional-chain': 'error',
+
+        /**
+         * https://typescript-eslint.io/rules/prefer-promise-reject-errors
+         */
+        '@typescript-eslint/prefer-promise-reject-errors': 'error',
+        'prefer-promise-reject-errors': 'off',
 
         /**
          * https://typescript-eslint.io/rules/prefer-readonly
@@ -240,7 +291,12 @@ module.exports = {
         /**
          * https://typescript-eslint.io/rules/unbound-method
          */
-        '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }]
+        '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
+
+        /**
+         * https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable
+         */
+        '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error'
       }
     }
   ]

@@ -17,7 +17,11 @@ test('define all rules from @typescript-eslint/eslint-plugin without type checki
 })
 
 for (const [ruleName, { meta }] of Object.entries(plugin.rules)) {
-  if (meta.deprecated && (!meta.docs.requiresTypeChecking || ruleName === 'naming-convention')) {
+  if (
+    meta.deprecated &&
+    meta.type !== 'layout' &&
+    (!meta.docs.requiresTypeChecking || ruleName === 'naming-convention')
+  ) {
     test(`disable deprecated rule @typescript-eslint/${ruleName}`, () => {
       assert.equal(
         config.rules[`@typescript-eslint/${ruleName}`],

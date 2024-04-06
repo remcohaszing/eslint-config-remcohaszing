@@ -5,7 +5,7 @@ interface ButtonProps extends ComponentProps<'button'> {
   /**
    * An optional class name for the button.
    */
-  className?: string
+  readonly className?: string
 }
 
 /**

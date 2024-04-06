@@ -42,20 +42,20 @@
     "typescript": "^5.0.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "6",
+    "@typescript-eslint/eslint-plugin": "7",
     "eslint": "8",
     "eslint-plugin-eslint-comments": "3",
     "eslint-plugin-import": "2",
     "eslint-plugin-jest-formatting": "3",
-    "eslint-plugin-jsdoc": "46",
+    "eslint-plugin-jsdoc": "48",
     "eslint-plugin-jsx-a11y": "6",
-    "eslint-plugin-markdown": "3",
+    "eslint-plugin-markdown": "4",
     "eslint-plugin-n": "16",
     "eslint-plugin-prettier": "5",
     "eslint-plugin-react": "7",
     "eslint-plugin-react-hooks": "4",
     "eslint-plugin-sort-destructure-keys": "1",
-    "eslint-plugin-unicorn": "48",
+    "eslint-plugin-unicorn": "52",
     "prettier": "3"
   },
   "peerDependenciesMeta": {

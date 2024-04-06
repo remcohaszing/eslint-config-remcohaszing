@@ -20,6 +20,15 @@ module.exports = {
   },
 
   /**
+   * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/checked-requires-onchange-or-readonly.md
+   */
+  'react/checked-requires-onchange-or-readonly': {
+    jsx: 'off',
+    preact: 'off',
+    react: 'off'
+  },
+
+  /**
    * https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
    */
   'react/default-props-match-prop-types': {
