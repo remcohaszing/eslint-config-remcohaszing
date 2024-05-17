@@ -17,7 +17,6 @@ plugins have been carefully considered. Overrides are used to apply rules based 
   - [Settings](#settings)
   - [TypeScript](#typescript)
   - [JSX](#jsx)
-    - [React / Preact](#react--preact)
   - [Markdown](#markdown)
 - [Ignored files](#ignored-files)
 - [Warnings](#warnings)
