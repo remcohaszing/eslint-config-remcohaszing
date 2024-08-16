@@ -1,3 +1,4 @@
+const rules = require('./plugins/core.js')
 const getIgnorePatterns = require('./utils/getIgnorePatterns.js')
 
 /**
@@ -20,7 +21,9 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [],
-  rules: {},
+  rules: {
+    ...rules
+  },
   settings: {},
   overrides: [
     /**
@@ -137,11 +140,6 @@ module.exports = {
       extends: ['remcohaszing/typescript']
     }
   ]
-}
-
-for (const name of ['deprecated', 'layout', 'problem', 'suggestion']) {
-  const rules = require(`./core/${name}`)
-  Object.assign(module.exports.rules, rules)
 }
 
 for (const name of [
