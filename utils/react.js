@@ -98,9 +98,9 @@ module.exports = {
     react: 'off'
   },
   'react/jsx-curly-brace-presence': {
-    jsx: 'error',
-    preact: 'error',
-    react: 'error'
+    jsx: 'off',
+    preact: 'off',
+    react: 'off'
   },
   'react/jsx-curly-newline': {
     jsx: 'off',
@@ -243,9 +243,9 @@ module.exports = {
     react: 'off'
   },
   'react/jsx-sort-props': {
-    jsx: ['error', { ignoreCase: true }],
-    preact: ['error', { ignoreCase: true }],
-    react: ['error', { ignoreCase: true }]
+    jsx: 'off',
+    preact: 'off',
+    react: 'off'
   },
   'react/jsx-space-before-closing': {
     jsx: 'off',
@@ -468,9 +468,9 @@ module.exports = {
     react: 'error'
   },
   'react/self-closing-comp': {
-    jsx: 'error',
-    preact: 'error',
-    react: 'error'
+    jsx: 'off',
+    preact: 'off',
+    react: 'off'
   },
   'react/sort-comp': {
     jsx: 'off',
@@ -497,9 +497,9 @@ module.exports = {
     react: ['error', { ignoreCase: true }]
   },
   'react/sort-prop-types': {
-    jsx: ['off', { ignoreCase: true }],
-    preact: ['error', { ignoreCase: true }],
-    react: ['error', { ignoreCase: true }]
+    jsx: 'off',
+    preact: 'off',
+    react: 'off'
   },
   'react/state-in-constructor': {
     jsx: 'off',

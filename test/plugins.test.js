@@ -4,7 +4,9 @@ const { test } = require('node:test')
 const config = require('eslint-config-remcohaszing')
 
 for (const name of config.plugins) {
-  const plugin = require(`eslint-plugin-${name}`)
+  const plugin = name.startsWith('@')
+    ? require(`${name}/eslint-plugin`)
+    : require(`eslint-plugin-${name}`)
 
   test(`define all rules alphabetically for eslint-plugin-${name}`, () => {
     assert.deepEqual(

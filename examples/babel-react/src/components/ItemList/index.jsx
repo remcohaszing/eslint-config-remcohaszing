@@ -21,7 +21,7 @@ export function ItemList() {
           {items.map(({ id, link, text }) => (
             <li key={id}>
               {link ? (
-                <a href={link} key={id} rel="noopener noreferrer" target="_blank">
+                <a key={id} href={link} rel="noopener noreferrer" target="_blank">
                   {text}
                 </a>
               ) : (

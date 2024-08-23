@@ -1,5 +1,4 @@
 const allowedProperties = require('./utils/allowedProperties.js')
-const prettier = require('./utils/prettier.js')
 
 /**
  * Configuration for TypeScript specifically that don’t require type checking.
@@ -352,26 +351,12 @@ module.exports = {
     /**
      * https://typescript-eslint.io/rules/lines-around-comment
      */
-    '@typescript-eslint/lines-around-comment': [
-      'error',
-      {
-        allowBlockStart: true,
-        allowObjectStart: true,
-        allowArrayStart: true,
-        allowClassStart: true,
-        allowEnumStart: true,
-        allowInterfaceStart: true,
-        allowModuleStart: true,
-        allowTypeStart: true
-      }
-    ],
-    'lines-around-comment': 'off',
+    '@typescript-eslint/lines-around-comment': 'off',
 
     /**
      * https://typescript-eslint.io/rules/lines-between-class-members
      */
-    '@typescript-eslint/lines-between-class-members': 'error',
-    'lines-between-class-members': 'off',
+    '@typescript-eslint/lines-between-class-members': 'off',
 
     /**
      * https://typescript-eslint.io/rules/max-params
@@ -718,12 +703,7 @@ module.exports = {
     /**
      * https://typescript-eslint.io/rules/quotes
      */
-    '@typescript-eslint/quotes': [
-      'error',
-      prettier.ts.singleQuote ? 'single' : 'double',
-      { avoidEscape: true, allowTemplateLiterals: false }
-    ],
-    quotes: 'off',
+    '@typescript-eslint/quotes': 'off',
 
     /**
      * https://typescript-eslint.io/rules/semi
