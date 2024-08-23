@@ -48,7 +48,7 @@
     "eslint-plugin-eslint-comments": "3",
     "eslint-plugin-import-x": "3",
     "eslint-plugin-jest-formatting": "3",
-    "eslint-plugin-jsdoc": "48",
+    "eslint-plugin-jsdoc": "50",
     "eslint-plugin-jsx-a11y": "6",
     "eslint-plugin-markdown": "4",
     "eslint-plugin-n": "16",
