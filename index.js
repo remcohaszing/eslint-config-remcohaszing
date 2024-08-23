@@ -481,7 +481,14 @@ module.exports = {
     '@stylistic/space-in-parens': 'off',
     '@stylistic/space-infix-ops': 'off',
     '@stylistic/space-unary-ops': 'off',
-    '@stylistic/spaced-comment': ['error', 'always', { block: { balanced: true } }],
+    '@stylistic/spaced-comment': [
+      'error',
+      'always',
+      {
+        block: { balanced: true },
+        line: { markers: ['/'] }
+      }
+    ],
     '@stylistic/switch-colon-spacing': 'off',
     '@stylistic/template-curly-spacing': 'off',
     '@stylistic/template-tag-spacing': 'off',
