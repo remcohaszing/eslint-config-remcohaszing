@@ -225,20 +225,6 @@ module.exports = {
     '@typescript-eslint/ban-types': 'error',
 
     /**
-     * https://typescript-eslint.io/rules/block-spacing
-     *
-     * Prettier
-     */
-    '@typescript-eslint/block-spacing': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/brace-style
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/brace-style': 'off',
-
-    /**
      * https://typescript-eslint.io/rules/class-literal-property-style
      */
     '@typescript-eslint/class-literal-property-style': 'error',
@@ -248,20 +234,6 @@ module.exports = {
      */
     '@typescript-eslint/class-methods-use-this': 'error',
     'class-methods-use-this': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/comma-dangle
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/comma-dangle': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/comma-spacing
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/comma-spacing': 'off',
 
     /**
      * https://typescript-eslint.io/rules/consistent-generic-constructors
@@ -315,62 +287,16 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
 
     /**
-     * https://typescript-eslint.io/rules/func-call-spacing
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/func-call-spacing': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/indent
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/indent': 'off',
-
-    /**
      * https://typescript-eslint.io/rules/init-declarations
      */
     '@typescript-eslint/init-declarations': 'off',
     'init-declarations': 'off',
 
     /**
-     * https://typescript-eslint.io/rules/key-spacing
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/key-spacing': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/keyword-spacing
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/keyword-spacing': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/lines-around-comment
-     */
-    '@typescript-eslint/lines-around-comment': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/lines-between-class-members
-     */
-    '@typescript-eslint/lines-between-class-members': 'off',
-
-    /**
      * https://typescript-eslint.io/rules/max-params
-     *
-     * // Prettier
      */
     '@typescript-eslint/max-params': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/member-delimiter-style
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/member-delimiter-style': 'off',
+    'max-params': 'off',
 
     /**
      * https://typescript-eslint.io/rules/member-ordering
@@ -475,20 +401,6 @@ module.exports = {
     '@typescript-eslint/no-extra-non-null-assertion': 'error',
 
     /**
-     * https://typescript-eslint.io/rules/no-extra-parens
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/no-extra-parens': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/no-extra-semi
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/no-extra-semi': 'off',
-
-    /**
      * https://typescript-eslint.io/rules/no-extraneous-class
      */
     '@typescript-eslint/no-extraneous-class': 'error',
@@ -591,11 +503,6 @@ module.exports = {
     '@typescript-eslint/no-this-alias': 'error',
 
     /**
-     * https://typescript-eslint.io/rules/no-type-alias
-     */
-    '@typescript-eslint/no-type-alias': 'off',
-
-    /**
      * https://typescript-eslint.io/rules/no-unnecessary-type-constraint
      */
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
@@ -644,18 +551,6 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'error',
 
     /**
-     * https://typescript-eslint.io/rules/object-curly-spacing
-     *
-     * Prettier
-     */
-    '@typescript-eslint/object-curly-spacing': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/padding-line-between-statements
-     */
-    '@typescript-eslint/padding-line-between-statements': 'error',
-
-    /**
      * https://typescript-eslint.io/rules/parameter-properties
      */
     '@typescript-eslint/parameter-properties': 'error',
@@ -701,56 +596,14 @@ module.exports = {
     '@typescript-eslint/prefer-ts-expect-error': 'error',
 
     /**
-     * https://typescript-eslint.io/rules/quotes
-     */
-    '@typescript-eslint/quotes': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/semi
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/semi': 'off',
-    semi: 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/space-before-function-paren
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/space-before-function-paren': 'off',
-    'space-before-function-paren': 'off',
-
-    /**
      * https://typescript-eslint.io/rules/sort-type-union-constituents
      */
     '@typescript-eslint/sort-type-constituents': 'error',
 
     /**
-     * https://typescript-eslint.io/rules/space-before-blocks
-     *
-     * Prettier
-     */
-    '@typescript-eslint/space-before-blocks': 'off',
-
-    /**
-     * https://typescript-eslint.io/rules/space-infix-ops
-     *
-     * Prettier
-     */
-    '@typescript-eslint/space-infix-ops': 'off',
-
-    /**
      * https://typescript-eslint.io/rules/triple-slash-reference
      */
     '@typescript-eslint/triple-slash-reference': 'error',
-
-    /**
-     * https://typescript-eslint.io/rules/type-annotation-spacing
-     *
-     * // Prettier
-     */
-    '@typescript-eslint/type-annotation-spacing': 'off',
 
     /**
      * https://typescript-eslint.io/rules/typedef

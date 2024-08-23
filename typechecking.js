@@ -31,13 +31,6 @@ module.exports = {
         'dot-notation': 'off',
 
         /**
-         * https://typescript-eslint.io/rules/naming-convention
-         *
-         * Defined in the TypeScript override.
-         */
-        '@typescript-eslint/naming-convention': 'error',
-
-        /**
          * https://typescript-eslint.io/rules/no-array-delete"
          */
         '@typescript-eslint/no-array-delete': 'error',
@@ -91,13 +84,6 @@ module.exports = {
          * https://typescript-eslint.io/rules/no-redundant-type-constituents
          */
         '@typescript-eslint/no-redundant-type-constituents': 'error',
-
-        /**
-         * https://typescript-eslint.io/rules/no-throw-literal
-         *
-         * @deprecated
-         */
-        '@typescript-eslint/no-throw-literal': 'off',
 
         /**
          * https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare

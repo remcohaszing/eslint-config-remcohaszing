@@ -1,33 +1,27 @@
 const assert = require('node:assert/strict')
-const { test } = require('node:test')
+const { describe, test } = require('node:test')
 
 const config = require('eslint-config-remcohaszing')
 
-for (const name of config.plugins) {
-  const plugin = name.startsWith('@')
-    ? require(`${name}/eslint-plugin`)
-    : require(`eslint-plugin-${name}`)
+for (const pluginPrefix of config.plugins) {
+  const pluginName = pluginPrefix.startsWith('@')
+    ? `${pluginPrefix}/eslint-plugin`
+    : `eslint-plugin-${pluginPrefix}`
+  const plugin = require(pluginName)
 
-  test(`define all rules alphabetically for eslint-plugin-${name}`, () => {
-    assert.deepEqual(
-      Object.keys(config.rules)
-        .filter((rule) => rule.startsWith(`${name}/`))
-        .sort(),
-      Object.keys(plugin.rules)
-        .map((rule) => `${name}/${rule}`)
-        .sort()
-    )
-  })
+  describe(pluginName, () => {
+    for (const [ruleName, rule] of Object.entries(plugin.rules)) {
+      const name = `${pluginPrefix}/${ruleName}`
 
-  for (const [ruleName, { meta }] of Object.entries(plugin.rules)) {
-    if (meta.deprecated) {
-      test(`disable deprecated rule ${name}/${ruleName}`, () => {
-        assert.equal(
-          config.rules[`${name}/${ruleName}`],
-          'off',
-          `expected ${name}/${ruleName} to be disabled`
-        )
-      })
+      if (rule.meta.deprecated) {
+        test(`rule ${name} (deprecated)`, () => {
+          assert.ok(!(name in config.rules), `${name} should not be specified`)
+        })
+      } else {
+        test(`rule ${name}`, () => {
+          assert.ok(name in config.rules, `${name} should be specified`)
+        })
+      }
     }
-  }
+  })
 }

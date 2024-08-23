@@ -1,6 +1,5 @@
 module.exports = {
   rules: {
-    'jsx-a11y/accessible-emoji': 'off',
     'jsx-a11y/alt-text': 'error',
     'jsx-a11y/anchor-ambiguous-text': 'off',
     'jsx-a11y/anchor-has-content': 'error',
@@ -19,7 +18,6 @@ module.exports = {
     'jsx-a11y/img-redundant-alt': 'error',
     'jsx-a11y/interactive-supports-focus': 'error',
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either', depth: 25 }],
-    'jsx-a11y/label-has-for': 'off',
     'jsx-a11y/lang': 'error',
     'jsx-a11y/media-has-caption': 'error',
     'jsx-a11y/mouse-events-have-key-events': 'error',
@@ -31,7 +29,6 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-interactions': 'error',
     'jsx-a11y/no-noninteractive-element-to-interactive-role': 0,
     'jsx-a11y/no-noninteractive-tabindex': 'error',
-    'jsx-a11y/no-onchange': 'off',
     'jsx-a11y/no-redundant-roles': 'error',
     'jsx-a11y/no-static-element-interactions': 'error',
     'jsx-a11y/prefer-tag-over-role': 'error',

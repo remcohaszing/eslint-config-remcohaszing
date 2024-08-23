@@ -1,28 +1,21 @@
 const assert = require('node:assert/strict')
-const { test } = require('node:test')
+const { describe, test } = require('node:test')
 
 const config = require('eslint-config-remcohaszing/jsx')
 const pluginJsxA11y = require('eslint-plugin-jsx-a11y')
 
-test('define all rules from eslint-plugin-jsx-a11y', () => {
-  assert.deepEqual(
-    Object.keys(config.rules)
-      .filter((rule) => rule.startsWith('jsx-a11y/'))
-      .sort(),
-    Object.keys(pluginJsxA11y.rules)
-      .map((rule) => `jsx-a11y/${rule}`)
-      .sort()
-  )
-})
+describe('jsx-a11y', () => {
+  for (const [ruleName, rule] of Object.entries(pluginJsxA11y.rules)) {
+    const name = `jsx-a11y/${ruleName}`
 
-for (const [ruleName, { meta }] of Object.entries(pluginJsxA11y.rules)) {
-  if (meta.deprecated) {
-    test(`disable deprecated rule jsx-a11y/${ruleName}`, () => {
-      assert.equal(
-        config.rules[`jsx-a11y/${ruleName}`],
-        'off',
-        `expected jsx-a11y/${ruleName} to be disabled`
-      )
-    })
+    if (rule.meta.deprecated) {
+      test(`rule ${name} (deprecated)`, () => {
+        assert.ok(!(name in config.rules), `${name} should not be specified`)
+      })
+    } else {
+      test(`rule ${name}`, () => {
+        assert.ok(name in config.rules, `${name} should be specified`)
+      })
+    }
   }
-}
+})
