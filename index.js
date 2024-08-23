@@ -31,11 +31,11 @@ module.exports = {
     sourceType: 'module'
   },
   settings: {
-    'import/extensions': [],
-    'import/parsers': {
+    'import-x/extensions': [],
+    'import-x/parsers': {
       '@typescript-eslint/parser': ['.cts', '.mts', '.ts', '.tsx']
     },
-    'import/resolver': {
+    'import-x/resolver': {
       node: {
         extensions: []
       }
@@ -105,7 +105,7 @@ module.exports = {
   plugins: [
     '@stylistic',
     'eslint-comments',
-    'import',
+    'import-x',
     'jest-formatting',
     'jsdoc',
     'n',
@@ -515,21 +515,21 @@ module.exports = {
 
     // https://github.com/import-js/eslint-plugin-import
     // #region eslint-plugin-import
-    'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
-    'import/default': 'error',
-    'import/dynamic-import-chunkname': 'off',
-    'import/export': 'error',
-    'import/exports-last': 'off',
-    'import/extensions': ['error', 'ignorePackages'],
-    'import/first': 'error',
-    'import/group-exports': 'off',
-    'import/max-dependencies': 'off',
-    'import/named': 'error',
-    'import/namespace': 'error',
-    'import/newline-after-import': 'error',
-    'import/no-absolute-path': 'error',
-    'import/no-amd': 'error',
-    'import/no-anonymous-default-export': [
+    'import-x/consistent-type-specifier-style': ['error', 'prefer-inline'],
+    'import-x/default': 'error',
+    'import-x/dynamic-import-chunkname': 'off',
+    'import-x/export': 'error',
+    'import-x/exports-last': 'off',
+    'import-x/extensions': ['error', 'ignorePackages'],
+    'import-x/first': 'error',
+    'import-x/group-exports': 'off',
+    'import-x/max-dependencies': 'off',
+    'import-x/named': 'error',
+    'import-x/namespace': 'error',
+    'import-x/newline-after-import': 'error',
+    'import-x/no-absolute-path': 'error',
+    'import-x/no-amd': 'error',
+    'import-x/no-anonymous-default-export': [
       'error',
       {
         allowArray: true,
@@ -542,14 +542,14 @@ module.exports = {
         allowObject: true
       }
     ],
-    'import/no-commonjs': 'off',
-    'import/no-cycle': 'off',
-    'import/no-default-export': 'off',
-    'import/no-deprecated': 'warn',
-    'import/no-duplicates': ['error', { 'prefer-inline': true }],
-    'import/no-dynamic-require': 'off',
-    'import/no-empty-named-blocks': 'off',
-    'import/no-extraneous-dependencies': [
+    'import-x/no-commonjs': 'off',
+    'import-x/no-cycle': 'off',
+    'import-x/no-default-export': 'off',
+    'import-x/no-deprecated': 'warn',
+    'import-x/no-duplicates': ['error', { 'prefer-inline': true }],
+    'import-x/no-dynamic-require': 'off',
+    'import-x/no-empty-named-blocks': 'off',
+    'import-x/no-extraneous-dependencies': [
       'error',
       {
         devDependencies: false,
@@ -558,21 +558,21 @@ module.exports = {
         bundledDependencies: true
       }
     ],
-    'import/no-import-module-exports': 'off',
-    'import/no-internal-modules': 'off',
-    'import/no-mutable-exports': 'error',
-    'import/no-named-as-default': 'error',
-    'import/no-named-as-default-member': 'off',
-    'import/no-named-default': 'error',
-    'import/no-named-export': 'off',
-    'import/no-namespace': 'off',
-    'import/no-nodejs-modules': 'off',
-    'import/no-relative-packages': 'error',
-    'import/no-relative-parent-imports': 'off',
-    'import/no-restricted-paths': 'off',
-    'import/no-self-import': 'error',
-    'import/no-unassigned-import': 'off',
-    'import/no-unresolved': [
+    'import-x/no-import-module-exports': 'off',
+    'import-x/no-internal-modules': 'off',
+    'import-x/no-mutable-exports': 'error',
+    'import-x/no-named-as-default': 'error',
+    'import-x/no-named-as-default-member': 'off',
+    'import-x/no-named-default': 'error',
+    'import-x/no-named-export': 'off',
+    'import-x/no-namespace': 'off',
+    'import-x/no-nodejs-modules': 'off',
+    'import-x/no-relative-packages': 'error',
+    'import-x/no-relative-parent-imports': 'off',
+    'import-x/no-restricted-paths': 'off',
+    'import-x/no-self-import': 'error',
+    'import-x/no-unassigned-import': 'off',
+    'import-x/no-unresolved': [
       'error',
       {
         caseSensitiveStrict: true,
@@ -580,10 +580,10 @@ module.exports = {
         ignore: [/^[@a-z]/.source, /[!*]/.source, /.\.(cjs|js|mjs)$/.source]
       }
     ],
-    'import/no-unused-modules': 'off',
-    'import/no-useless-path-segments': 'error',
-    'import/no-webpack-loader-syntax': 'error',
-    'import/order': [
+    'import-x/no-unused-modules': 'off',
+    'import-x/no-useless-path-segments': 'error',
+    'import-x/no-webpack-loader-syntax': 'error',
+    'import-x/order': [
       'error',
       {
         alphabetize: { order: 'asc', caseInsensitive: true },
@@ -596,8 +596,8 @@ module.exports = {
         warnOnUnassignedImports: true
       }
     ],
-    'import/prefer-default-export': 'off',
-    'import/unambiguous': 'off',
+    'import-x/prefer-default-export': 'off',
+    'import-x/unambiguous': 'off',
     // #endregion
 
     // https://github.com/dangreenisrael/eslint-plugin-jest-formatting
@@ -1000,12 +1000,12 @@ module.exports = {
         /**
          * This may be useful for documentation purposes.
          */
-        'import/extensions': 'off',
+        'import-x/extensions': 'off',
 
         /**
          * This may be useful for documentation purposes.
          */
-        'import/no-unresolved': 'off',
+        'import-x/no-unresolved': 'off',
 
         /**
          * This rule doesn’t work with eslint-plugin-markdown.

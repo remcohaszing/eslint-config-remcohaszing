@@ -52,48 +52,48 @@ module.exports = {
     'no-undef': 'off',
 
     /**
-     * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/default
+     * https://github.com/benmosher/eslint-plugin-import-x/blob/main/docs/rules/default
      *
      * Use TypeScript to determine this.
      */
-    'import/default': 'off',
+    'import-x/default': 'off',
 
     /**
-     * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies
+     * https://github.com/benmosher/eslint-plugin-import-x/blob/main/docs/rules/no-extraneous-dependencies
      *
      * Handled by node/no-extraneous-import
      *
      * Use your own judgement to determine if this is a dependency or devDependency.
      */
-    'import/no-extraneous-dependencies:': 'off',
+    'import-x/no-extraneous-dependencies:': 'off',
 
     /**
-     * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/named
+     * https://github.com/benmosher/eslint-plugin-import-x/blob/main/docs/rules/named
      *
      * Use TypeScript to determine this.
      */
-    'import/named': 'off',
+    'import-x/named': 'off',
 
     /**
-     * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/namespace
+     * https://github.com/benmosher/eslint-plugin-import-x/blob/main/docs/rules/namespace
      *
      * Use TypeScript to determine this.
      */
-    'import/namespace': 'off',
+    'import-x/namespace': 'off',
 
     /**
-     * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/no-deprecated
+     * https://github.com/benmosher/eslint-plugin-import-x/blob/main/docs/rules/no-deprecated
      *
      * This is triggered if function one call signature is deprecated, but not another.
      */
-    'import/no-deprecated': 'off',
+    'import-x/no-deprecated': 'off',
 
     /**
-     * https://github.com/benmosher/eslint-plugin-import/blob/main/docs/rules/no-named-as-default-member
+     * https://github.com/benmosher/eslint-plugin-import-x/blob/main/docs/rules/no-named-as-default-member
      *
      * Use TypeScript to determine this.
      */
-    'import/no-named-as-default-member': 'off',
+    'import-x/no-named-as-default-member': 'off',
 
     /**
      * https://github.com/gajus/eslint-plugin-jsdoc/blob/main/.README/rules/no-types

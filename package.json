@@ -46,7 +46,7 @@
     "@typescript-eslint/eslint-plugin": "7",
     "eslint": "8",
     "eslint-plugin-eslint-comments": "3",
-    "eslint-plugin-import": "2",
+    "eslint-plugin-import-x": "3",
     "eslint-plugin-jest-formatting": "3",
     "eslint-plugin-jsdoc": "48",
     "eslint-plugin-jsx-a11y": "6",
