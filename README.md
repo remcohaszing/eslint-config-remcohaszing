@@ -16,7 +16,6 @@ plugins have been carefully considered. Overrides are used to apply rules based 
 - [Configuration](#configuration)
   - [Settings](#settings)
   - [TypeScript](#typescript)
-  - [JSX](#jsx)
   - [Markdown](#markdown)
 - [Ignored files](#ignored-files)
 - [Warnings](#warnings)
@@ -106,58 +105,6 @@ extends:
 This sets the project configuration to `tsconfig.json`. To change it, see
 [`@typescript-eslint/parser`](https://www.npmjs.com/package/@typescript-eslint/parser#parseroptionsproject)
 
-### JSX
-
-JSX syntax is supported by default in `.jsx` and `.tsx` files. This requires some additional
-dependencies to be installed:
-
-```sh
-npm install --save-dev \
-  eslint-plugin-jsx-a11y \
-  eslint-plugin-react
-```
-
-The pragma is set to `h` by default.
-
-#### React / Preact
-
-For React and Preact some special configurations are recommended.
-
-An additional dependency is required:
-
-```sh
-npm install --save-dev eslint-plugin-react-hooks
-```
-
-The configurations can be applied by extending `remcohaszing/react` or `remcohaszing/preact`
-respectively. The `extends` may be on the top level of the ESLint configuration or in an override.
-
-React example:
-
-```yaml
-root: true
-extends:
-  - remcohaszing
-overrides:
-  - files:
-      - 'src/**'
-    extends:
-      - remcohaszing/react
-```
-
-Preact example:
-
-```yaml
-root: true
-extends:
-  - remcohaszing
-overrides:
-  - files:
-      - 'src/**'
-    extends:
-      - remcohaszing/preact
-```
-
 ### Markdown
 
 Code blocks in Markdown are linted by default using
@@ -191,7 +138,6 @@ All ESLint that are turned on will trigger error, not warnings. The notable exce
 following rules:
 
 - `import-x/no-deprecated`
-- `react/no-deprecated`
 
 This is to allow a smooth migration if a dependency decides to deprecate an API. To turn make
 warnings cause ESLint to exit with exit code 1, run:

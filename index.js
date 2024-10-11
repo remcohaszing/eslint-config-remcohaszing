@@ -718,11 +718,15 @@ module.exports = {
     },
 
     /**
-     * Enable specific rules for JSX files.
+     * Enable parsing of JSX files.
      */
     {
-      files: ['*.jsx', '*.tsx'],
-      extends: ['remcohaszing/jsx']
+      files: ['*.jsx'],
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true
+        }
+      }
     },
 
     /**
