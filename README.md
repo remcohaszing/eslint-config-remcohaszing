@@ -14,9 +14,9 @@ plugins have been carefully considered. Overrides are used to apply rules based 
 
 - [Installation](#installation)
 - [Configuration](#configuration)
-  - [Settings](#settings)
   - [TypeScript](#typescript)
   - [Markdown](#markdown)
+  - [Disabling rules](#disabling-rules)
 - [Ignored files](#ignored-files)
 - [Warnings](#warnings)
 - [License](#license)
@@ -58,33 +58,10 @@ singleQuote: true
 trailingComma: all
 ```
 
-The configuration may be tweaked to your liking. Beware `eslint-config-remcohaszing` bases some rule
-configurations on the Prettier configuration, but doesn’t support
-[overrides](https://prettier.io/docs/en/configuration.html#configuration-overrides).
+Next, create `eslint.config.js` with the following content:
 
-Next, create `.eslintrc.yaml` with the following content:
-
-```yaml
-root: true
-extends:
-  - remcohaszing
-```
-
-### Settings
-
-Most ESLint settings are tweaked to have a proper default. There is one setting that needs to be
-configured if your project uses a build process and provides an executable command:
-`node.convertPath`. See
-[`n/no-unpublished-import`](https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unpublished-import.md#shared-settings)
-for details.
-
-```yaml
-settings:
-  node:
-    convertPath:
-      'src/**':
-        - 'src/(.+?)\.tsx?$'
-        - dist/$1.js
+```js
+export { default } from 'eslint-config-remcohaszing'
 ```
 
 ### TypeScript
@@ -93,57 +70,58 @@ This configuration enabled ESLint for TypeScript automatically.
 
 Some rules from `@typescript-eslint/eslint-plugin` require TypeScript type checking features to be
 enabled. Unfortunately, this makes ESLint slow. Enabling these rules is recommended for small
-projects only. To enable this, add the following to `.eslintrc.yaml`:
+projects only. To enable this, add the following to `eslint.config.js`:
 
-```yaml
-root: true
-extends:
-  - remcohaszing
-  - remcohaszing/typechecking
+```js
+import config, { typechecking } from 'eslint-config-remcohaszing'
+
+export default [...config, ...typechecking]
 ```
-
-This sets the project configuration to `tsconfig.json`. To change it, see
-[`@typescript-eslint/parser`](https://www.npmjs.com/package/@typescript-eslint/parser#parseroptionsproject)
 
 ### Markdown
 
 Code blocks in Markdown are linted by default using
-[`eslint-plugin-markdown`](https://github.com/eslint/eslint-plugin-markdown).
+[`@eslint/markdown`](https://github.com/eslint/markdown). The type checking rules from
+`@typescript-eslint/eslint-plugin` don’t work with markdown code blocks.
 
 `prettier/prettier` is disabled, because it doesn’t play nice with `eslint-plugin-markdown`.
 
-The type checking rules from `@typescript-eslint/eslint-plugin` don’t work with
-`eslint-plugin-markdown`. To work around this, tag TypeScript code blocks with `typescript`, not
-`ts` or `tsx`.
-
-Other rules have been turned off, because these rules may conflict with the purpose of the
+Some other rules have been turned off, because these rules may conflict with the purpose of the
 documentation.
 
-To not lint Markdown files, ignore them.
+### Disabling rules
 
-```yaml
-ignorePatterns:
-  - '*.md'
+Rules can be disabled by adding an extra ESLint configuration item to the configuration array. For
+example:
+
+```js
+import config from 'eslint-config-remcohaszing'
+
+export default [
+  ...config,
+  {
+    rules: {
+      'no-console': 'off'
+    }
+  }
+]
 ```
 
 ## Ignored files
 
-By default ESLint ignores `node_modules/` and all dotfiles. This ESLint configuration unignores
-dotfiles and passes the patterns from `.gitignore` to ESLint in addition to those in
-`.eslintignore`. Typically this means you won’t need a `.eslintignore` file.
+By default ESLint ignores `node_modules/` and all dotfiles. This ESLint configuration also ignores
+the patterns from `.gitignore`.
 
 ## Warnings
 
-All ESLint that are turned on will trigger error, not warnings. The notable exceptions are the
-following rules:
-
-- `import-x/no-deprecated`
+All ESLint that are turned on will trigger error, not warnings. The notable exceptions is
+`@typescript-eslint/no-deprecated`.
 
 This is to allow a smooth migration if a dependency decides to deprecate an API. To turn make
 warnings cause ESLint to exit with exit code 1, run:
 
 ```sh
-eslint --max-warnings 0 .
+eslint
 ```
 
 ## License

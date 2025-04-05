@@ -1,7 +1,7 @@
 /**
  * These property names are allowed, because exist in commonly used specifications.
  */
-module.exports = [
+export const allowedProperties = [
   // OAuth2
   'access_token',
   'client_id',

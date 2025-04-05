@@ -1,9 +1,19 @@
-const assert = require('node:assert/strict')
-const { describe, test } = require('node:test')
+import assert from 'node:assert/strict'
+import { describe, test } from 'node:test'
 
-const { builtinRules } = require('eslint/use-at-your-own-risk')
-const config = require('eslint-config-remcohaszing')
+import { builtinRules } from 'eslint/use-at-your-own-risk'
+import config, { typechecking } from 'eslint-config-remcohaszing'
 
+/**
+ * A comparator for sorting ESLint rules.
+ *
+ * @param {string} a
+ *   The first rule
+ * @param {string} b
+ *   The second rule
+ * @returns {number}
+ *   A comparison
+ */
 function compareRules(a, b) {
   if (a.includes('/')) {
     if (b.includes('/')) {
@@ -13,6 +23,10 @@ function compareRules(a, b) {
     return 1
   }
 
+  if (b.includes('/')) {
+    return -1
+  }
+
   return a.localeCompare(b)
 }
 
@@ -20,14 +34,13 @@ const allowedDeprecated = new Set(['no-return-await'])
 
 const disabled = new Set([
   // https://eslint.org/docs/latest/rules/
-  // #region core rules
   'complexity',
   'consistent-return',
+  'default-case',
   'func-name-matching',
   'id-length',
   'id-match',
   'init-declarations',
-  'line-comment-position',
   'max-classes-per-file',
   'max-depth',
   'max-lines',
@@ -35,7 +48,6 @@ const disabled = new Set([
   'max-nested-callbacks',
   'max-params',
   'max-statements',
-  'multiline-comment-style',
   'no-await-in-loop',
   'no-bitwise',
   'no-continue',
@@ -66,10 +78,8 @@ const disabled = new Set([
   'sort-vars',
   'unicode-bom',
   'vars-on-top',
-  // #endregion
 
   // https://eslint.style
-  // #region @stylistic/eslint-plugin
   '@stylistic/array-bracket-newline',
   '@stylistic/array-bracket-spacing',
   '@stylistic/array-element-newline',
@@ -81,6 +91,7 @@ const disabled = new Set([
   '@stylistic/comma-spacing',
   '@stylistic/comma-style',
   '@stylistic/computed-property-spacing',
+  '@stylistic/curly-newline',
   '@stylistic/dot-location',
   '@stylistic/eol-last',
   '@stylistic/func-call-spacing',
@@ -113,7 +124,6 @@ const disabled = new Set([
   '@stylistic/linebreak-style',
   '@stylistic/max-statements-per-line',
   '@stylistic/member-delimiter-style',
-  '@stylistic/multiline-comment-style',
   '@stylistic/multiline-ternary',
   '@stylistic/new-parens',
   '@stylistic/newline-per-chained-call',
@@ -153,21 +163,49 @@ const disabled = new Set([
   '@stylistic/wrap-iife',
   '@stylistic/wrap-regex',
   '@stylistic/yield-star-spacing',
-  // #endregion
+
+  // https://typescript-eslint.io/rules/
+  '@typescript-eslint/ban-tslint-comment',
+  '@typescript-eslint/consistent-return',
+  '@typescript-eslint/consistent-type-exports',
+  '@typescript-eslint/explicit-module-boundary-types',
+  '@typescript-eslint/init-declarations',
+  '@typescript-eslint/max-params',
+  '@typescript-eslint/no-confusing-non-null-assertion',
+  '@typescript-eslint/no-confusing-void-expression',
+  '@typescript-eslint/no-dynamic-delete',
+  '@typescript-eslint/no-floating-promises',
+  '@typescript-eslint/no-import-type-side-effects',
+  '@typescript-eslint/no-invalid-this',
+  '@typescript-eslint/no-invalid-void-type',
+  '@typescript-eslint/no-magic-numbers',
+  '@typescript-eslint/no-misused-promises',
+  '@typescript-eslint/no-misused-spread',
+  '@typescript-eslint/no-mixed-enums',
+  '@typescript-eslint/no-namespace',
+  '@typescript-eslint/no-non-null-assertion',
+  '@typescript-eslint/no-redeclare',
+  '@typescript-eslint/no-restricted-types',
+  '@typescript-eslint/no-unnecessary-parameter-property-assignment',
+  '@typescript-eslint/no-unnecessary-type-parameters',
+  '@typescript-eslint/no-unsafe-type-assertion',
+  '@typescript-eslint/prefer-enum-initializers',
+  '@typescript-eslint/prefer-readonly-parameter-types',
+  '@typescript-eslint/prefer-readonly',
+  '@typescript-eslint/promise-function-async',
+  '@typescript-eslint/require-await',
+  '@typescript-eslint/strict-boolean-expressions',
+  '@typescript-eslint/switch-exhaustiveness-check',
+  '@typescript-eslint/typedef',
 
   // https://github.com/eslint-community/eslint-plugin-eslint-comments
-  // #region eslint-plugin-eslint-comments
   'eslint-comments/require-description',
-  // #endregion
 
   // https://github.com/eslint-community/eslint-plugin-eslint-comments
-  // #region eslint-plugin-eslint-comments
   'eslint-comments/no-restricted-disable',
   'eslint-comments/require-description',
-  // #endregion
 
   // https://github.com/un-ts/eslint-plugin-import-x
-  // #region eslint-plugin-import
   'import-x/dynamic-import-chunkname',
   'import-x/exports-last',
   'import-x/group-exports',
@@ -175,6 +213,7 @@ const disabled = new Set([
   'import-x/no-commonjs',
   'import-x/no-cycle',
   'import-x/no-default-export',
+  'import-x/no-deprecated',
   'import-x/no-dynamic-require',
   'import-x/no-empty-named-blocks',
   'import-x/no-import-module-exports',
@@ -184,21 +223,18 @@ const disabled = new Set([
   'import-x/no-namespace',
   'import-x/no-nodejs-modules',
   'import-x/no-relative-parent-imports',
+  'import-x/no-rename-default',
   'import-x/no-restricted-paths',
   'import-x/no-unassigned-import',
   'import-x/no-unused-modules',
   'import-x/prefer-default-export',
   'import-x/unambiguous',
-  // #endregion
 
   // https://github.com/dangreenisrael/eslint-plugin-jest-formatting
-  // #region eslint-plugin-jest-formatting
   'jest-formatting/padding-around-all',
   'jest-formatting/padding-around-expect-groups',
-  // #endregion
 
   // https://github.com/gajus/eslint-plugin-jsdoc
-  // #region eslint-plugin-jsdoc
   'jsdoc/check-alignment',
   'jsdoc/check-examples',
   'jsdoc/check-property-names',
@@ -221,11 +257,12 @@ const disabled = new Set([
   'jsdoc/require-property-name',
   'jsdoc/require-template',
   'jsdoc/require-throws',
+  'jsdoc/require-yields',
+  'jsdoc/require-yields-check',
   'jsdoc/text-escaping',
-  // #endregion
+  'jsdoc/valid-types',
 
   // https://github.com/eslint-community/eslint-plugin-n
-  // #region eslint-plugin-n
   'n/file-extension-in-import',
   'n/global-require',
   'n/no-callback-literal',
@@ -241,10 +278,13 @@ const disabled = new Set([
   'n/no-sync',
   'n/no-unpublished-import',
   'n/no-unpublished-require',
-  // #endregion
+  'n/no-unsupported-features/es-builtins',
+  'n/no-unsupported-features/es-syntax',
+  'n/no-unsupported-features/node-builtins',
+  'n/prefer-node-protocol',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn
-  // #region eslint-plugin-unicorn
+  'unicorn/consistent-existence-index-check',
   'unicorn/empty-brace-spaces',
   'unicorn/explicit-length-check',
   'unicorn/filename-case',
@@ -273,34 +313,40 @@ const disabled = new Set([
   'unicorn/require-array-join-separator',
   'unicorn/require-number-to-fixed-digits-argument',
   'unicorn/string-content'
-  // #endregion
 ])
 
-const allRules = []
+const baseRules = []
+const typescriptRules = []
+const typecheckingRules = []
+const baseConfig = config.find((c) => c.name === 'base')
+const typescriptConfig = config.find((c) => c.name === 'typescript')
+const typecheckingConfig = typechecking.find((c) => c.name === 'typechecking')
 
 for (const [name, rule] of builtinRules) {
   if (rule.meta.deprecated && !allowedDeprecated.has(name)) {
     test(`rule ${name} (deprecated)`, () => {
-      assert.ok(!(name in config.rules || disabled.has(name)), `${name} should not be considered`)
+      assert.ok(
+        !(name in baseConfig.rules || disabled.has(name)),
+        `${name} should not be considered`
+      )
     })
   } else {
-    allRules.push(name)
+    baseRules.push(name)
 
     test(`rule ${name}`, () => {
-      assert.ok(name in config.rules || disabled.has(name), `${name} should be considered`)
+      assert.ok(name in baseConfig.rules || disabled.has(name), `${name} should be considered`)
       assert.ok(
-        !(name in config.rules && disabled.has(name)),
+        !(name in baseConfig.rules && disabled.has(name)),
         `${name} should not be specified and disabled`
       )
     })
   }
 }
 
-for (const pluginPrefix of config.plugins) {
+for (const [pluginPrefix, plugin] of Object.entries(baseConfig.plugins)) {
   const pluginName = pluginPrefix.startsWith('@')
     ? `${pluginPrefix}/eslint-plugin`
     : `eslint-plugin-${pluginPrefix}`
-  const plugin = require(pluginName)
 
   describe(pluginName, () => {
     for (const [ruleName, rule] of Object.entries(plugin.rules)) {
@@ -309,17 +355,54 @@ for (const pluginPrefix of config.plugins) {
       if (rule.meta.deprecated) {
         test(`rule ${name} (deprecated)`, () => {
           assert.ok(
-            !(name in config.rules || disabled.has(name)),
+            !(name in baseConfig.rules || disabled.has(name)),
             `${name} should not be considered`
           )
         })
-      } else {
-        allRules.push(name)
+      } else if (rule.meta.docs?.requiresTypeChecking && ruleName !== 'naming-convention') {
+        typecheckingRules.push(name)
 
         test(`rule ${name}`, () => {
-          assert.ok(name in config.rules || disabled.has(name), `${name} should be considered`)
           assert.ok(
-            !(name in config.rules && disabled.has(name)),
+            (name in typecheckingConfig.rules && typecheckingConfig.rules[name] !== 'off') ||
+              disabled.has(name),
+            `${name} should be considered`
+          )
+          assert.ok(
+            !(name in typecheckingConfig.rules && disabled.has(name)),
+            `${name} should not be specified and disabled`
+          )
+          if (name in typecheckingConfig.rules && rule.meta?.docs?.extendsBaseRule) {
+            assert.ok(typecheckingConfig.rules[ruleName] === 'off', `should turn ${ruleName} off`)
+          }
+        })
+      } else if (pluginPrefix === '@typescript-eslint') {
+        typescriptRules.push(name)
+
+        test(`rule ${name}`, () => {
+          assert.ok(
+            (name in typescriptConfig.rules && typescriptConfig.rules[name] !== 'off') ||
+              disabled.has(name),
+            `${name} should be considered`
+          )
+          assert.ok(
+            !(name in typescriptConfig.rules && disabled.has(name)),
+            `${name} should not be specified and disabled`
+          )
+          if (name in typescriptConfig.rules && rule.meta?.docs?.extendsBaseRule) {
+            assert.ok(typescriptConfig.rules[ruleName] === 'off', `should turn ${ruleName} off`)
+          }
+        })
+      } else {
+        baseRules.push(name)
+
+        test(`rule ${name}`, () => {
+          assert.ok(
+            (name in baseConfig.rules && baseConfig.rules[name] !== 'off') || disabled.has(name),
+            `${name} should be considered`
+          )
+          assert.ok(
+            !(name in baseConfig.rules && disabled.has(name)),
             `${name} should not be specified and disabled`
           )
         })
@@ -328,19 +411,24 @@ for (const pluginPrefix of config.plugins) {
   })
 }
 
-test('consider all rules', () => {
-  allRules.sort(compareRules)
-  const specifiedRules = [...Object.keys(config.rules), ...disabled].sort(compareRules)
+baseRules.sort(compareRules)
 
-  assert.deepEqual(allRules, specifiedRules)
+test('sort base rules aphabetically', () => {
+  const ruleNames = Object.keys(baseConfig.rules)
+  assert.deepEqual(ruleNames, ruleNames.toSorted(compareRules))
 })
 
-test('sort rules aphabetically', () => {
-  const ruleNames = Object.keys(config.rules)
+test('sort TypeScript rules aphabetically', () => {
+  const ruleNames = Object.keys(typescriptConfig.rules)
+  assert.deepEqual(ruleNames, ruleNames.toSorted(compareRules))
+})
+
+test('sort type checking rules aphabetically', () => {
+  const ruleNames = Object.keys(typecheckingConfig.rules)
   assert.deepEqual(ruleNames, ruleNames.toSorted(compareRules))
 })
 
 test('sort disabled aphabetically', () => {
-  const ruleNames = [...allRules]
+  const ruleNames = [...baseRules]
   assert.deepEqual(ruleNames, ruleNames.toSorted(compareRules))
 })

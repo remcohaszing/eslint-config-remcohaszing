@@ -1,6 +1,0 @@
-settings:
-  node:
-    convertPath:
-      'src/**':
-        - 'src/(.+?)\.ts$'
-        - dist/$1.js

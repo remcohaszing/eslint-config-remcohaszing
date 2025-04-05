@@ -1,7 +1,7 @@
 /**
  * Known packages in on DefinitelyTyped that don’t describe an npm package.
  */
-module.exports.dtOnlyPackages = [
+export const dtOnlyPackages = [
   'estree',
   'estree-jsx',
   'hast',
@@ -14,4 +14,4 @@ module.exports.dtOnlyPackages = [
 /**
  * Known packages that export only type definitions, but which don’t contain a JavaScript file.
  */
-module.exports.typesOnlyPackages = ['@fortawesome/fontawesome-common-types']
+export const typesOnlyPackages = ['@fortawesome/fontawesome-common-types']
