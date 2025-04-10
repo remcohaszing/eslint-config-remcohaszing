@@ -13,9 +13,13 @@
   "license": "MIT",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
   "type": "module",
-  "exports": "./lib/config.js",
+  "exports": {
+    "types": "./types/config.d.ts",
+    "default": "./lib/config.js"
+  },
   "files": [
-    "lib"
+    "lib",
+    "types"
   ],
   "workspaces": [
     "examples/*"
@@ -41,7 +45,7 @@
     "find-up": "^5.0.0"
   },
   "devDependencies": {
-    "eslint-config-remcohaszing": ".",
+    "@types/confusing-browser-globals": "^1.0.0",
     "prettier-plugin-packagejson": "^2.0.0",
     "remark-cli": "^12.0.0",
     "remark-preset-remcohaszing": "^3.0.0",

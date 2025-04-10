@@ -1,0 +1,15 @@
+{
+  "include": ["lib"],
+  "compilerOptions": {
+    "checkJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "module": "node18",
+    "outDir": "types",
+    "rootDir": "lib",
+    "declarationMap": true,
+    "strict": true,
+    "target": "es2020",
+    "types": ["node"]
+  }
+}

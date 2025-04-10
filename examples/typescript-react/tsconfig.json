@@ -1,3 +1,10 @@
 {
-  "extends": "../../tsconfig"
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "node18",
+    "noEmit": true,
+    "strict": true,
+    "target": "es2020"
+  }
 }

@@ -1,11 +1,9 @@
 {
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "module": "node16",
-    "noEmit": true,
-    "noImplicitAny": true,
-    "sourceMap": true,
-    "strict": true,
-    "target": "es2020"
-  }
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.build.json" },
+    { "path": "./examples/typescript-lib/tsconfig.json" },
+    { "path": "./examples/typescript-preact/tsconfig.json" },
+    { "path": "./examples/typescript-react/tsconfig.json" }
+  ]
 }

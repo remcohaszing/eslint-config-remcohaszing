@@ -1,6 +1,10 @@
 {
   "extends": "../../tsconfig",
   "compilerOptions": {
+    "module": "node18",
+    "noEmit": true,
+    "strict": true,
+    "target": "es2020",
     "types": ["node"]
   }
 }
