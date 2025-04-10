@@ -25,6 +25,7 @@
     "examples/*"
   ],
   "scripts": {
+    "prepack": "tsc -b",
     "test": "node --test"
   },
   "dependencies": {
