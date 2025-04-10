@@ -206,6 +206,7 @@ const disabled = new Set([
   'eslint-comments/require-description',
 
   // https://github.com/un-ts/eslint-plugin-import-x
+  'import-x/default',
   'import-x/dynamic-import-chunkname',
   'import-x/exports-last',
   'import-x/group-exports',
