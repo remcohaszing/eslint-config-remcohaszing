@@ -13,12 +13,9 @@
   "license": "MIT",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
   "type": "module",
-  "exports": "./index.js",
+  "exports": "./lib/config.js",
   "files": [
-    "*.js",
-    "core",
-    "plugins",
-    "utils"
+    "lib"
   ],
   "workspaces": [
     "examples/*"
