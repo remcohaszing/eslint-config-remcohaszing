@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+        with: { node-version: 22 }
       - run: npm ci
       - run: npx eslint .
 
@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+        with: { node-version: 22 }
       - run: npm ci
       - run: npm pack
       - uses: actions/upload-artifact@v4
@@ -34,7 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+        with: { node-version: 22 }
       - run: npm ci
       - run: npx prettier --check .
 
@@ -52,7 +52,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           registry-url: https://registry.npmjs.org
       - uses: actions/download-artifact@v4
         with: { name: package }
@@ -65,21 +65,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+        with: { node-version: 22 }
       - run: npm ci
       - run: npx remark --frail .
 
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version:
-          - 16
-          - 18
-          - 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: '${{ matrix.node-version }}' }
+        with: { node-version: 22 }
       - run: npm ci
       - run: node --test
