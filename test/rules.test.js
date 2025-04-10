@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict'
 import { describe, test } from 'node:test'
 
-import { builtinRules } from 'eslint/use-at-your-own-risk'
 import config, { typechecking } from '@remcohaszing/eslint'
+import { builtinRules } from 'eslint/use-at-your-own-risk'
 
 /**
  * A comparator for sorting ESLint rules.
