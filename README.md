@@ -1,10 +1,10 @@
-# eslint-config-remcohaszing
+# @remcohaszing/eslint
 
 > A strict ESLint configuration
 
-[![build status](https://github.com/remcohaszing/eslint-config-remcohaszing/workflows/ci/badge.svg)](https://github.com/remcohaszing/eslint-config-remcohaszing/actions)
-[![codecov](https://codecov.io/gh/remcohaszing/eslint-config-remcohaszing/branch/main/graph/badge.svg)](https://codecov.io/gh/remcohaszing/eslint-config-remcohaszing)
-[![npm](https://img.shields.io/npm/v/eslint-config-remcohaszing)](https://www.npmjs.com/package/eslint-config-remcohaszing)
+[![build status](https://github.com/remcohaszing/@remcohaszing/eslint/workflows/ci/badge.svg)](https://github.com/remcohaszing/@remcohaszing/eslint/actions)
+[![codecov](https://codecov.io/gh/remcohaszing/@remcohaszing/eslint/branch/main/graph/badge.svg)](https://codecov.io/gh/remcohaszing/@remcohaszing/eslint)
+[![npm](https://img.shields.io/npm/v/@remcohaszing/eslint)](https://www.npmjs.com/package/@remcohaszing/eslint)
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
 
 This is a strict shareable ESLint configuration. All ESLint core rules and a variety of ESLint
@@ -23,12 +23,12 @@ plugins have been carefully considered. Overrides are used to apply rules based 
 
 ## Installation
 
-Install `eslint-config-remcohaszing` using `npm`.
+Install `@remcohaszing/eslint` using `npm`.
 
 ```sh
 npm install --save-dev \
   eslint \
-  eslint-config-remcohaszing \
+  @remcohaszing/eslint \
   prettier
 ```
 
@@ -61,7 +61,7 @@ trailingComma: all
 Next, create `eslint.config.js` with the following content:
 
 ```js
-export { default } from 'eslint-config-remcohaszing'
+export { default } from '@remcohaszing/eslint'
 ```
 
 ### TypeScript
@@ -73,7 +73,7 @@ enabled. Unfortunately, this makes ESLint slow. Enabling these rules is recommen
 projects only. To enable this, add the following to `eslint.config.js`:
 
 ```js
-import config, { typechecking } from 'eslint-config-remcohaszing'
+import config, { typechecking } from '@remcohaszing/eslint'
 
 export default [...config, ...typechecking]
 ```
@@ -95,7 +95,7 @@ Rules can be disabled by adding an extra ESLint configuration item to the config
 example:
 
 ```js
-import config from 'eslint-config-remcohaszing'
+import config from '@remcohaszing/eslint'
 
 export default [
   ...config,

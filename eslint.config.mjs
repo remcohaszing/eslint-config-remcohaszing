@@ -1,1 +1,1 @@
-export { default } from 'eslint-config-remcohaszing'
+export { default } from '@remcohaszing/eslint'

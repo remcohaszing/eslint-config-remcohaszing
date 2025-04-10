@@ -1,6 +1,6 @@
 # TypeScript Lib Example
 
-This is an example for using `eslint-config-remcohaszing` in a TypeScript library.
+This is an example for using `@remcohaszing/eslint` in a TypeScript library.
 
 ## Inline Code Blocks
 

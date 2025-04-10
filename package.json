@@ -1,14 +1,14 @@
 {
-  "name": "eslint-config-remcohaszing",
+  "name": "@remcohaszing/eslint",
   "version": "10.0.1",
   "description": "A strict ESLint configuration.",
   "keywords": [
     "eslint",
     "eslintconfig"
   ],
-  "homepage": "https://github.com/remcohaszing/eslint-config-remcohaszing#readme",
-  "bugs": "https://github.com/remcohaszing/eslint-config-remcohaszing/issues",
-  "repository": "remcohaszing/eslint-config-remcohaszing",
+  "homepage": "https://github.com/remcohaszing/@remcohaszing/eslint#readme",
+  "bugs": "https://github.com/remcohaszing/@remcohaszing/eslint/issues",
+  "repository": "remcohaszing/@remcohaszing/eslint",
   "funding": "https://github.com/sponsors/remcohaszing",
   "license": "MIT",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
