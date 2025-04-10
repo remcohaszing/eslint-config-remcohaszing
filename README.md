@@ -19,6 +19,7 @@ plugins have been carefully considered. Overrides are used to apply rules based 
   - [Disabling rules](#disabling-rules)
 - [Ignored files](#ignored-files)
 - [Warnings](#warnings)
+- [Compatibility](#compatibility)
 - [License](#license)
 
 ## Installation
@@ -123,6 +124,10 @@ warnings cause ESLint to exit with exit code 1, run:
 ```sh
 eslint
 ```
+
+## Compatibility
+
+This project requires Node.js 22 or greater.
 
 ## License
 
