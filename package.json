@@ -6,9 +6,9 @@
     "eslint",
     "eslintconfig"
   ],
-  "homepage": "https://github.com/remcohaszing/@remcohaszing/eslint#readme",
-  "bugs": "https://github.com/remcohaszing/@remcohaszing/eslint/issues",
-  "repository": "remcohaszing/@remcohaszing/eslint",
+  "homepage": "https://github.com/remcohaszing/eslint#readme",
+  "bugs": "https://github.com/remcohaszing/eslint/issues",
+  "repository": "remcohaszing/eslint",
   "funding": "https://github.com/sponsors/remcohaszing",
   "license": "MIT",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
