@@ -1,3 +1,1 @@
-import config, { typechecking } from 'eslint-config-remcohaszing'
-
-export default [...config, ...typechecking]
+export { default } from 'eslint-config-remcohaszing'
