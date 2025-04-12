@@ -80,6 +80,11 @@ const disabled = new Set([
   'unicode-bom',
   'vars-on-top',
 
+  // https://eslint-community.github.io/eslint-plugin-eslint-comments
+  '@eslint-community/eslint-comments/require-description',
+  '@eslint-community/eslint-comments/no-restricted-disable',
+  '@eslint-community/eslint-comments/require-description',
+
   // https://eslint.style
   '@stylistic/array-bracket-newline',
   '@stylistic/array-bracket-spacing',
@@ -118,6 +123,7 @@ const disabled = new Set([
   '@stylistic/jsx-pascal-case',
   '@stylistic/jsx-props-no-multi-spaces',
   '@stylistic/jsx-quotes',
+  '@stylistic/jsx-sort-props',
   '@stylistic/jsx-tag-spacing',
   '@stylistic/jsx-wrap-multilines',
   '@stylistic/key-spacing',
@@ -198,13 +204,6 @@ const disabled = new Set([
   '@typescript-eslint/strict-boolean-expressions',
   '@typescript-eslint/switch-exhaustiveness-check',
   '@typescript-eslint/typedef',
-
-  // https://github.com/eslint-community/eslint-plugin-eslint-comments
-  'eslint-comments/require-description',
-
-  // https://github.com/eslint-community/eslint-plugin-eslint-comments
-  'eslint-comments/no-restricted-disable',
-  'eslint-comments/require-description',
 
   // https://github.com/un-ts/eslint-plugin-import-x
   'import-x/default',
@@ -290,7 +289,6 @@ const disabled = new Set([
   'perfectionist/sort-decorators',
   'perfectionist/sort-enums',
   'perfectionist/sort-interfaces',
-  'perfectionist/sort-jsx-props',
   'perfectionist/sort-modules',
   'perfectionist/sort-object-types',
   'perfectionist/sort-sets',
