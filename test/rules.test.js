@@ -74,6 +74,7 @@ const disabled = new Set([
   'prefer-object-has-own',
   'require-atomic-updates',
   'require-unicode-regexp',
+  'sort-imports',
   'sort-keys',
   'sort-vars',
   'unicode-bom',
@@ -228,6 +229,7 @@ const disabled = new Set([
   'import-x/no-restricted-paths',
   'import-x/no-unassigned-import',
   'import-x/no-unused-modules',
+  'import-x/order',
   'import-x/prefer-default-export',
   'import-x/unambiguous',
 
@@ -283,6 +285,17 @@ const disabled = new Set([
   'n/no-unsupported-features/es-syntax',
   'n/no-unsupported-features/node-builtins',
   'n/prefer-node-protocol',
+
+  // https://perfectionist.dev
+  'perfectionist/sort-decorators',
+  'perfectionist/sort-enums',
+  'perfectionist/sort-interfaces',
+  'perfectionist/sort-jsx-props',
+  'perfectionist/sort-modules',
+  'perfectionist/sort-object-types',
+  'perfectionist/sort-sets',
+  'perfectionist/sort-switch-case',
+  'perfectionist/sort-variable-declarations',
 
   // https://github.com/sindresorhus/eslint-plugin-unicorn
   'unicorn/consistent-existence-index-check',
