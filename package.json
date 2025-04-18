@@ -29,9 +29,9 @@
     "test": "node --test"
   },
   "dependencies": {
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.0.0",
     "@eslint/compat": "^1.0.0",
     "@eslint/markdown": "^6.0.0",
-    "@eslint-community/eslint-plugin-eslint-comments": "^4.0.0",
     "@stylistic/eslint-plugin": "^4.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
