@@ -178,6 +178,7 @@ const disabled = new Set([
   '@typescript-eslint/explicit-module-boundary-types',
   '@typescript-eslint/init-declarations',
   '@typescript-eslint/max-params',
+  '@typescript-eslint/member-ordering',
   '@typescript-eslint/no-confusing-non-null-assertion',
   '@typescript-eslint/no-confusing-void-expression',
   '@typescript-eslint/no-dynamic-delete',
